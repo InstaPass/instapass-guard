@@ -1,0 +1,6 @@
+framework module Pods_instapass_guardTests {
+  umbrella header "Pods-instapass-guardTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -14,5 +14,6 @@ target 'instapass-guard' do
 
   pod 'Alamofire-SwiftyJSON'
   pod 'QRCodeReader.swift'
+  pod 'IQKeyboardManager'
 
 end
