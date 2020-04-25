@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,8 +11,7 @@
 		82ACD892942DCEDBE6610341 /* Pods_instapass_guardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77999AFF8ED6DBDF28351B01 /* Pods_instapass_guardTests.framework */; };
 		8A5F2C20245303BC003E636C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5F2C1F245303BC003E636C /* AppDelegate.swift */; };
 		8A5F2C22245303BC003E636C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5F2C21245303BC003E636C /* SceneDelegate.swift */; };
-		8A5F2C24245303BC003E636C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5F2C23245303BC003E636C /* FirstViewController.swift */; };
-		8A5F2C26245303BC003E636C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5F2C25245303BC003E636C /* SecondViewController.swift */; };
+		8A5F2C24245303BC003E636C /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5F2C23245303BC003E636C /* ScanViewController.swift */; };
 		8A5F2C29245303BC003E636C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A5F2C27245303BC003E636C /* Main.storyboard */; };
 		8A5F2C2B245303BD003E636C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A5F2C2A245303BD003E636C /* Assets.xcassets */; };
 		8A5F2C2E245303BD003E636C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A5F2C2C245303BD003E636C /* LaunchScreen.storyboard */; };
@@ -37,8 +36,7 @@
 		8A5F2C1C245303BC003E636C /* InstaPass (Guard).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InstaPass (Guard).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5F2C1F245303BC003E636C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A5F2C21245303BC003E636C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8A5F2C23245303BC003E636C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		8A5F2C25245303BC003E636C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		8A5F2C23245303BC003E636C /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		8A5F2C28245303BC003E636C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A5F2C2A245303BD003E636C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A5F2C2D245303BD003E636C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -102,10 +100,8 @@
 		8A5F2C1E245303BC003E636C /* instapass-guard */ = {
 			isa = PBXGroup;
 			children = (
-				8A5F2C1F245303BC003E636C /* AppDelegate.swift */,
-				8A5F2C21245303BC003E636C /* SceneDelegate.swift */,
-				8A5F2C23245303BC003E636C /* FirstViewController.swift */,
-				8A5F2C25245303BC003E636C /* SecondViewController.swift */,
+				8A9F444C245477150005FD01 /* Delegate */,
+				8A9F444B2454770F0005FD01 /* VC */,
 				8A5F2C27245303BC003E636C /* Main.storyboard */,
 				8A5F2C2A245303BD003E636C /* Assets.xcassets */,
 				8A5F2C2C245303BD003E636C /* LaunchScreen.storyboard */,
@@ -123,6 +119,23 @@
 			path = "instapass-guardTests";
 			sourceTree = "<group>";
 		};
+		8A9F444B2454770F0005FD01 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				8A5F2C23245303BC003E636C /* ScanViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		8A9F444C245477150005FD01 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				8A5F2C1F245303BC003E636C /* AppDelegate.swift */,
+				8A5F2C21245303BC003E636C /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
 		998FA45315F2D182A142B138 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,7 +144,6 @@
 				08ED6AFFE276571FE8B95CB3 /* Pods-instapass-guardTests.debug.xcconfig */,
 				3BEA930918EC248EF3EEB851 /* Pods-instapass-guardTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -303,8 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A5F2C26245303BC003E636C /* SecondViewController.swift in Sources */,
-				8A5F2C24245303BC003E636C /* FirstViewController.swift in Sources */,
+				8A5F2C24245303BC003E636C /* ScanViewController.swift in Sources */,
 				8A5F2C20245303BC003E636C /* AppDelegate.swift in Sources */,
 				8A5F2C22245303BC003E636C /* SceneDelegate.swift in Sources */,
 			);
