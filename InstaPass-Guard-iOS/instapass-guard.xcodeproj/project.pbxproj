@@ -16,6 +16,7 @@
 		8A5F2C2B245303BD003E636C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A5F2C2A245303BD003E636C /* Assets.xcassets */; };
 		8A5F2C2E245303BD003E636C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A5F2C2C245303BD003E636C /* LaunchScreen.storyboard */; };
 		8A5F2C39245303BD003E636C /* instapass_guardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5F2C38245303BD003E636C /* instapass_guardTests.swift */; };
+		8A82E3D424551B2F00008610 /* raw.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A82E3D324551B2F00008610 /* raw.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		8A5F2C34245303BD003E636C /* instapass-guardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "instapass-guardTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5F2C38245303BD003E636C /* instapass_guardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instapass_guardTests.swift; sourceTree = "<group>"; };
 		8A5F2C3A245303BD003E636C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A82E3D324551B2F00008610 /* raw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = raw.png; path = ../../Icons/raw.png; sourceTree = "<group>"; };
 		B1D5F574E1F290EDC011291A /* Pods-instapass-guard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instapass-guard.debug.xcconfig"; path = "Target Support Files/Pods-instapass-guard/Pods-instapass-guard.debug.xcconfig"; sourceTree = "<group>"; };
 		FAD101A56FABCCBC4824824F /* Pods-instapass-guard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instapass-guard.release.xcconfig"; path = "Target Support Files/Pods-instapass-guard/Pods-instapass-guard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +82,7 @@
 		8A5F2C13245303BC003E636C = {
 			isa = PBXGroup;
 			children = (
+				8A82E3D224551B2600008610 /* Icons */,
 				8A5F2C1E245303BC003E636C /* instapass-guard */,
 				8A5F2C37245303BD003E636C /* instapass-guardTests */,
 				8A5F2C1D245303BC003E636C /* Products */,
@@ -117,6 +120,14 @@
 				8A5F2C3A245303BD003E636C /* Info.plist */,
 			);
 			path = "instapass-guardTests";
+			sourceTree = "<group>";
+		};
+		8A82E3D224551B2600008610 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				8A82E3D324551B2F00008610 /* raw.png */,
+			);
+			path = Icons;
 			sourceTree = "<group>";
 		};
 		8A9F444B2454770F0005FD01 /* VC */ = {
@@ -231,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A82E3D424551B2F00008610 /* raw.png in Resources */,
 				8A5F2C2E245303BD003E636C /* LaunchScreen.storyboard in Resources */,
 				8A5F2C2B245303BD003E636C /* Assets.xcassets in Resources */,
 				8A5F2C29245303BC003E636C /* Main.storyboard in Resources */,
