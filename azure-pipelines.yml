@@ -7,28 +7,28 @@
 trigger:
   - master
   
-  pool:
-    vmImage: 'macos-latest'
-  
-  jobs:
-    - job: 'ios_build'
-      steps:
-      - task: Xcode@5
+pool:
+  vmImage: 'macos-latest'
+
+jobs:
+  - job: 'ios_build'
+    steps:
+    - task: Xcode@5
+      inputs:
+        actions: 'build'
+        scheme: 'instapass-guard'
+        sdk: 'iphoneos'
+        configuration: 'Release'
+        xcWorkspacePath: '**/instapass-guard.xcworkspace'
+        xcodeVersion: 'default' # Options: 8, 9, 10, default, specifyPath
+  - job: 'android_build'
+    steps:
+      - task: Gradle@2
         inputs:
-          actions: 'build'
-          scheme: 'instapass-guard'
-          sdk: 'iphoneos'
-          configuration: 'Release'
-          xcWorkspacePath: '**/instapass-guard.xcworkspace'
-          xcodeVersion: 'default' # Options: 8, 9, 10, default, specifyPath
-    - job: 'android_build'
-      steps:
-        - task: Gradle@2
-          inputs:
-            workingDirectory: './InstaPass-Guard-Android'
-            gradleWrapperFile: './gradlew'
-            gradleOptions: '-Xmx3072m'
-            publishJUnitResults: false
-            testResultsFiles: '**/TEST-*.xml'
-            tasks: 'assembleDebug'
+          workingDirectory: './InstaPass-Guard-Android'
+          gradleWrapperFile: './gradlew'
+          gradleOptions: '-Xmx3072m'
+          publishJUnitResults: false
+          testResultsFiles: '**/TEST-*.xml'
+          tasks: 'assembleDebug'
 
