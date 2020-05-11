@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -45,7 +45,9 @@
                             <constraint firstItem="J9G-5M-cdy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="KtR-MM-snc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J9G-5M-cdy" secondAttribute="trailing" constant="64" id="Xg0-JS-Czv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vZY-aE-f56" secondAttribute="bottom" constant="10" id="YYg-Uy-txZ"/>
+                            <constraint firstItem="vZY-aE-f56" firstAttribute="top" relation="greaterThanOrEqual" secondItem="J9G-5M-cdy" secondAttribute="bottom" constant="30" id="w0d-By-2L1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vZY-aE-f56" secondAttribute="trailing" constant="20" id="wqV-yT-t27"/>
+                            <constraint firstItem="J9G-5M-cdy" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="yzZ-UT-7cy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -56,6 +58,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="1024" height="1024"/>
+        <image name="Image" width="512" height="512"/>
     </resources>
 </document>

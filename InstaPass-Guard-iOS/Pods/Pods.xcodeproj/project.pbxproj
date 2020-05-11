@@ -3,110 +3,143 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C5E11DE24DAA737704B355F5F2F3426 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDB2FDBDF53D3385E68A07A7D6C7AA1 /* ParameterEncoding.swift */; };
-		0E8B87FA998C7178EBEE0D8A3F6C0A98 /* IQPreviousNextView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB2307BAA2C5FEDE67FE5D9A38A3530 /* IQPreviousNextView.m */; };
-		104E7B3F596C88BFC1933E78ED3ACAC3 /* IQUIViewController+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 94224A4C7B1B3D801C29079DE6720FD0 /* IQUIViewController+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		12C6E46A5E0FD04DBF7866649491D5F7 /* IQKeyboardManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B58261D0CD98A2063C98284773DBDE57 /* IQKeyboardManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		132E0F619E4338E5D1B27E4C72076B3F /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ABD7D06974CCCDC2AE071D2A35607B /* Notifications.swift */; };
-		15B09EF10DCA5BDCF2BF591AD433C30D /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1DA26BC4A96FABED0D330C99251B60 /* IQToolbar.m */; };
+		0C5E11DE24DAA737704B355F5F2F3426 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0466041A1A8FBCE131BD46577E45765 /* ParameterEncoding.swift */; };
+		0E6439134E5F915B48C7421A462B2A5A /* SPAlertIconMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03464E06808A4773EA2E54F0419CCCFD /* SPAlertIconMessageView.swift */; };
+		0E8B87FA998C7178EBEE0D8A3F6C0A98 /* IQPreviousNextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F18E7B747D4C16849920A30F29C493C3 /* IQPreviousNextView.m */; };
+		104E7B3F596C88BFC1933E78ED3ACAC3 /* IQUIViewController+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B45AFFF954961F36204E077FFDD1EDA /* IQUIViewController+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12C6E46A5E0FD04DBF7866649491D5F7 /* IQKeyboardManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B055E47DAA75FB2E44BCF789F56D54DB /* IQKeyboardManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		132E0F619E4338E5D1B27E4C72076B3F /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EBD944F36718E94AADD8A36A2F2694 /* Notifications.swift */; };
+		15B09EF10DCA5BDCF2BF591AD433C30D /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ADA33D71D640A65E55923B9E0F15A9 /* IQToolbar.m */; };
+		161FBB221B786E78A6D9B9B402EB794B /* SPAlertIconFlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FACC2BF9AEF1924AAA75A638BB5D33 /* SPAlertIconFlagView.swift */; };
 		16683CCF2980B612EA38DB421BFA5C1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1EC0EF02204748E0DB115B391A53F9 /* Foundation.framework */; };
-		17682BBCAF1C2E34A74C422D945DE84A /* IQUITextFieldView+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1525A0674F0A11E17BB51B9010E5280E /* IQUITextFieldView+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1945CD5D63A1C164AEAAA9A33E85571E /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F906795A938700CD8375D2148B37DA /* Alamofire-dummy.m */; };
-		1946D09EDE4DE349FA7EDD1FB3D94F90 /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464BD0036275C765C04EE20B74871B35 /* ReaderOverlayView.swift */; };
-		1986B50C74F1697EA43F68335C93CEB3 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E1FCDB5AF3C1E346EA34C9935C6697 /* MultipartFormData.swift */; };
-		1B41AC54E11CACC13E07B06EC6D17919 /* IQKeyboardManagerConstantsInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = F15572838322BDF170A6F8112520D377 /* IQKeyboardManagerConstantsInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1C809C061A2FF7D03948003497DCA47B /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C10300AD7485210D0242743FBC53F80 /* SwiftyJSON-dummy.m */; };
-		1E57243855864342901DA2D577ED32BF /* Alamofire-SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7E6B6C683F996C24CC332C2E3761AA /* Alamofire-SwiftyJSON-dummy.m */; };
-		25ED403997DCA16626CB15246ACEB3D7 /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = F294211B95BFDD746469E79B7BFAC9B7 /* IQNSArray+Sort.m */; };
-		28022E74182B2397C573044E22EF6D06 /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = D248D124879A1AAA92DB79E15D65197C /* IQUIView+Hierarchy.m */; };
-		2B3C65EB96B8237408B8CFC1586F406E /* IQKeyboardManagerConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = F95C612F140FF262AEF790999F379033 /* IQKeyboardManagerConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C61B040BA6A9A7AE66C4D9BA26D5520 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF94D05303B60F0A4A0CDACA799F5153 /* SessionDelegate.swift */; };
-		34CF3751CCEE78B9D7B4AD2047C4D5AF /* QRCodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B7E38B8870F31E335E4CD65CB39EE /* QRCodeReaderViewController.swift */; };
-		3571F958A3907B3A806E62D50C2550D4 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8BBCC2EA8A5EDDD58F6AAEC9023FC8 /* NetworkReachabilityManager.swift */; };
+		17682BBCAF1C2E34A74C422D945DE84A /* IQUITextFieldView+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 224F924119BD2AC9D6C6CE242387F7FC /* IQUITextFieldView+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18EF6526C3F2639E944E9494EDE0A357 /* SPAlertIconLikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFF661853F87EAC694B115FD1B4BBB /* SPAlertIconLikeView.swift */; };
+		1945CD5D63A1C164AEAAA9A33E85571E /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E1B4BF409C8982C6AE1184BC5CEB68 /* Alamofire-dummy.m */; };
+		1946D09EDE4DE349FA7EDD1FB3D94F90 /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BF44C85FA30CF3785C325538913887 /* ReaderOverlayView.swift */; };
+		1986B50C74F1697EA43F68335C93CEB3 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233D8328147997C2B7AAD992FD0813EA /* MultipartFormData.swift */; };
+		1B41AC54E11CACC13E07B06EC6D17919 /* IQKeyboardManagerConstantsInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = E18546244F115FA3EF142D34C9C3554F /* IQKeyboardManagerConstantsInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1C809C061A2FF7D03948003497DCA47B /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B71C7C1669AC21E3784C73EDF9757EB1 /* SwiftyJSON-dummy.m */; };
+		1D0CF762FBEC65B4A8B54ECE47BD0EF4 /* SPAlertIconAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A9B56BFB23B3B863360AF444289EC /* SPAlertIconAnimatable.swift */; };
+		1E57243855864342901DA2D577ED32BF /* Alamofire-SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 240D55F294B6995E822B75092A291423 /* Alamofire-SwiftyJSON-dummy.m */; };
+		25ED403997DCA16626CB15246ACEB3D7 /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D47755E106FA6E702C632B78AD9283A /* IQNSArray+Sort.m */; };
+		28022E74182B2397C573044E22EF6D06 /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B83848EA65D756BC422AD9C870A656 /* IQUIView+Hierarchy.m */; };
+		2B3C65EB96B8237408B8CFC1586F406E /* IQKeyboardManagerConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = E0AC99137420718A8A4F5BFBE0BA67AE /* IQKeyboardManagerConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C61B040BA6A9A7AE66C4D9BA26D5520 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964FA1E89F36C0AC5EA4333FD06479DE /* SessionDelegate.swift */; };
+		2DFD7599E3A19075E5CB9AB40DD5F658 /* Pods-instapass-guard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C9AA45A05FB41DF7638335E9BC14A53 /* Pods-instapass-guard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34CF3751CCEE78B9D7B4AD2047C4D5AF /* QRCodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A9360561632E7F5DD9F5753471CB75 /* QRCodeReaderViewController.swift */; };
+		34D111B03F09C063F0EA283A3A8A48C2 /* SPAlertIconPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F3D05E2CD2AD5DDA00737BDE91B2B4 /* SPAlertIconPrivacyView.swift */; };
+		3571F958A3907B3A806E62D50C2550D4 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA85CC42434DAB5B23FD703697F5C32 /* NetworkReachabilityManager.swift */; };
 		390CE491C241ADD1C12B25CB42225BBE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98FD4EF2B3F6ED88223266286265007E /* CoreGraphics.framework */; };
-		3AFC00B1416890196212D9A7FDFFEAC4 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF20E387CA3DD2E49CA0891AB66FFBF9 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3B2A13FD720BF70389C731D834C1117B /* IQUIView+IQKeyboardToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 54ED24FAA0A005BFEF363BF8F7104E54 /* IQUIView+IQKeyboardToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AFC00B1416890196212D9A7FDFFEAC4 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E9E3FCF4D152B2F532520F1A3F0CD97 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B2A13FD720BF70389C731D834C1117B /* IQUIView+IQKeyboardToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = D75B818776919C3768189F18634AA624 /* IQUIView+IQKeyboardToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DBBA68849C512ACB8C27D32B7A67591 /* Pods-instapass-guardTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50772A11DDD0909173F1F31582A84D5C /* Pods-instapass-guardTests-dummy.m */; };
 		4014DB80C7E8F9FFC17BAB49559AAFA4 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76983DE0A3EFD7D2B3DE3516104A84AE /* SwiftyJSON.framework */; };
-		40AD629DC248DD9F8AE636A2DB0C5F95 /* IQToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 84AFE3B51572012E8171A6FAE7EA7570 /* IQToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D009BF653F1C9AB12CA9DECED6CAAB0 /* IQKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C162566F13A0EE94AC17F4C68618D2 /* IQKeyboardManager.m */; };
-		50441774261AFC348CCD86946A7E15DE /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E840D64BA28D55EDDEAC3442B72E14E /* SwiftyJSON.swift */; };
-		53791F5E5F07400F92CFDFC89A432305 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994ED10EDFF5270BE2B2A0C84250DC2D /* Validation.swift */; };
-		540817F995B4A3A5966C21DFE34B9C0A /* QRCodeReaderViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEAA7A49DF136D9FDF61E9AEA86817C /* QRCodeReaderViewContainer.swift */; };
-		5CB6B38AB6F0E37F8910BE3B658CBD59 /* IQPreviousNextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 50EE331355A3A729FC11A95129D1774F /* IQPreviousNextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		64744C911253C3E01461FAD7C935C8D7 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F29DBBBD5CE198CC67B6D0C8032EEA /* Result.swift */; };
-		647F43E23DF7C36E66ABFDC61CF91F42 /* IQUIScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA4D47CCFA393A64AA5CA5BA7A13D8 /* IQUIScrollView+Additions.m */; };
-		6967171BF47D707A9327B3BAB924CA6C /* QRCodeReader.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD4AB71C8944087DC62D75762F60149 /* QRCodeReader.swift-dummy.m */; };
-		6BF82ADE657E689F4F4D4FB0C1D27248 /* IQKeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EC0A534C5A665B5A68D55FFA01570CDC /* IQKeyboardManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D0DF8C852F40BD0BA5BA6AF0D517334 /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DB39B0D001BCD8C8B60C2B79B7B7AB /* QRCodeReader.swift */; };
+		40AD629DC248DD9F8AE636A2DB0C5F95 /* IQToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 254B5455628CBC16B414441FD14BEA0E /* IQToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48CFAF902B40514E00AA1458395218AD /* SPAlertIconEjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DABCC827F29FBFCBD9F0E81A09F8D6 /* SPAlertIconEjectView.swift */; };
+		4D009BF653F1C9AB12CA9DECED6CAAB0 /* IQKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1EFFFDFB03EFC5D8AAE0F483A1354D /* IQKeyboardManager.m */; };
+		4F508BF7125DE338B06FD3BDB8B00452 /* SPAlertIconRotateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E7A5D25F80A86E3D8F03C9AF62A5EE /* SPAlertIconRotateView.swift */; };
+		50441774261AFC348CCD86946A7E15DE /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5CBAC38615CE04F6CD1DE6D3D3DD4A /* SwiftyJSON.swift */; };
+		5228087BBD99D3884C2A82B2F9780AB9 /* SPAlertIconDislikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4098A9CFAA260DDD29F66753A2D478A5 /* SPAlertIconDislikeView.swift */; };
+		5254060120138B45D3E8D9989AC02DDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6DB73CEC3C0645F448F99C254AB988C /* UIKit.framework */; };
+		53791F5E5F07400F92CFDFC89A432305 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E868038824E99E56656BBB40DF68200A /* Validation.swift */; };
+		540817F995B4A3A5966C21DFE34B9C0A /* QRCodeReaderViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F81B83CC6678A35EBE4ACF5B1E7817 /* QRCodeReaderViewContainer.swift */; };
+		55E9BE5C94449A89DDA620CC7CD8D963 /* SPAlert-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D1ACFE3C45F803256D9949CEE5CB0 /* SPAlert-dummy.m */; };
+		561F3EA35F1EADE9A15E6416EF2409EA /* SPAlertIconMoonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC2CD6E0E3704AD64B1627AB75CD599 /* SPAlertIconMoonView.swift */; };
+		5CB6B38AB6F0E37F8910BE3B658CBD59 /* IQPreviousNextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 43B3BDF0F4649216A7FD9A4088D4CECA /* IQPreviousNextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62469D28BEF369846DE0363847B2BBF0 /* SPAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CCDF992EAE8AEC248E2617F79A7686 /* SPAlert.swift */; };
+		64744C911253C3E01461FAD7C935C8D7 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713CC3C8046878A0F6171E7CB5130740 /* Result.swift */; };
+		647F43E23DF7C36E66ABFDC61CF91F42 /* IQUIScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 859C4C6B41438C29BBD8463FC3D1A1F8 /* IQUIScrollView+Additions.m */; };
+		6967171BF47D707A9327B3BAB924CA6C /* QRCodeReader.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B477B879151F681064A1B437D2B2D9 /* QRCodeReader.swift-dummy.m */; };
+		6BF82ADE657E689F4F4D4FB0C1D27248 /* IQKeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AC15607152791CB5F87AB016A4A133C /* IQKeyboardManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D0DF8C852F40BD0BA5BA6AF0D517334 /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE140986275ADA31A5E2FF5291C9F20 /* QRCodeReader.swift */; };
 		71C03D960B2EF794827CBD57FDABAA01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1EC0EF02204748E0DB115B391A53F9 /* Foundation.framework */; };
-		7266EFAF956AEA659AF4D5A589CA4D97 /* IQUIView+Hierarchy.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E5EA66B6F415FBC623F4801ABDCF463 /* IQUIView+Hierarchy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7266EFAF956AEA659AF4D5A589CA4D97 /* IQUIView+Hierarchy.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D8F19C46A879DC2B5BE7E170E2143AE /* IQUIView+Hierarchy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7331DB0E9C0F8C7207EED17158B5012C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1EC0EF02204748E0DB115B391A53F9 /* Foundation.framework */; };
 		74225A0F80E2329640C745C39ACDD809 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6DB73CEC3C0645F448F99C254AB988C /* UIKit.framework */; };
 		7664FD4F59A0C00866CBAE60B0A3AD64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1EC0EF02204748E0DB115B391A53F9 /* Foundation.framework */; };
 		77658E5D66A2EECAADD8C5579CD4832C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1EC0EF02204748E0DB115B391A53F9 /* Foundation.framework */; };
-		7F74F071867B13EADBE8A2F3CF13AF06 /* QRCodeReader.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C0AE0EE1AE1B84B741C7B63B2A39CB20 /* QRCodeReader.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		83956E20859CDBBE7BC38ABADE0170FB /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB9652E582E85763897FC5DBDEEF0C /* AFError.swift */; };
-		8839DA33B5164E66F5730317AE92546E /* IQKeyboardReturnKeyHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 2965A2BBFD565FF2BB0E335C5E36B0CA /* IQKeyboardReturnKeyHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		90A787DD458F3386E5EB7244B10BE520 /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B5DDB0500D58C39FD8EB940306DF5B /* IQTextView.m */; };
-		931BBB8230A25161D5C37528A8F9FECF /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E9B6015991FF8568A5B3380574D0D2 /* SessionManager.swift */; };
-		933FDA5970AA525D6CB92BFEBA2BAB4A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEAEE8DBBEE1F02C49ECB63D075E125 /* Timeline.swift */; };
-		97205CB1427D0AF744247CE71F357591 /* QRCodeReaderViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730EA854DA2C42CF8929C3709EF82898 /* QRCodeReaderViewControllerBuilder.swift */; };
-		98A929C8E9012AB167672714FFD2113C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25937EE5062933A01ECEBBDC6302C778 /* Request.swift */; };
-		9949F9F80C4545265A76A0DA6827E7BC /* ToggleTorchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C5DE08D7F28B1FA2B9A45C4CD9A1A3 /* ToggleTorchButton.swift */; };
-		9C519108851167CFA5CE1542B214D53D /* QRCodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137C9FBF9F7A5D1F933B1BBC31C66EB6 /* QRCodeReaderView.swift */; };
-		A2124E1EF06C9BA13E2CCC41B3C750E3 /* IQUIScrollView+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6263C7F2FEF57DE260296F0A6F59FA4C /* IQUIScrollView+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CD1AE8626ED8E244A82561100F15BBF /* SPAlert-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB5C3EB77BC55A23B807DC5FC0F2DFE8 /* SPAlert-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F74F071867B13EADBE8A2F3CF13AF06 /* QRCodeReader.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8C08ABB8FB96CC80E1DCD15ACA744ED /* QRCodeReader.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83956E20859CDBBE7BC38ABADE0170FB /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B10A1B03961D70DEAC31088873B80A /* AFError.swift */; };
+		858720387837E0AB13C8068A0FF2C771 /* SPAlertIconExclamationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A0416CB3304443A1CD5A98CEAA2201 /* SPAlertIconExclamationView.swift */; };
+		8839DA33B5164E66F5730317AE92546E /* IQKeyboardReturnKeyHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F8A4DB5940B3C9DE053E89FF801A48F /* IQKeyboardReturnKeyHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B1285453AA9FD9A725AAB9E6288A826 /* SPAlertIconDoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A52A8844C1C0F650BD77E5595F81F5 /* SPAlertIconDoneView.swift */; };
+		8DBD9A7F5FBF18D00DEAAC0E2D5B23D4 /* SPAlertIconDocView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A78A009E3666CCFAF95C5EBB31F0F /* SPAlertIconDocView.swift */; };
+		90A787DD458F3386E5EB7244B10BE520 /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD98F60E5D45E8A902BE2B0F128A91D0 /* IQTextView.m */; };
+		912EA6EFBB309291B18DA40BACDB4EB4 /* SPAlertIconCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9136AB391493DF79EDBCFB12A8B57D53 /* SPAlertIconCartView.swift */; };
+		931BBB8230A25161D5C37528A8F9FECF /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475B05A11E68D49FF7199008E75BB539 /* SessionManager.swift */; };
+		933FDA5970AA525D6CB92BFEBA2BAB4A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BA09290AD4CF0CBD9138DFC020F37E /* Timeline.swift */; };
+		97205CB1427D0AF744247CE71F357591 /* QRCodeReaderViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC690945D9BCBFD2CE1158F9DBEE4C41 /* QRCodeReaderViewControllerBuilder.swift */; };
+		98A929C8E9012AB167672714FFD2113C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E95F787A21E32BFDF3F8B9A487CA8 /* Request.swift */; };
+		9949F9F80C4545265A76A0DA6827E7BC /* ToggleTorchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF22C3B6C761C8009186D18829E058BE /* ToggleTorchButton.swift */; };
+		9A16A01BDFAF2732A834D9AE7B3DA4F4 /* SPAlertIconAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C950EE83F78BB407B04F6612BBBC27CF /* SPAlertIconAddView.swift */; };
+		9AA562C9B78B53B926EB329E496310C4 /* SPAlertIconSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31A3267C54C94E165060E755B440FD6 /* SPAlertIconSearchView.swift */; };
+		9B001D82A37E3327948CD1769630EA2C /* SPAlertIconStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7B8C0D56419E1C5C6916D2D32B944 /* SPAlertIconStarView.swift */; };
+		9C519108851167CFA5CE1542B214D53D /* QRCodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5162AB50A16790CA2F77FB557AD4D92 /* QRCodeReaderView.swift */; };
+		9ECFFC120A53B933BBF5ECA791822A14 /* SPAlertIconRepeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897FA7D64A6042695E8EEC8C61E77FE4 /* SPAlertIconRepeatView.swift */; };
+		A2124E1EF06C9BA13E2CCC41B3C750E3 /* IQUIScrollView+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 801C1BCB9047EDF4B84BE716DEC0017A /* IQUIScrollView+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A3F26EE67CB4D642CE440CA821D76898 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C894F0E9C817BF3D1205375EA07AA154 /* Alamofire.framework */; };
-		A515CC7F86BF7EBC950FF9E903D4969F /* Pods-instapass-guard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C9AA45A05FB41DF7638335E9BC14A53 /* Pods-instapass-guard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A545E12C27AF78537BE170C550D7A77A /* QRCodeReaderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3B6A917E94B61BC697ED6E11E0BB0 /* QRCodeReaderResult.swift */; };
+		A545E12C27AF78537BE170C550D7A77A /* QRCodeReaderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BFFEC12A73B8E005FE683B9BE2C372 /* QRCodeReaderResult.swift */; };
+		A8451C8DBC33B8B4D9DF3F2372DE6260 /* SPAlertIconErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E462DDDC81DDD5FE9C5D34DD5916D4AA /* SPAlertIconErrorView.swift */; };
+		A87FE0E352F9754F8361D58A2159E0DE /* SPAlertIconShuffleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E27882A5E7C3E2CFD9ABAE713EF3D8 /* SPAlertIconShuffleView.swift */; };
 		AA6248F845AA4B4D0A946D3CF0F4A54B /* Pods-instapass-guardTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFBA8A47CF4C6C4A937C899536FB807B /* Pods-instapass-guardTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD73568C5AEF8F76CA4B6F25E0DF6C30 /* IQUIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA32C6E3EC2538A91A996DC75F9A7DB /* IQUIViewController+Additions.m */; };
-		AFC64B1097F7355FF423D6A73E9C7210 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291233C7C8EFE207C09E08AE9155575 /* TaskDelegate.swift */; };
-		B5F741924D26FBF0403B284AED21EDCB /* IQBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 48910D51C04BADCAE1D82622B3412E59 /* IQBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9DB9CBD70E3AC953EF0A5382E503663 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1EC0EF02204748E0DB115B391A53F9 /* Foundation.framework */; };
-		BCD438631B5DF2331A6EB83D1938F451 /* Alamofire-SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A03B0BCBC231DE982208EE364B9C635 /* Alamofire-SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEE6B677416CA71C981D1D3F60B18C96 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4C77CE08A0FEB7C250DB591B073C92 /* Alamofire.swift */; };
-		BFCFD1B6E83BED8638290D9F0FB58E7C /* IQKeyboardManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6042916AACCF081B9F940CED94459DF /* IQKeyboardManager-dummy.m */; };
-		C253F868600B259CA4FD39A9A5D7D025 /* IQBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4786884C9C402193B1A0093216A87E53 /* IQBarButtonItem.m */; };
-		C6B3B0CF9A00D07E7A877ACE8AD65409 /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DAC145057151B167477988411DFACA9 /* IQUIView+IQKeyboardToolbar.m */; };
-		C8AFE4AA2DB906E9CBC45F785CEE3BBD /* IQTitleBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 655C589D5F1DA62BA1CC40632FDEB230 /* IQTitleBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD73568C5AEF8F76CA4B6F25E0DF6C30 /* IQUIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F43E5446946F970EBCAAE622C34C8D5F /* IQUIViewController+Additions.m */; };
+		AE7F380121838061BFEB5AE13409CF5D /* SPAlertIconCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00554D74F0CE8F3B698CEF3A7ACF9C98 /* SPAlertIconCardView.swift */; };
+		AFC64B1097F7355FF423D6A73E9C7210 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86742640C55F2B08066D4416B7380730 /* TaskDelegate.swift */; };
+		B342B7923F83478FCA1F34E35F246FF7 /* SPAlertIconBoltView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E1234C052DA712FA522E1843B53817 /* SPAlertIconBoltView.swift */; };
+		B5F741924D26FBF0403B284AED21EDCB /* IQBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 36188E80DE79D187AFA1A899AFCCE031 /* IQBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8FE45402E6BB8AF9D65BECCF8A807F4 /* SPAlertIconQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E204DB453871CA08058B122F068574 /* SPAlertIconQuestionView.swift */; };
+		BCBBEA913A044397A007674F89E1758F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1EC0EF02204748E0DB115B391A53F9 /* Foundation.framework */; };
+		BCD438631B5DF2331A6EB83D1938F451 /* Alamofire-SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56663DE2AF6C5733F61CDECFFA91C87B /* Alamofire-SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEE6B677416CA71C981D1D3F60B18C96 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B8F45C7FC15B62F4DF78DAE0A6D23 /* Alamofire.swift */; };
+		BFCFD1B6E83BED8638290D9F0FB58E7C /* IQKeyboardManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B8B09480FAD38A00028A45EC9A9776 /* IQKeyboardManager-dummy.m */; };
+		C253F868600B259CA4FD39A9A5D7D025 /* IQBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 366EB9745BC419B7F6AD65DA0782E7F5 /* IQBarButtonItem.m */; };
+		C62456707B7B4B1808640EB45BA5F1CF /* SPAlertIconBookmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FB7862D362A8C1FF0D4BB708CCB692 /* SPAlertIconBookmarkView.swift */; };
+		C6B3B0CF9A00D07E7A877ACE8AD65409 /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B01568DC191AA088F923CD99198C67 /* IQUIView+IQKeyboardToolbar.m */; };
+		C8AFE4AA2DB906E9CBC45F785CEE3BBD /* IQTitleBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = AC312C28C266ACD6CAF43D9618229E3F /* IQTitleBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9EFDE3D7436287B2F5C198FC0A8DB68 /* SPAlertPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E09E16CF33006805022836EFC4B7C8E /* SPAlertPreset.swift */; };
+		CE872D535C7C19E9930A8B5EF9E03060 /* SPAlertIconHeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16E09D4AA0EF3EDA1020F8BA5874B81 /* SPAlertIconHeartView.swift */; };
 		CF2E3778463AF7F7B8935E07BB42A237 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1EC0EF02204748E0DB115B391A53F9 /* Foundation.framework */; };
 		D0A17E0254C1E37B87E3968884CE0441 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B857218D99043D3C24F8BDA26A3A459 /* AVFoundation.framework */; };
-		D3D8C379C6E4FB487E5ABD6800AD7B7E /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404A43416E3D1633F8D25D4456818A6 /* DispatchQueue+Alamofire.swift */; };
-		D65C254F5ABF2CB5ECEE50FE8F8E1A80 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036CB968750916A91F7794EA921A72E6 /* Response.swift */; };
-		E3747EC31FCCA97D75A81FC700CF7E24 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F8B98940D9B463AC2635CD21CA87A7 /* ResponseSerialization.swift */; };
+		D3D8C379C6E4FB487E5ABD6800AD7B7E /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6B37C9FCD1F9C150127F5F5CD84C77 /* DispatchQueue+Alamofire.swift */; };
+		D65C254F5ABF2CB5ECEE50FE8F8E1A80 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB197CF98C3AEFF73502C5B3BE77518B /* Response.swift */; };
+		E3747EC31FCCA97D75A81FC700CF7E24 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05DDA1F1B9982FD3A0E6260A4BEC19F /* ResponseSerialization.swift */; };
 		E3DC4888B7BFE8197FF80954EDC52DE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1EC0EF02204748E0DB115B391A53F9 /* Foundation.framework */; };
-		E40CD05AFD50106B17D9A3B953F1A898 /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06E140575CED151D8BC71ED2E97D2BB /* SwitchCameraButton.swift */; };
-		EB6BC4B8CF19C6716F66BA98E8C24837 /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6480A41343391832D6916A4EB71BD /* IQTitleBarButtonItem.m */; };
+		E40CD05AFD50106B17D9A3B953F1A898 /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D4B9DA27A6A75FCF72572B4C909B40 /* SwitchCameraButton.swift */; };
+		E586B14CD3CDAA734B5D21B6180B7337 /* SPAlertHaptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436DFA2886B021A0AB2684576EEB426 /* SPAlertHaptic.swift */; };
+		EA239FEC3E6423F87606D8B0F285BD90 /* Pods-instapass-guard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A7A6D804C65BE6BAECAB19AD4626FC /* Pods-instapass-guard-dummy.m */; };
+		EA700BFB4616897545550ED4A5458BB4 /* SPAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49525940DF0477A88644D305ABDBA962 /* SPAlertView.swift */; };
+		EB6BC4B8CF19C6716F66BA98E8C24837 /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F91697A004B246C4A17CD33266969C68 /* IQTitleBarButtonItem.m */; };
 		EEC2A25296DA7732C6B3773675D0790D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF3CC277A5A95703A993B63D20F06958 /* QuartzCore.framework */; };
-		EFA8462A0CC26EB370FB6FC0906A0CFF /* IQNSArray+Sort.h in Headers */ = {isa = PBXBuildFile; fileRef = 30A5523428820A8573EAC09CC3571F13 /* IQNSArray+Sort.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EFCC9A3424D831242CFE74E85E068E77 /* Pods-instapass-guard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A7A6D804C65BE6BAECAB19AD4626FC /* Pods-instapass-guard-dummy.m */; };
-		F07159B581975CDC3C60B3BD76EEF273 /* IQUITextFieldView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = FB621091B93BE4253C0770C9895819D1 /* IQUITextFieldView+Additions.m */; };
-		F13F2AA7F2E6D95A181CAB99B900D531 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F61905D7690C56BD026BFA08A3CA53 /* ServerTrustPolicy.swift */; };
-		F47FAF105D05876AE65A43C4ABE1A1EC /* QRCodeReaderViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D2F5C8A3A7AE06AB7F23164C81334A /* QRCodeReaderViewControllerDelegate.swift */; };
-		F564AC14CA7F3E6B7C01CBA680282277 /* IQTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = A71614E88132366F5795E9E60AA1058F /* IQTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F6D72FF41E6DA79B23CC6581E993D4D4 /* Alamofire-SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB37112B0738FAA3ECDFBC8E2DA7EA4B /* Alamofire-SwiftyJSON.swift */; };
-		F7B74645E07C39771156A1FA413B98D4 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85BC157E853B453DB21B475EF2A1D150 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FCEC05C4AD02A79F3F1B4B859186F401 /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9D938F2EE88876B4D39A47DA0DA76 /* IQKeyboardReturnKeyHandler.m */; };
+		EFA8462A0CC26EB370FB6FC0906A0CFF /* IQNSArray+Sort.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E606398D0A33D7286D392494B7EF98D /* IQNSArray+Sort.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F07159B581975CDC3C60B3BD76EEF273 /* IQUITextFieldView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6887220C7FF52FF5221F40C037C697D7 /* IQUITextFieldView+Additions.m */; };
+		F13F2AA7F2E6D95A181CAB99B900D531 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EDE43E3F43B5AA0F826934DDA00059 /* ServerTrustPolicy.swift */; };
+		F2D313F366EB899FC63EF01A50ED23A9 /* SPAlertLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C049CA02CA0BB1D00EF4A7CB3EF44629 /* SPAlertLayout.swift */; };
+		F47FAF105D05876AE65A43C4ABE1A1EC /* QRCodeReaderViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF9052F34AD9BBF7BA73D5ED297D0F8 /* QRCodeReaderViewControllerDelegate.swift */; };
+		F564AC14CA7F3E6B7C01CBA680282277 /* IQTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7713134C63DA713E1678697AFDA2FB2A /* IQTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6D72FF41E6DA79B23CC6581E993D4D4 /* Alamofire-SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30574F559BA6E346E6430B37FE6559F3 /* Alamofire-SwiftyJSON.swift */; };
+		F7B74645E07C39771156A1FA413B98D4 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5D8F7D6F949E97C55718E838A9871E3 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCEC05C4AD02A79F3F1B4B859186F401 /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CACEEFB446E35391226D5783B2E72ABC /* IQKeyboardReturnKeyHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3AD61DF078B01D4FAD1CD64D1A237BA3 /* PBXContainerItemProxy */ = {
+		0F3C1BAE7A96BFF4E86D61735BE775B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 78B0645ACBF4869373A8E6BBCFAA7F63;
-			remoteInfo = "Alamofire-SwiftyJSON";
+			remoteGlobalIDString = FBA456CB50E371584C11231929A0971E;
+			remoteInfo = IQKeyboardManager;
 		};
-		66AEA58E8E84DD544FF90EA81AE50F82 /* PBXContainerItemProxy */ = {
+		688DBABB58D7F15AFB9E9F5B540FD2AF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D118A6A04828FD3CDA8640CD2B6796D2;
-			remoteInfo = SwiftyJSON;
+			remoteGlobalIDString = 29F475E46142FCD224E52A385AD26DB6;
+			remoteInfo = QRCodeReader.swift;
 		};
 		72AFF7E30805A6622083BD59EC5F1F69 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -122,19 +155,19 @@
 			remoteGlobalIDString = 1136F07BD2BD9B0E27C45D9C3E619924;
 			remoteInfo = "Pods-instapass-guard";
 		};
-		9664A3089391662A8B45EFC2F81D95C9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FBA456CB50E371584C11231929A0971E;
-			remoteInfo = IQKeyboardManager;
-		};
-		9DC27E308160458902C3E67CBAC56925 /* PBXContainerItemProxy */ = {
+		7D057CA8B3826E3E144A5C50C4D1F774 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
 			remoteInfo = Alamofire;
+		};
+		85E9C5D3E1793C01918C4239AB846A7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78B0645ACBF4869373A8E6BBCFAA7F63;
+			remoteInfo = "Alamofire-SwiftyJSON";
 		};
 		B1C1829FAECAFE0B9FD8924E9CD6D3A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -143,135 +176,178 @@
 			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
 			remoteInfo = Alamofire;
 		};
-		F856FEEF9427DF026C040085216D838D /* PBXContainerItemProxy */ = {
+		F75BD0370C989C760E4568A5F535685E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 29F475E46142FCD224E52A385AD26DB6;
-			remoteInfo = QRCodeReader.swift;
+			remoteGlobalIDString = B4652B2924FE3B941944F77DA8477ABD;
+			remoteInfo = SPAlert;
+		};
+		FA5597CBBFA7D8017256EE073E0CD6FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D118A6A04828FD3CDA8640CD2B6796D2;
+			remoteInfo = SwiftyJSON;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00A9D938F2EE88876B4D39A47DA0DA76 /* IQKeyboardReturnKeyHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQKeyboardReturnKeyHandler.m; path = IQKeyboardManager/IQKeyboardReturnKeyHandler.m; sourceTree = "<group>"; };
-		017C910F6BC5B521E93B3D57A55F6122 /* Alamofire-SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Alamofire-SwiftyJSON.modulemap"; sourceTree = "<group>"; };
-		01F61905D7690C56BD026BFA08A3CA53 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		00164BAF57E43AA3F5B0A1B699BFAAFE /* IQKeyboardManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IQKeyboardManager-Info.plist"; sourceTree = "<group>"; };
+		00554D74F0CE8F3B698CEF3A7ACF9C98 /* SPAlertIconCardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertIconCardView.swift; path = Source/SPAlert/Views/Icons/SPAlertIconCardView.swift; sourceTree = "<group>"; };
+		01156402D31451599A229B52697F5A14 /* SPAlert.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SPAlert.modulemap; sourceTree = "<group>"; };
 		02A68C6166519E9E42ADB1FDDEB6D0D9 /* Pods_instapass_guard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_instapass_guard.framework; path = "Pods-instapass-guard.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		036CB968750916A91F7794EA921A72E6 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		04AF0028987A9F9130A3A0E2C17FEB35 /* IQKeyboardManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IQKeyboardManager-Info.plist"; sourceTree = "<group>"; };
-		08237D126FE44F6CDD2944EB02E79493 /* QRCodeReader.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QRCodeReader.swift-prefix.pch"; sourceTree = "<group>"; };
-		09B5DDB0500D58C39FD8EB940306DF5B /* IQTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQTextView.m; path = IQKeyboardManager/IQTextView/IQTextView.m; sourceTree = "<group>"; };
-		0CA6480A41343391832D6916A4EB71BD /* IQTitleBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQTitleBarButtonItem.m; path = IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.m; sourceTree = "<group>"; };
-		0D3204B75A5DB89BCEB7C7E60B67BA7A /* Alamofire-SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		0E7E6B6C683F996C24CC332C2E3761AA /* Alamofire-SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		137C9FBF9F7A5D1F933B1BBC31C66EB6 /* QRCodeReaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCodeReaderView.swift; path = Sources/QRCodeReaderView.swift; sourceTree = "<group>"; };
-		1404A43416E3D1633F8D25D4456818A6 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		1525A0674F0A11E17BB51B9010E5280E /* IQUITextFieldView+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUITextFieldView+Additions.h"; path = "IQKeyboardManager/Categories/IQUITextFieldView+Additions.h"; sourceTree = "<group>"; };
+		02DFE2EB5E35B75DA2F480ABBCCE9272 /* Alamofire-SwiftyJSON-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-SwiftyJSON-Info.plist"; sourceTree = "<group>"; };
+		03464E06808A4773EA2E54F0419CCCFD /* SPAlertIconMessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertIconMessageView.swift; path = Source/SPAlert/Views/Icons/SPAlertIconMessageView.swift; sourceTree = "<group>"; };
+		076A78A009E3666CCFAF95C5EBB31F0F /* SPAlertIconDocView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertIconDocView.swift; path = Source/SPAlert/Views/Icons/SPAlertIconDocView.swift; sourceTree = "<group>"; };
+		07BFFEC12A73B8E005FE683B9BE2C372 /* QRCodeReaderResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCodeReaderResult.swift; path = Sources/QRCodeReaderResult.swift; sourceTree = "<group>"; };
+		08B11BDEA5EDE2DAD2AEAE1706425830 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		0AC15607152791CB5F87AB016A4A133C /* IQKeyboardManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManager.h; path = IQKeyboardManager/IQKeyboardManager.h; sourceTree = "<group>"; };
+		0E606398D0A33D7286D392494B7EF98D /* IQNSArray+Sort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQNSArray+Sort.h"; path = "IQKeyboardManager/Categories/IQNSArray+Sort.h"; sourceTree = "<group>"; };
+		10B477B879151F681064A1B437D2B2D9 /* QRCodeReader.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QRCodeReader.swift-dummy.m"; sourceTree = "<group>"; };
+		11DABCC827F29FBFCBD9F0E81A09F8D6 /* SPAlertIconEjectView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertIconEjectView.swift; path = Source/SPAlert/Views/Icons/SPAlertIconEjectView.swift; sourceTree = "<group>"; };
+		1372AB9A9DADC0CE86EAA2CDF02F538E /* QRCodeReader.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QRCodeReader.swift.xcconfig; sourceTree = "<group>"; };
 		164EAE9E04CDB96EBBA9F55B05248D1C /* Pods-instapass-guard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-instapass-guard.modulemap"; sourceTree = "<group>"; };
 		19D04B18E5588749BE9B580BA3F399D5 /* Pods-instapass-guard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-instapass-guard.debug.xcconfig"; sourceTree = "<group>"; };
 		1BF81E80FACC840DA28435D3F0511A80 /* Pods-instapass-guardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-instapass-guardTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1C10300AD7485210D0242743FBC53F80 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		1EEAA7A49DF136D9FDF61E9AEA86817C /* QRCodeReaderViewContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCodeReaderViewContainer.swift; path = Sources/QRCodeReaderViewContainer.swift; sourceTree = "<group>"; };
-		2003C5AE3780F09E2B1BE32201641B9D /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
-		20E9B6015991FF8568A5B3380574D0D2 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
-		20F29DBBBD5CE198CC67B6D0C8032EEA /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		25937EE5062933A01ECEBBDC6302C778 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		1F8A4DB5940B3C9DE053E89FF801A48F /* IQKeyboardReturnKeyHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardReturnKeyHandler.h; path = IQKeyboardManager/IQKeyboardReturnKeyHandler.h; sourceTree = "<group>"; };
+		224F924119BD2AC9D6C6CE242387F7FC /* IQUITextFieldView+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUITextFieldView+Additions.h"; path = "IQKeyboardManager/Categories/IQUITextFieldView+Additions.h"; sourceTree = "<group>"; };
+		233D8328147997C2B7AAD992FD0813EA /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		23B10A1B03961D70DEAC31088873B80A /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		240D55F294B6995E822B75092A291423 /* Alamofire-SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		254B5455628CBC16B414441FD14BEA0E /* IQToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQToolbar.h; path = IQKeyboardManager/IQToolbar/IQToolbar.h; sourceTree = "<group>"; };
 		28C820A095C651B4C7B0734B0D351A29 /* Pods-instapass-guard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-instapass-guard.release.xcconfig"; sourceTree = "<group>"; };
-		2965A2BBFD565FF2BB0E335C5E36B0CA /* IQKeyboardReturnKeyHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardReturnKeyHandler.h; path = IQKeyboardManager/IQKeyboardReturnKeyHandler.h; sourceTree = "<group>"; };
-		2E5EA66B6F415FBC623F4801ABDCF463 /* IQUIView+Hierarchy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIView+Hierarchy.h"; path = "IQKeyboardManager/Categories/IQUIView+Hierarchy.h"; sourceTree = "<group>"; };
-		2E840D64BA28D55EDDEAC3442B72E14E /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		30A5523428820A8573EAC09CC3571F13 /* IQNSArray+Sort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQNSArray+Sort.h"; path = "IQKeyboardManager/Categories/IQNSArray+Sort.h"; sourceTree = "<group>"; };
-		34ABD7D06974CCCDC2AE071D2A35607B /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		30574F559BA6E346E6430B37FE6559F3 /* Alamofire-SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Alamofire-SwiftyJSON.swift"; path = "Source/Alamofire-SwiftyJSON.swift"; sourceTree = "<group>"; };
+		3160CF6A0E9C036238D126B4333602DC /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		31CCDF992EAE8AEC248E2617F79A7686 /* SPAlert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlert.swift; path = Source/SPAlert/SPAlert.swift; sourceTree = "<group>"; };
+		32B01568DC191AA088F923CD99198C67 /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIView+IQKeyboardToolbar.m"; path = "IQKeyboardManager/IQToolbar/IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
+		32F3D05E2CD2AD5DDA00737BDE91B2B4 /* SPAlertIconPrivacyView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertIconPrivacyView.swift; path = Source/SPAlert/Views/Icons/SPAlertIconPrivacyView.swift; sourceTree = "<group>"; };
+		36188E80DE79D187AFA1A899AFCCE031 /* IQBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQBarButtonItem.h; path = IQKeyboardManager/IQToolbar/IQBarButtonItem.h; sourceTree = "<group>"; };
 		3652B113DC334A3FDA0C14F6794A5F69 /* QRCodeReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = QRCodeReader.framework; path = QRCodeReader.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		37D2F5C8A3A7AE06AB7F23164C81334A /* QRCodeReaderViewControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCodeReaderViewControllerDelegate.swift; path = Sources/QRCodeReaderViewControllerDelegate.swift; sourceTree = "<group>"; };
+		366EB9745BC419B7F6AD65DA0782E7F5 /* IQBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQBarButtonItem.m; path = IQKeyboardManager/IQToolbar/IQBarButtonItem.m; sourceTree = "<group>"; };
+		36DAA5755240E6D38483660060CD3D5C /* Alamofire-SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Alamofire-SwiftyJSON.modulemap"; sourceTree = "<group>"; };
+		37DEC89949374829FADD567A01DEACA4 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		3BF9052F34AD9BBF7BA73D5ED297D0F8 /* QRCodeReaderViewControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCodeReaderViewControllerDelegate.swift; path = Sources/QRCodeReaderViewControllerDelegate.swift; sourceTree = "<group>"; };
 		3C9AA45A05FB41DF7638335E9BC14A53 /* Pods-instapass-guard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-instapass-guard-umbrella.h"; sourceTree = "<group>"; };
-		4107DE16CD2EA877DDC4A5C2D368EA29 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		3E41843C9D3DA1952163552186D81254 /* QRCodeReader.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QRCodeReader.swift-prefix.pch"; sourceTree = "<group>"; };
+		4098A9CFAA260DDD29F66753A2D478A5 /* SPAlertIconDislikeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertIconDislikeView.swift; path = Source/SPAlert/Views/Icons/SPAlertIconDislikeView.swift; sourceTree = "<group>"; };
+		43B3BDF0F4649216A7FD9A4088D4CECA /* IQPreviousNextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQPreviousNextView.h; path = IQKeyboardManager/IQToolbar/IQPreviousNextView.h; sourceTree = "<group>"; };
 		447CDCF25F7767608FC7E031293996F4 /* Pods-instapass-guardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-instapass-guardTests.release.xcconfig"; sourceTree = "<group>"; };
-		44DD87A6F1F120091CE50EF43A43044B /* IQKeyboardManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IQKeyboardManager.modulemap; sourceTree = "<group>"; };
-		464BD0036275C765C04EE20B74871B35 /* ReaderOverlayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReaderOverlayView.swift; path = Sources/ReaderOverlayView.swift; sourceTree = "<group>"; };
-		4786884C9C402193B1A0093216A87E53 /* IQBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQBarButtonItem.m; path = IQKeyboardManager/IQToolbar/IQBarButtonItem.m; sourceTree = "<group>"; };
-		48910D51C04BADCAE1D82622B3412E59 /* IQBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQBarButtonItem.h; path = IQKeyboardManager/IQToolbar/IQBarButtonItem.h; sourceTree = "<group>"; };
-		49ABC5D0FC60CE0E9825E94EF563FE70 /* Alamofire-SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Alamofire-SwiftyJSON.xcconfig"; sourceTree = "<group>"; };
-		4A03B0BCBC231DE982208EE364B9C635 /* Alamofire-SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		4B2388382C884FFE601CA3C862455F5B /* IQKeyboardManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManager.xcconfig; sourceTree = "<group>"; };
-		4D5BA31FE4D3B12C86F02B456F2811D0 /* QRCodeReader.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QRCodeReader.swift.xcconfig; sourceTree = "<group>"; };
+		475B05A11E68D49FF7199008E75BB539 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		49525940DF0477A88644D305ABDBA962 /* SPAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertView.swift; path = Source/SPAlert/Views/SPAlertView.swift; sourceTree = "<group>"; };
+		4B8A210896143652E0023793B231D067 /* IQKeyboardManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManager-prefix.pch"; sourceTree = "<group>"; };
+		4D0D1ACFE3C45F803256D9949CEE5CB0 /* SPAlert-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SPAlert-dummy.m"; sourceTree = "<group>"; };
+		4E09E16CF33006805022836EFC4B7C8E /* SPAlertPreset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertPreset.swift; path = Source/SPAlert/Models/SPAlertPreset.swift; sourceTree = "<group>"; };
+		4F1EFFFDFB03EFC5D8AAE0F483A1354D /* IQKeyboardManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQKeyboardManager.m; path = IQKeyboardManager/IQKeyboardManager.m; sourceTree = "<group>"; };
 		50772A11DDD0909173F1F31582A84D5C /* Pods-instapass-guardTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-instapass-guardTests-dummy.m"; sourceTree = "<group>"; };
-		50EE331355A3A729FC11A95129D1774F /* IQPreviousNextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQPreviousNextView.h; path = IQKeyboardManager/IQToolbar/IQPreviousNextView.h; sourceTree = "<group>"; };
-		525D0D06B4DF236921164D3B5D61E048 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
 		533B54CD257F66D056A1A0A3B6D80A62 /* Pods-instapass-guardTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-instapass-guardTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		54ED24FAA0A005BFEF363BF8F7104E54 /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIView+IQKeyboardToolbar.h"; path = "IQKeyboardManager/IQToolbar/IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
-		57A46C0AB1267113032F8E57EE93598E /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		58F906795A938700CD8375D2148B37DA /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		56663DE2AF6C5733F61CDECFFA91C87B /* Alamofire-SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		58BA09290AD4CF0CBD9138DFC020F37E /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		60F8B98940D9B463AC2635CD21CA87A7 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		61C162566F13A0EE94AC17F4C68618D2 /* IQKeyboardManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQKeyboardManager.m; path = IQKeyboardManager/IQKeyboardManager.m; sourceTree = "<group>"; };
-		6263C7F2FEF57DE260296F0A6F59FA4C /* IQUIScrollView+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIScrollView+Additions.h"; path = "IQKeyboardManager/Categories/IQUIScrollView+Additions.h"; sourceTree = "<group>"; };
-		62C5DE08D7F28B1FA2B9A45C4CD9A1A3 /* ToggleTorchButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToggleTorchButton.swift; path = Sources/ToggleTorchButton.swift; sourceTree = "<group>"; };
-		655C589D5F1DA62BA1CC40632FDEB230 /* IQTitleBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQTitleBarButtonItem.h; path = IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.h; sourceTree = "<group>"; };
-		6A6FC5A20E75AF503066A67280B4E0DA /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		61E27882A5E7C3E2CFD9ABAE713EF3D8 /* SPAlertIconShuffleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertIconShuffleView.swift; path = Source/SPAlert/Views/Icons/SPAlertIconShuffleView.swift; sourceTree = "<group>"; };
+		640E95F787A21E32BFDF3F8B9A487CA8 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		67B83848EA65D756BC422AD9C870A656 /* IQUIView+Hierarchy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIView+Hierarchy.m"; path = "IQKeyboardManager/Categories/IQUIView+Hierarchy.m"; sourceTree = "<group>"; };
+		6887220C7FF52FF5221F40C037C697D7 /* IQUITextFieldView+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUITextFieldView+Additions.m"; path = "IQKeyboardManager/Categories/IQUITextFieldView+Additions.m"; sourceTree = "<group>"; };
+		69EDE43E3F43B5AA0F826934DDA00059 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		6AC2CD6E0E3704AD64B1627AB75CD599 /* SPAlertIconMoonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertIconMoonView.swift; path = Source/SPAlert/Views/Icons/SPAlertIconMoonView.swift; sourceTree = "<group>"; };
 		6B857218D99043D3C24F8BDA26A3A459 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		6E4C77CE08A0FEB7C250DB591B073C92 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		730EA854DA2C42CF8929C3709EF82898 /* QRCodeReaderViewControllerBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCodeReaderViewControllerBuilder.swift; path = Sources/QRCodeReaderViewControllerBuilder.swift; sourceTree = "<group>"; };
-		74C18E50958446F1D78DEBDA7DAA307A /* SwiftyJSON-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyJSON-Info.plist"; sourceTree = "<group>"; };
-		74E1FCDB5AF3C1E346EA34C9935C6697 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		767B4C0C744DE85EF1C398AE8A532C78 /* Alamofire-SwiftyJSON-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-SwiftyJSON-Info.plist"; sourceTree = "<group>"; };
+		6D6B37C9FCD1F9C150127F5F5CD84C77 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		6D8F19C46A879DC2B5BE7E170E2143AE /* IQUIView+Hierarchy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIView+Hierarchy.h"; path = "IQKeyboardManager/Categories/IQUIView+Hierarchy.h"; sourceTree = "<group>"; };
+		713CC3C8046878A0F6171E7CB5130740 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		76983DE0A3EFD7D2B3DE3516104A84AE /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A8BBCC2EA8A5EDDD58F6AAEC9023FC8 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		7C3C94ADEC037AA45FEA9C25087E9860 /* QRCodeReader.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "QRCodeReader.swift-Info.plist"; sourceTree = "<group>"; };
-		84AFE3B51572012E8171A6FAE7EA7570 /* IQToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQToolbar.h; path = IQKeyboardManager/IQToolbar/IQToolbar.h; sourceTree = "<group>"; };
-		84F9B3B5B392C87E870E06F6FA4EB6C8 /* IQKeyboardManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManager-prefix.pch"; sourceTree = "<group>"; };
-		85BC157E853B453DB21B475EF2A1D150 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		85FB9652E582E85763897FC5DBDEEF0C /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		7713134C63DA713E1678697AFDA2FB2A /* IQTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQTextView.h; path = IQKeyboardManager/IQTextView/IQTextView.h; sourceTree = "<group>"; };
+		78A0416CB3304443A1CD5A98CEAA2201 /* SPAlertIconExclamationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertIconExclamationView.swift; path = Source/SPAlert/Views/Icons/SPAlertIconExclamationView.swift; sourceTree = "<group>"; };
+		7FDFF661853F87EAC694B115FD1B4BBB /* SPAlertIconLikeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertIconLikeView.swift; path = Source/SPAlert/Views/Icons/SPAlertIconLikeView.swift; sourceTree = "<group>"; };
+		801C1BCB9047EDF4B84BE716DEC0017A /* IQUIScrollView+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIScrollView+Additions.h"; path = "IQKeyboardManager/Categories/IQUIScrollView+Additions.h"; sourceTree = "<group>"; };
+		8436DFA2886B021A0AB2684576EEB426 /* SPAlertHaptic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertHaptic.swift; path = Source/SPAlert/Models/SPAlertHaptic.swift; sourceTree = "<group>"; };
+		859C4C6B41438C29BBD8463FC3D1A1F8 /* IQUIScrollView+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIScrollView+Additions.m"; path = "IQKeyboardManager/Categories/IQUIScrollView+Additions.m"; sourceTree = "<group>"; };
+		86742640C55F2B08066D4416B7380730 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		86FB7862D362A8C1FF0D4BB708CCB692 /* SPAlertIconBookmarkView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertIconBookmarkView.swift; path = Source/SPAlert/Views/Icons/SPAlertIconBookmarkView.swift; sourceTree = "<group>"; };
+		87E1234C052DA712FA522E1843B53817 /* SPAlertIconBoltView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertIconBoltView.swift; path = Source/SPAlert/Views/Icons/SPAlertIconBoltView.swift; sourceTree = "<group>"; };
 		8969A367A79E8797465493474DC26D60 /* Pods-instapass-guard-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-instapass-guard-Info.plist"; sourceTree = "<group>"; };
-		8AEAEE8DBBEE1F02C49ECB63D075E125 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		8DDB2FDBDF53D3385E68A07A7D6C7AA1 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		92B3B6A917E94B61BC697ED6E11E0BB0 /* QRCodeReaderResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCodeReaderResult.swift; path = Sources/QRCodeReaderResult.swift; sourceTree = "<group>"; };
-		94224A4C7B1B3D801C29079DE6720FD0 /* IQUIViewController+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIViewController+Additions.h"; path = "IQKeyboardManager/Categories/IQUIViewController+Additions.h"; sourceTree = "<group>"; };
+		897FA7D64A6042695E8EEC8C61E77FE4 /* SPAlertIconRepeatView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertIconRepeatView.swift; path = Source/SPAlert/Views/Icons/SPAlertIconRepeatView.swift; sourceTree = "<group>"; };
+		8AFE57A29AB289D3DD2B124D715C07F1 /* SPAlert-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SPAlert-prefix.pch"; sourceTree = "<group>"; };
+		8B45AFFF954961F36204E077FFDD1EDA /* IQUIViewController+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIViewController+Additions.h"; path = "IQKeyboardManager/Categories/IQUIViewController+Additions.h"; sourceTree = "<group>"; };
+		8D47755E106FA6E702C632B78AD9283A /* IQNSArray+Sort.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQNSArray+Sort.m"; path = "IQKeyboardManager/Categories/IQNSArray+Sort.m"; sourceTree = "<group>"; };
+		8F36373BA4A94EAC0D5E533E869ED841 /* IQKeyboardManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IQKeyboardManager.modulemap; sourceTree = "<group>"; };
+		9111C3DD7F4DE634FF65936BEADD06E4 /* IQKeyboardManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManager.xcconfig; sourceTree = "<group>"; };
+		9136AB391493DF79EDBCFB12A8B57D53 /* SPAlertIconCartView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertIconCartView.swift; path = Source/SPAlert/Views/Icons/SPAlertIconCartView.swift; sourceTree = "<group>"; };
+		91D4B9DA27A6A75FCF72572B4C909B40 /* SwitchCameraButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwitchCameraButton.swift; path = Sources/SwitchCameraButton.swift; sourceTree = "<group>"; };
+		964FA1E89F36C0AC5EA4333FD06479DE /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		98527D7196957AAB07B79E2E2AFDE23E /* IQKeyboardManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManager.framework; path = IQKeyboardManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98FD4EF2B3F6ED88223266286265007E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		994ED10EDFF5270BE2B2A0C84250DC2D /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		9B1EC0EF02204748E0DB115B391A53F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		9B6B7E38B8870F31E335E4CD65CB39EE /* QRCodeReaderViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCodeReaderViewController.swift; path = Sources/QRCodeReaderViewController.swift; sourceTree = "<group>"; };
-		9C1DA26BC4A96FABED0D330C99251B60 /* IQToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQToolbar.m; path = IQKeyboardManager/IQToolbar/IQToolbar.m; sourceTree = "<group>"; };
+		9BA85CC42434DAB5B23FD703697F5C32 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		9C9A9B56BFB23B3B863360AF444289EC /* SPAlertIconAnimatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertIconAnimatable.swift; path = Source/SPAlert/Protocol/SPAlertIconAnimatable.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DAC145057151B167477988411DFACA9 /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIView+IQKeyboardToolbar.m"; path = "IQKeyboardManager/IQToolbar/IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
+		9E9E3FCF4D152B2F532520F1A3F0CD97 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		9ED47960E1ABB0533FDBB7DEBABEBFE9 /* Pods-instapass-guard-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-instapass-guard-acknowledgements.plist"; sourceTree = "<group>"; };
-		A56124C71BF5EDEB4EBFA126950ABDD2 /* QRCodeReader.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = QRCodeReader.swift.modulemap; sourceTree = "<group>"; };
-		A6042916AACCF081B9F940CED94459DF /* IQKeyboardManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManager-dummy.m"; sourceTree = "<group>"; };
+		A2E7A5D25F80A86E3D8F03C9AF62A5EE /* SPAlertIconRotateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertIconRotateView.swift; path = Source/SPAlert/Views/Icons/SPAlertIconRotateView.swift; sourceTree = "<group>"; };
+		A5162AB50A16790CA2F77FB557AD4D92 /* QRCodeReaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCodeReaderView.swift; path = Sources/QRCodeReaderView.swift; sourceTree = "<group>"; };
 		A6DB73CEC3C0645F448F99C254AB988C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		A71614E88132366F5795E9E60AA1058F /* IQTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQTextView.h; path = IQKeyboardManager/IQTextView/IQTextView.h; sourceTree = "<group>"; };
 		AB621F88C39BB64A1CCFC673E19C6830 /* Pods_instapass_guardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_instapass_guardTests.framework; path = "Pods-instapass-guardTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABB2307BAA2C5FEDE67FE5D9A38A3530 /* IQPreviousNextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQPreviousNextView.m; path = IQKeyboardManager/IQToolbar/IQPreviousNextView.m; sourceTree = "<group>"; };
-		AF94D05303B60F0A4A0CDACA799F5153 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		B58261D0CD98A2063C98284773DBDE57 /* IQKeyboardManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManager-umbrella.h"; sourceTree = "<group>"; };
+		AC312C28C266ACD6CAF43D9618229E3F /* IQTitleBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQTitleBarButtonItem.h; path = IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.h; sourceTree = "<group>"; };
+		B0466041A1A8FBCE131BD46577E45765 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		B055E47DAA75FB2E44BCF789F56D54DB /* IQKeyboardManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManager-umbrella.h"; sourceTree = "<group>"; };
+		B0B8B09480FAD38A00028A45EC9A9776 /* IQKeyboardManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManager-dummy.m"; sourceTree = "<group>"; };
+		B0BF9380F9059AD8E3C68187DDE80420 /* QRCodeReader.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = QRCodeReader.swift.modulemap; sourceTree = "<group>"; };
+		B16E09D4AA0EF3EDA1020F8BA5874B81 /* SPAlertIconHeartView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertIconHeartView.swift; path = Source/SPAlert/Views/Icons/SPAlertIconHeartView.swift; sourceTree = "<group>"; };
+		B652230AEA718A975C4B8B8EAD406297 /* QRCodeReader.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "QRCodeReader.swift-Info.plist"; sourceTree = "<group>"; };
+		B71C7C1669AC21E3784C73EDF9757EB1 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		B82128BE8CA3DA5B6450F49EE825D47F /* Pods-instapass-guardTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-instapass-guardTests-Info.plist"; sourceTree = "<group>"; };
+		B8C08ABB8FB96CC80E1DCD15ACA744ED /* QRCodeReader.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QRCodeReader.swift-umbrella.h"; sourceTree = "<group>"; };
+		BA5CBAC38615CE04F6CD1DE6D3D3DD4A /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		BC45935961B3E08A2C9AB3F4070FF9D2 /* Alamofire-SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		BC690945D9BCBFD2CE1158F9DBEE4C41 /* QRCodeReaderViewControllerBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCodeReaderViewControllerBuilder.swift; path = Sources/QRCodeReaderViewControllerBuilder.swift; sourceTree = "<group>"; };
 		BDF6136650C912756E10B2E3F289789C /* Alamofire_SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire_SwiftyJSON.framework; path = "Alamofire-SwiftyJSON.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE629661A28417489F63DBC74196BBD6 /* SPAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SPAlert.framework; path = SPAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF3CC277A5A95703A993B63D20F06958 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		C0AE0EE1AE1B84B741C7B63B2A39CB20 /* QRCodeReader.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QRCodeReader.swift-umbrella.h"; sourceTree = "<group>"; };
+		C049CA02CA0BB1D00EF4A7CB3EF44629 /* SPAlertLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertLayout.swift; path = Source/SPAlert/Models/SPAlertLayout.swift; sourceTree = "<group>"; };
+		C0BF44C85FA30CF3785C325538913887 /* ReaderOverlayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReaderOverlayView.swift; path = Sources/ReaderOverlayView.swift; sourceTree = "<group>"; };
+		C0FACC2BF9AEF1924AAA75A638BB5D33 /* SPAlertIconFlagView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertIconFlagView.swift; path = Source/SPAlert/Views/Icons/SPAlertIconFlagView.swift; sourceTree = "<group>"; };
+		C0FAEB59B1DBD7ACFB335150762DFC0E /* Alamofire-SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Alamofire-SwiftyJSON.xcconfig"; sourceTree = "<group>"; };
 		C182E5D657E21CE1A92B9E26AC94B92C /* Pods-instapass-guardTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-instapass-guardTests.modulemap"; sourceTree = "<group>"; };
+		C3A9360561632E7F5DD9F5753471CB75 /* QRCodeReaderViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCodeReaderViewController.swift; path = Sources/QRCodeReaderViewController.swift; sourceTree = "<group>"; };
+		C5D8F7D6F949E97C55718E838A9871E3 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		C894F0E9C817BF3D1205375EA07AA154 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB37112B0738FAA3ECDFBC8E2DA7EA4B /* Alamofire-SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Alamofire-SwiftyJSON.swift"; path = "Source/Alamofire-SwiftyJSON.swift"; sourceTree = "<group>"; };
+		C950EE83F78BB407B04F6612BBBC27CF /* SPAlertIconAddView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertIconAddView.swift; path = Source/SPAlert/Views/Icons/SPAlertIconAddView.swift; sourceTree = "<group>"; };
+		CACEEFB446E35391226D5783B2E72ABC /* IQKeyboardReturnKeyHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQKeyboardReturnKeyHandler.m; path = IQKeyboardManager/IQKeyboardReturnKeyHandler.m; sourceTree = "<group>"; };
+		CB197CF98C3AEFF73502C5B3BE77518B /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		CB5BC366EC44427B57830F0942396938 /* Pods-instapass-guard-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-instapass-guard-frameworks.sh"; sourceTree = "<group>"; };
-		D248D124879A1AAA92DB79E15D65197C /* IQUIView+Hierarchy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIView+Hierarchy.m"; path = "IQKeyboardManager/Categories/IQUIView+Hierarchy.m"; sourceTree = "<group>"; };
-		DCA32C6E3EC2538A91A996DC75F9A7DB /* IQUIViewController+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIViewController+Additions.m"; path = "IQKeyboardManager/Categories/IQUIViewController+Additions.m"; sourceTree = "<group>"; };
-		DFDA4D47CCFA393A64AA5CA5BA7A13D8 /* IQUIScrollView+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIScrollView+Additions.m"; path = "IQKeyboardManager/Categories/IQUIScrollView+Additions.m"; sourceTree = "<group>"; };
-		E19728FFC328CF76C28DCAE5E7467967 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		CEF7B8C0D56419E1C5C6916D2D32B944 /* SPAlertIconStarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertIconStarView.swift; path = Source/SPAlert/Views/Icons/SPAlertIconStarView.swift; sourceTree = "<group>"; };
+		D31A3267C54C94E165060E755B440FD6 /* SPAlertIconSearchView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertIconSearchView.swift; path = Source/SPAlert/Views/Icons/SPAlertIconSearchView.swift; sourceTree = "<group>"; };
+		D75B818776919C3768189F18634AA624 /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIView+IQKeyboardToolbar.h"; path = "IQKeyboardManager/IQToolbar/IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
+		D8E1B4BF409C8982C6AE1184BC5CEB68 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		DB5C3EB77BC55A23B807DC5FC0F2DFE8 /* SPAlert-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SPAlert-umbrella.h"; sourceTree = "<group>"; };
+		DD459F7CCC5DF6336206DEC081DB9CDF /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		E0AC99137420718A8A4F5BFBE0BA67AE /* IQKeyboardManagerConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManagerConstants.h; path = IQKeyboardManager/Constants/IQKeyboardManagerConstants.h; sourceTree = "<group>"; };
+		E18546244F115FA3EF142D34C9C3554F /* IQKeyboardManagerConstantsInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManagerConstantsInternal.h; path = IQKeyboardManager/Constants/IQKeyboardManagerConstantsInternal.h; sourceTree = "<group>"; };
 		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E291233C7C8EFE207C09E08AE9155575 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
 		E29D74EF2015B87555A66734058CB373 /* Pods-instapass-guardTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-instapass-guardTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		E4DB39B0D001BCD8C8B60C2B79B7B7AB /* QRCodeReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCodeReader.swift; path = Sources/QRCodeReader.swift; sourceTree = "<group>"; };
-		EBD4AB71C8944087DC62D75762F60149 /* QRCodeReader.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QRCodeReader.swift-dummy.m"; sourceTree = "<group>"; };
-		EC0A534C5A665B5A68D55FFA01570CDC /* IQKeyboardManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManager.h; path = IQKeyboardManager/IQKeyboardManager.h; sourceTree = "<group>"; };
-		EF20E387CA3DD2E49CA0891AB66FFBF9 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		E2A52A8844C1C0F650BD77E5595F81F5 /* SPAlertIconDoneView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertIconDoneView.swift; path = Source/SPAlert/Views/Icons/SPAlertIconDoneView.swift; sourceTree = "<group>"; };
+		E2E408CB1395F82799E022471D3937BA /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		E35B8F45C7FC15B62F4DF78DAE0A6D23 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		E462DDDC81DDD5FE9C5D34DD5916D4AA /* SPAlertIconErrorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertIconErrorView.swift; path = Source/SPAlert/Views/Icons/SPAlertIconErrorView.swift; sourceTree = "<group>"; };
+		E4ADA33D71D640A65E55923B9E0F15A9 /* IQToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQToolbar.m; path = IQKeyboardManager/IQToolbar/IQToolbar.m; sourceTree = "<group>"; };
+		E868038824E99E56656BBB40DF68200A /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		E8D5945A7C9649CDD389829A470DB829 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		E8F81B83CC6678A35EBE4ACF5B1E7817 /* QRCodeReaderViewContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCodeReaderViewContainer.swift; path = Sources/QRCodeReaderViewContainer.swift; sourceTree = "<group>"; };
+		E9EBD944F36718E94AADD8A36A2F2694 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		ECEA7F9861C7BB79F14713E0CBFCD2A6 /* SPAlert-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SPAlert-Info.plist"; sourceTree = "<group>"; };
 		EFBA8A47CF4C6C4A937C899536FB807B /* Pods-instapass-guardTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-instapass-guardTests-umbrella.h"; sourceTree = "<group>"; };
 		EFC6D66B5BDD7233F447D84CB69007F6 /* Pods-instapass-guard-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-instapass-guard-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F06E140575CED151D8BC71ED2E97D2BB /* SwitchCameraButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwitchCameraButton.swift; path = Sources/SwitchCameraButton.swift; sourceTree = "<group>"; };
-		F15572838322BDF170A6F8112520D377 /* IQKeyboardManagerConstantsInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManagerConstantsInternal.h; path = IQKeyboardManager/Constants/IQKeyboardManagerConstantsInternal.h; sourceTree = "<group>"; };
-		F294211B95BFDD746469E79B7BFAC9B7 /* IQNSArray+Sort.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQNSArray+Sort.m"; path = "IQKeyboardManager/Categories/IQNSArray+Sort.m"; sourceTree = "<group>"; };
+		F05DDA1F1B9982FD3A0E6260A4BEC19F /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		F0F7C0FC55EBBA59A6464A41BC1948A8 /* SwiftyJSON-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyJSON-Info.plist"; sourceTree = "<group>"; };
+		F18E7B747D4C16849920A30F29C493C3 /* IQPreviousNextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQPreviousNextView.m; path = IQKeyboardManager/IQToolbar/IQPreviousNextView.m; sourceTree = "<group>"; };
+		F43E5446946F970EBCAAE622C34C8D5F /* IQUIViewController+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIViewController+Additions.m"; path = "IQKeyboardManager/Categories/IQUIViewController+Additions.m"; sourceTree = "<group>"; };
 		F5A7A6D804C65BE6BAECAB19AD4626FC /* Pods-instapass-guard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-instapass-guard-dummy.m"; sourceTree = "<group>"; };
-		F80592FA6B4A458C687D2F42A177A2AD /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
-		F95C612F140FF262AEF790999F379033 /* IQKeyboardManagerConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManagerConstants.h; path = IQKeyboardManager/Constants/IQKeyboardManagerConstants.h; sourceTree = "<group>"; };
-		FB621091B93BE4253C0770C9895819D1 /* IQUITextFieldView+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUITextFieldView+Additions.m"; path = "IQKeyboardManager/Categories/IQUITextFieldView+Additions.m"; sourceTree = "<group>"; };
+		F8F085578A02B4AE4D67E7EEA8CE3F2F /* SPAlert.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SPAlert.xcconfig; sourceTree = "<group>"; };
+		F91697A004B246C4A17CD33266969C68 /* IQTitleBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQTitleBarButtonItem.m; path = IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.m; sourceTree = "<group>"; };
+		F940718D84F790C041ECA45E9E7C3116 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		F9E204DB453871CA08058B122F068574 /* SPAlertIconQuestionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SPAlertIconQuestionView.swift; path = Source/SPAlert/Views/Icons/SPAlertIconQuestionView.swift; sourceTree = "<group>"; };
+		FAE140986275ADA31A5E2FF5291C9F20 /* QRCodeReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCodeReader.swift; path = Sources/QRCodeReader.swift; sourceTree = "<group>"; };
+		FD98F60E5D45E8A902BE2B0F128A91D0 /* IQTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQTextView.m; path = IQKeyboardManager/IQTextView/IQTextView.m; sourceTree = "<group>"; };
+		FF22C3B6C761C8009186D18829E058BE /* ToggleTorchButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToggleTorchButton.swift; path = Sources/ToggleTorchButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -311,11 +387,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B24C71B7BC28CD597CEE07F29F0337B /* Frameworks */ = {
+		7DA2E85F13A47DB65D9C2AD91D79C65A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9DB9CBD70E3AC953EF0A5382E503663 /* Foundation.framework in Frameworks */,
+				7331DB0E9C0F8C7207EED17158B5012C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +400,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				16683CCF2980B612EA38DB421BFA5C1E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4BE5689AA381FCCB294FB8044E12140 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCBBEA913A044397A007674F89E1758F /* Foundation.framework in Frameworks */,
+				5254060120138B45D3E8D9989AC02DDC /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,18 +425,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		24A037768328FECCACA6FEE85CF5571F /* Support Files */ = {
+		1B839F4FD31ED8E8EE47402CBF37DE99 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				017C910F6BC5B521E93B3D57A55F6122 /* Alamofire-SwiftyJSON.modulemap */,
-				49ABC5D0FC60CE0E9825E94EF563FE70 /* Alamofire-SwiftyJSON.xcconfig */,
-				0E7E6B6C683F996C24CC332C2E3761AA /* Alamofire-SwiftyJSON-dummy.m */,
-				767B4C0C744DE85EF1C398AE8A532C78 /* Alamofire-SwiftyJSON-Info.plist */,
-				0D3204B75A5DB89BCEB7C7E60B67BA7A /* Alamofire-SwiftyJSON-prefix.pch */,
-				4A03B0BCBC231DE982208EE364B9C635 /* Alamofire-SwiftyJSON-umbrella.h */,
+				01156402D31451599A229B52697F5A14 /* SPAlert.modulemap */,
+				F8F085578A02B4AE4D67E7EEA8CE3F2F /* SPAlert.xcconfig */,
+				4D0D1ACFE3C45F803256D9949CEE5CB0 /* SPAlert-dummy.m */,
+				ECEA7F9861C7BB79F14713E0CBFCD2A6 /* SPAlert-Info.plist */,
+				8AFE57A29AB289D3DD2B124D715C07F1 /* SPAlert-prefix.pch */,
+				DB5C3EB77BC55A23B807DC5FC0F2DFE8 /* SPAlert-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Alamofire-SwiftyJSON";
+			path = "../Target Support Files/SPAlert";
+			sourceTree = "<group>";
+		};
+		26569B9B8888F95CED84D42E15941D47 /* Alamofire-SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				30574F559BA6E346E6430B37FE6559F3 /* Alamofire-SwiftyJSON.swift */,
+				C004C4EA1489D087F5FE11044B0B3EA0 /* Support Files */,
+			);
+			name = "Alamofire-SwiftyJSON";
+			path = "Alamofire-SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		2D42CDC74573E5D02077E4CC11AC7514 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD6F42E365B4B51F8E96C9F4E86EA1A2 /* Alamofire */,
+				26569B9B8888F95CED84D42E15941D47 /* Alamofire-SwiftyJSON */,
+				8F7DD71CED0F61C90F3C40CCDE77D513 /* IQKeyboardManager */,
+				F139EA2C10C24EBEE83E99E63928CE1D /* QRCodeReader.swift */,
+				94D1DFC65B50C2DA86956872A35B95A6 /* SPAlert */,
+				D70FCB35FB95F46BD83638E76892F20F /* SwiftyJSON */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		364DFB9007470EFEC9C9E7D4F39D30AA /* Pods-instapass-guard */ = {
@@ -371,124 +479,47 @@
 			path = "Target Support Files/Pods-instapass-guard";
 			sourceTree = "<group>";
 		};
-		3CFC471F122594343CCC1D53EE0AF59B /* QRCodeReader.swift */ = {
+		4A8143D84F7572489A21D8D3CA58620F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E4DB39B0D001BCD8C8B60C2B79B7B7AB /* QRCodeReader.swift */,
-				92B3B6A917E94B61BC697ED6E11E0BB0 /* QRCodeReaderResult.swift */,
-				137C9FBF9F7A5D1F933B1BBC31C66EB6 /* QRCodeReaderView.swift */,
-				1EEAA7A49DF136D9FDF61E9AEA86817C /* QRCodeReaderViewContainer.swift */,
-				9B6B7E38B8870F31E335E4CD65CB39EE /* QRCodeReaderViewController.swift */,
-				730EA854DA2C42CF8929C3709EF82898 /* QRCodeReaderViewControllerBuilder.swift */,
-				37D2F5C8A3A7AE06AB7F23164C81334A /* QRCodeReaderViewControllerDelegate.swift */,
-				464BD0036275C765C04EE20B74871B35 /* ReaderOverlayView.swift */,
-				F06E140575CED151D8BC71ED2E97D2BB /* SwitchCameraButton.swift */,
-				62C5DE08D7F28B1FA2B9A45C4CD9A1A3 /* ToggleTorchButton.swift */,
-				66DBB7F1506C53D227E81F2CE47DE15C /* Support Files */,
-			);
-			name = QRCodeReader.swift;
-			path = QRCodeReader.swift;
-			sourceTree = "<group>";
-		};
-		506FE4425ED097371ED8261766F0CF7E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2003C5AE3780F09E2B1BE32201641B9D /* SwiftyJSON.modulemap */,
-				E19728FFC328CF76C28DCAE5E7467967 /* SwiftyJSON.xcconfig */,
-				1C10300AD7485210D0242743FBC53F80 /* SwiftyJSON-dummy.m */,
-				74C18E50958446F1D78DEBDA7DAA307A /* SwiftyJSON-Info.plist */,
-				525D0D06B4DF236921164D3B5D61E048 /* SwiftyJSON-prefix.pch */,
-				EF20E387CA3DD2E49CA0891AB66FFBF9 /* SwiftyJSON-umbrella.h */,
+				37DEC89949374829FADD567A01DEACA4 /* Alamofire.modulemap */,
+				08B11BDEA5EDE2DAD2AEAE1706425830 /* Alamofire.xcconfig */,
+				D8E1B4BF409C8982C6AE1184BC5CEB68 /* Alamofire-dummy.m */,
+				DD459F7CCC5DF6336206DEC081DB9CDF /* Alamofire-Info.plist */,
+				E2E408CB1395F82799E022471D3937BA /* Alamofire-prefix.pch */,
+				C5D8F7D6F949E97C55718E838A9871E3 /* Alamofire-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SwiftyJSON";
+			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
-		543B1E886339AF39D9560CA0AD8AA1FC /* Support Files */ = {
+		594EC3744DE361893E5C00F0ACC03620 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				44DD87A6F1F120091CE50EF43A43044B /* IQKeyboardManager.modulemap */,
-				4B2388382C884FFE601CA3C862455F5B /* IQKeyboardManager.xcconfig */,
-				A6042916AACCF081B9F940CED94459DF /* IQKeyboardManager-dummy.m */,
-				04AF0028987A9F9130A3A0E2C17FEB35 /* IQKeyboardManager-Info.plist */,
-				84F9B3B5B392C87E870E06F6FA4EB6C8 /* IQKeyboardManager-prefix.pch */,
-				B58261D0CD98A2063C98284773DBDE57 /* IQKeyboardManager-umbrella.h */,
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
+				BDF6136650C912756E10B2E3F289789C /* Alamofire_SwiftyJSON.framework */,
+				98527D7196957AAB07B79E2E2AFDE23E /* IQKeyboardManager.framework */,
+				02A68C6166519E9E42ADB1FDDEB6D0D9 /* Pods_instapass_guard.framework */,
+				AB621F88C39BB64A1CCFC673E19C6830 /* Pods_instapass_guardTests.framework */,
+				3652B113DC334A3FDA0C14F6794A5F69 /* QRCodeReader.framework */,
+				BE629661A28417489F63DBC74196BBD6 /* SPAlert.framework */,
+				E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/IQKeyboardManager";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		66DBB7F1506C53D227E81F2CE47DE15C /* Support Files */ = {
+		81D2F0B39EB1FC2031854CA3803BBA46 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A56124C71BF5EDEB4EBFA126950ABDD2 /* QRCodeReader.swift.modulemap */,
-				4D5BA31FE4D3B12C86F02B456F2811D0 /* QRCodeReader.swift.xcconfig */,
-				EBD4AB71C8944087DC62D75762F60149 /* QRCodeReader.swift-dummy.m */,
-				7C3C94ADEC037AA45FEA9C25087E9860 /* QRCodeReader.swift-Info.plist */,
-				08237D126FE44F6CDD2944EB02E79493 /* QRCodeReader.swift-prefix.pch */,
-				C0AE0EE1AE1B84B741C7B63B2A39CB20 /* QRCodeReader.swift-umbrella.h */,
+				B0BF9380F9059AD8E3C68187DDE80420 /* QRCodeReader.swift.modulemap */,
+				1372AB9A9DADC0CE86EAA2CDF02F538E /* QRCodeReader.swift.xcconfig */,
+				10B477B879151F681064A1B437D2B2D9 /* QRCodeReader.swift-dummy.m */,
+				B652230AEA718A975C4B8B8EAD406297 /* QRCodeReader.swift-Info.plist */,
+				3E41843C9D3DA1952163552186D81254 /* QRCodeReader.swift-prefix.pch */,
+				B8C08ABB8FB96CC80E1DCD15ACA744ED /* QRCodeReader.swift-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/QRCodeReader.swift";
-			sourceTree = "<group>";
-		};
-		6A23196239362E6CF03B4BCDECDAAAF3 /* IQKeyboardManager */ = {
-			isa = PBXGroup;
-			children = (
-				48910D51C04BADCAE1D82622B3412E59 /* IQBarButtonItem.h */,
-				4786884C9C402193B1A0093216A87E53 /* IQBarButtonItem.m */,
-				EC0A534C5A665B5A68D55FFA01570CDC /* IQKeyboardManager.h */,
-				61C162566F13A0EE94AC17F4C68618D2 /* IQKeyboardManager.m */,
-				F95C612F140FF262AEF790999F379033 /* IQKeyboardManagerConstants.h */,
-				F15572838322BDF170A6F8112520D377 /* IQKeyboardManagerConstantsInternal.h */,
-				2965A2BBFD565FF2BB0E335C5E36B0CA /* IQKeyboardReturnKeyHandler.h */,
-				00A9D938F2EE88876B4D39A47DA0DA76 /* IQKeyboardReturnKeyHandler.m */,
-				30A5523428820A8573EAC09CC3571F13 /* IQNSArray+Sort.h */,
-				F294211B95BFDD746469E79B7BFAC9B7 /* IQNSArray+Sort.m */,
-				50EE331355A3A729FC11A95129D1774F /* IQPreviousNextView.h */,
-				ABB2307BAA2C5FEDE67FE5D9A38A3530 /* IQPreviousNextView.m */,
-				A71614E88132366F5795E9E60AA1058F /* IQTextView.h */,
-				09B5DDB0500D58C39FD8EB940306DF5B /* IQTextView.m */,
-				655C589D5F1DA62BA1CC40632FDEB230 /* IQTitleBarButtonItem.h */,
-				0CA6480A41343391832D6916A4EB71BD /* IQTitleBarButtonItem.m */,
-				84AFE3B51572012E8171A6FAE7EA7570 /* IQToolbar.h */,
-				9C1DA26BC4A96FABED0D330C99251B60 /* IQToolbar.m */,
-				6263C7F2FEF57DE260296F0A6F59FA4C /* IQUIScrollView+Additions.h */,
-				DFDA4D47CCFA393A64AA5CA5BA7A13D8 /* IQUIScrollView+Additions.m */,
-				1525A0674F0A11E17BB51B9010E5280E /* IQUITextFieldView+Additions.h */,
-				FB621091B93BE4253C0770C9895819D1 /* IQUITextFieldView+Additions.m */,
-				2E5EA66B6F415FBC623F4801ABDCF463 /* IQUIView+Hierarchy.h */,
-				D248D124879A1AAA92DB79E15D65197C /* IQUIView+Hierarchy.m */,
-				54ED24FAA0A005BFEF363BF8F7104E54 /* IQUIView+IQKeyboardToolbar.h */,
-				9DAC145057151B167477988411DFACA9 /* IQUIView+IQKeyboardToolbar.m */,
-				94224A4C7B1B3D801C29079DE6720FD0 /* IQUIViewController+Additions.h */,
-				DCA32C6E3EC2538A91A996DC75F9A7DB /* IQUIViewController+Additions.m */,
-				543B1E886339AF39D9560CA0AD8AA1FC /* Support Files */,
-			);
-			name = IQKeyboardManager;
-			path = IQKeyboardManager;
-			sourceTree = "<group>";
-		};
-		74FEE52248A20CD3DCAAACF9A0B08C8D /* Alamofire-SwiftyJSON */ = {
-			isa = PBXGroup;
-			children = (
-				CB37112B0738FAA3ECDFBC8E2DA7EA4B /* Alamofire-SwiftyJSON.swift */,
-				24A037768328FECCACA6FEE85CF5571F /* Support Files */,
-			);
-			name = "Alamofire-SwiftyJSON";
-			path = "Alamofire-SwiftyJSON";
-			sourceTree = "<group>";
-		};
-		763816F49653A5C14C2462D972038EBE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E05B92D6F9B675B6DF392B72BD7955EE /* Alamofire */,
-				74FEE52248A20CD3DCAAACF9A0B08C8D /* Alamofire-SwiftyJSON */,
-				6A23196239362E6CF03B4BCDECDAAAF3 /* IQKeyboardManager */,
-				3CFC471F122594343CCC1D53EE0AF59B /* QRCodeReader.swift */,
-				EBB34E281045A5F3C787DF973A9CC80E /* SwiftyJSON */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		8B2DA4B9E191474A5C810552BD38CFA7 /* Targets Support Files */ = {
@@ -498,6 +529,43 @@
 				B8555A780F807E5DDB17558ED3B17912 /* Pods-instapass-guardTests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8F7DD71CED0F61C90F3C40CCDE77D513 /* IQKeyboardManager */ = {
+			isa = PBXGroup;
+			children = (
+				36188E80DE79D187AFA1A899AFCCE031 /* IQBarButtonItem.h */,
+				366EB9745BC419B7F6AD65DA0782E7F5 /* IQBarButtonItem.m */,
+				0AC15607152791CB5F87AB016A4A133C /* IQKeyboardManager.h */,
+				4F1EFFFDFB03EFC5D8AAE0F483A1354D /* IQKeyboardManager.m */,
+				E0AC99137420718A8A4F5BFBE0BA67AE /* IQKeyboardManagerConstants.h */,
+				E18546244F115FA3EF142D34C9C3554F /* IQKeyboardManagerConstantsInternal.h */,
+				1F8A4DB5940B3C9DE053E89FF801A48F /* IQKeyboardReturnKeyHandler.h */,
+				CACEEFB446E35391226D5783B2E72ABC /* IQKeyboardReturnKeyHandler.m */,
+				0E606398D0A33D7286D392494B7EF98D /* IQNSArray+Sort.h */,
+				8D47755E106FA6E702C632B78AD9283A /* IQNSArray+Sort.m */,
+				43B3BDF0F4649216A7FD9A4088D4CECA /* IQPreviousNextView.h */,
+				F18E7B747D4C16849920A30F29C493C3 /* IQPreviousNextView.m */,
+				7713134C63DA713E1678697AFDA2FB2A /* IQTextView.h */,
+				FD98F60E5D45E8A902BE2B0F128A91D0 /* IQTextView.m */,
+				AC312C28C266ACD6CAF43D9618229E3F /* IQTitleBarButtonItem.h */,
+				F91697A004B246C4A17CD33266969C68 /* IQTitleBarButtonItem.m */,
+				254B5455628CBC16B414441FD14BEA0E /* IQToolbar.h */,
+				E4ADA33D71D640A65E55923B9E0F15A9 /* IQToolbar.m */,
+				801C1BCB9047EDF4B84BE716DEC0017A /* IQUIScrollView+Additions.h */,
+				859C4C6B41438C29BBD8463FC3D1A1F8 /* IQUIScrollView+Additions.m */,
+				224F924119BD2AC9D6C6CE242387F7FC /* IQUITextFieldView+Additions.h */,
+				6887220C7FF52FF5221F40C037C697D7 /* IQUITextFieldView+Additions.m */,
+				6D8F19C46A879DC2B5BE7E170E2143AE /* IQUIView+Hierarchy.h */,
+				67B83848EA65D756BC422AD9C870A656 /* IQUIView+Hierarchy.m */,
+				D75B818776919C3768189F18634AA624 /* IQUIView+IQKeyboardToolbar.h */,
+				32B01568DC191AA088F923CD99198C67 /* IQUIView+IQKeyboardToolbar.m */,
+				8B45AFFF954961F36204E077FFDD1EDA /* IQUIViewController+Additions.h */,
+				F43E5446946F970EBCAAE622C34C8D5F /* IQUIViewController+Additions.m */,
+				E1BEE35C647F5DD11B8A3FCB234C3013 /* Support Files */,
+			);
+			name = IQKeyboardManager;
+			path = IQKeyboardManager;
 			sourceTree = "<group>";
 		};
 		91A70EEEC14234D837BA90BF29859368 /* iOS */ = {
@@ -510,6 +578,44 @@
 				A6DB73CEC3C0645F448F99C254AB988C /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		94D1DFC65B50C2DA86956872A35B95A6 /* SPAlert */ = {
+			isa = PBXGroup;
+			children = (
+				31CCDF992EAE8AEC248E2617F79A7686 /* SPAlert.swift */,
+				8436DFA2886B021A0AB2684576EEB426 /* SPAlertHaptic.swift */,
+				C950EE83F78BB407B04F6612BBBC27CF /* SPAlertIconAddView.swift */,
+				9C9A9B56BFB23B3B863360AF444289EC /* SPAlertIconAnimatable.swift */,
+				87E1234C052DA712FA522E1843B53817 /* SPAlertIconBoltView.swift */,
+				86FB7862D362A8C1FF0D4BB708CCB692 /* SPAlertIconBookmarkView.swift */,
+				00554D74F0CE8F3B698CEF3A7ACF9C98 /* SPAlertIconCardView.swift */,
+				9136AB391493DF79EDBCFB12A8B57D53 /* SPAlertIconCartView.swift */,
+				4098A9CFAA260DDD29F66753A2D478A5 /* SPAlertIconDislikeView.swift */,
+				076A78A009E3666CCFAF95C5EBB31F0F /* SPAlertIconDocView.swift */,
+				E2A52A8844C1C0F650BD77E5595F81F5 /* SPAlertIconDoneView.swift */,
+				11DABCC827F29FBFCBD9F0E81A09F8D6 /* SPAlertIconEjectView.swift */,
+				E462DDDC81DDD5FE9C5D34DD5916D4AA /* SPAlertIconErrorView.swift */,
+				78A0416CB3304443A1CD5A98CEAA2201 /* SPAlertIconExclamationView.swift */,
+				C0FACC2BF9AEF1924AAA75A638BB5D33 /* SPAlertIconFlagView.swift */,
+				B16E09D4AA0EF3EDA1020F8BA5874B81 /* SPAlertIconHeartView.swift */,
+				7FDFF661853F87EAC694B115FD1B4BBB /* SPAlertIconLikeView.swift */,
+				03464E06808A4773EA2E54F0419CCCFD /* SPAlertIconMessageView.swift */,
+				6AC2CD6E0E3704AD64B1627AB75CD599 /* SPAlertIconMoonView.swift */,
+				32F3D05E2CD2AD5DDA00737BDE91B2B4 /* SPAlertIconPrivacyView.swift */,
+				F9E204DB453871CA08058B122F068574 /* SPAlertIconQuestionView.swift */,
+				897FA7D64A6042695E8EEC8C61E77FE4 /* SPAlertIconRepeatView.swift */,
+				A2E7A5D25F80A86E3D8F03C9AF62A5EE /* SPAlertIconRotateView.swift */,
+				D31A3267C54C94E165060E755B440FD6 /* SPAlertIconSearchView.swift */,
+				61E27882A5E7C3E2CFD9ABAE713EF3D8 /* SPAlertIconShuffleView.swift */,
+				CEF7B8C0D56419E1C5C6916D2D32B944 /* SPAlertIconStarView.swift */,
+				C049CA02CA0BB1D00EF4A7CB3EF44629 /* SPAlertLayout.swift */,
+				4E09E16CF33006805022836EFC4B7C8E /* SPAlertPreset.swift */,
+				49525940DF0477A88644D305ABDBA962 /* SPAlertView.swift */,
+				1B839F4FD31ED8E8EE47402CBF37DE99 /* Support Files */,
+			);
+			name = SPAlert;
+			path = SPAlert;
 			sourceTree = "<group>";
 		};
 		B84C995BF064E2130ACDE488F2C49D73 /* Frameworks */ = {
@@ -538,79 +644,112 @@
 			path = "Target Support Files/Pods-instapass-guardTests";
 			sourceTree = "<group>";
 		};
-		CF1408CF629C7361332E53B88F7BD30C = {
+		BD6F42E365B4B51F8E96C9F4E86EA1A2 /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				B84C995BF064E2130ACDE488F2C49D73 /* Frameworks */,
-				763816F49653A5C14C2462D972038EBE /* Pods */,
-				DB02A28EA8DD6F80DA688931282ACB01 /* Products */,
-				8B2DA4B9E191474A5C810552BD38CFA7 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		DB02A28EA8DD6F80DA688931282ACB01 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
-				BDF6136650C912756E10B2E3F289789C /* Alamofire_SwiftyJSON.framework */,
-				98527D7196957AAB07B79E2E2AFDE23E /* IQKeyboardManager.framework */,
-				02A68C6166519E9E42ADB1FDDEB6D0D9 /* Pods_instapass_guard.framework */,
-				AB621F88C39BB64A1CCFC673E19C6830 /* Pods_instapass_guardTests.framework */,
-				3652B113DC334A3FDA0C14F6794A5F69 /* QRCodeReader.framework */,
-				E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		E05B92D6F9B675B6DF392B72BD7955EE /* Alamofire */ = {
-			isa = PBXGroup;
-			children = (
-				85FB9652E582E85763897FC5DBDEEF0C /* AFError.swift */,
-				6E4C77CE08A0FEB7C250DB591B073C92 /* Alamofire.swift */,
-				1404A43416E3D1633F8D25D4456818A6 /* DispatchQueue+Alamofire.swift */,
-				74E1FCDB5AF3C1E346EA34C9935C6697 /* MultipartFormData.swift */,
-				7A8BBCC2EA8A5EDDD58F6AAEC9023FC8 /* NetworkReachabilityManager.swift */,
-				34ABD7D06974CCCDC2AE071D2A35607B /* Notifications.swift */,
-				8DDB2FDBDF53D3385E68A07A7D6C7AA1 /* ParameterEncoding.swift */,
-				25937EE5062933A01ECEBBDC6302C778 /* Request.swift */,
-				036CB968750916A91F7794EA921A72E6 /* Response.swift */,
-				60F8B98940D9B463AC2635CD21CA87A7 /* ResponseSerialization.swift */,
-				20F29DBBBD5CE198CC67B6D0C8032EEA /* Result.swift */,
-				01F61905D7690C56BD026BFA08A3CA53 /* ServerTrustPolicy.swift */,
-				AF94D05303B60F0A4A0CDACA799F5153 /* SessionDelegate.swift */,
-				20E9B6015991FF8568A5B3380574D0D2 /* SessionManager.swift */,
-				E291233C7C8EFE207C09E08AE9155575 /* TaskDelegate.swift */,
-				8AEAEE8DBBEE1F02C49ECB63D075E125 /* Timeline.swift */,
-				994ED10EDFF5270BE2B2A0C84250DC2D /* Validation.swift */,
-				F1203B0EAB224886353461F11DE7D3CA /* Support Files */,
+				23B10A1B03961D70DEAC31088873B80A /* AFError.swift */,
+				E35B8F45C7FC15B62F4DF78DAE0A6D23 /* Alamofire.swift */,
+				6D6B37C9FCD1F9C150127F5F5CD84C77 /* DispatchQueue+Alamofire.swift */,
+				233D8328147997C2B7AAD992FD0813EA /* MultipartFormData.swift */,
+				9BA85CC42434DAB5B23FD703697F5C32 /* NetworkReachabilityManager.swift */,
+				E9EBD944F36718E94AADD8A36A2F2694 /* Notifications.swift */,
+				B0466041A1A8FBCE131BD46577E45765 /* ParameterEncoding.swift */,
+				640E95F787A21E32BFDF3F8B9A487CA8 /* Request.swift */,
+				CB197CF98C3AEFF73502C5B3BE77518B /* Response.swift */,
+				F05DDA1F1B9982FD3A0E6260A4BEC19F /* ResponseSerialization.swift */,
+				713CC3C8046878A0F6171E7CB5130740 /* Result.swift */,
+				69EDE43E3F43B5AA0F826934DDA00059 /* ServerTrustPolicy.swift */,
+				964FA1E89F36C0AC5EA4333FD06479DE /* SessionDelegate.swift */,
+				475B05A11E68D49FF7199008E75BB539 /* SessionManager.swift */,
+				86742640C55F2B08066D4416B7380730 /* TaskDelegate.swift */,
+				58BA09290AD4CF0CBD9138DFC020F37E /* Timeline.swift */,
+				E868038824E99E56656BBB40DF68200A /* Validation.swift */,
+				4A8143D84F7572489A21D8D3CA58620F /* Support Files */,
 			);
 			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
-		EBB34E281045A5F3C787DF973A9CC80E /* SwiftyJSON */ = {
+		C004C4EA1489D087F5FE11044B0B3EA0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2E840D64BA28D55EDDEAC3442B72E14E /* SwiftyJSON.swift */,
-				506FE4425ED097371ED8261766F0CF7E /* Support Files */,
+				36DAA5755240E6D38483660060CD3D5C /* Alamofire-SwiftyJSON.modulemap */,
+				C0FAEB59B1DBD7ACFB335150762DFC0E /* Alamofire-SwiftyJSON.xcconfig */,
+				240D55F294B6995E822B75092A291423 /* Alamofire-SwiftyJSON-dummy.m */,
+				02DFE2EB5E35B75DA2F480ABBCCE9272 /* Alamofire-SwiftyJSON-Info.plist */,
+				BC45935961B3E08A2C9AB3F4070FF9D2 /* Alamofire-SwiftyJSON-prefix.pch */,
+				56663DE2AF6C5733F61CDECFFA91C87B /* Alamofire-SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire-SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				B84C995BF064E2130ACDE488F2C49D73 /* Frameworks */,
+				2D42CDC74573E5D02077E4CC11AC7514 /* Pods */,
+				594EC3744DE361893E5C00F0ACC03620 /* Products */,
+				8B2DA4B9E191474A5C810552BD38CFA7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D70FCB35FB95F46BD83638E76892F20F /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				BA5CBAC38615CE04F6CD1DE6D3D3DD4A /* SwiftyJSON.swift */,
+				D8EDCE800075B18C4931913F3D123F6E /* Support Files */,
 			);
 			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
-		F1203B0EAB224886353461F11DE7D3CA /* Support Files */ = {
+		D8EDCE800075B18C4931913F3D123F6E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6A6FC5A20E75AF503066A67280B4E0DA /* Alamofire.modulemap */,
-				57A46C0AB1267113032F8E57EE93598E /* Alamofire.xcconfig */,
-				58F906795A938700CD8375D2148B37DA /* Alamofire-dummy.m */,
-				F80592FA6B4A458C687D2F42A177A2AD /* Alamofire-Info.plist */,
-				4107DE16CD2EA877DDC4A5C2D368EA29 /* Alamofire-prefix.pch */,
-				85BC157E853B453DB21B475EF2A1D150 /* Alamofire-umbrella.h */,
+				3160CF6A0E9C036238D126B4333602DC /* SwiftyJSON.modulemap */,
+				E8D5945A7C9649CDD389829A470DB829 /* SwiftyJSON.xcconfig */,
+				B71C7C1669AC21E3784C73EDF9757EB1 /* SwiftyJSON-dummy.m */,
+				F0F7C0FC55EBBA59A6464A41BC1948A8 /* SwiftyJSON-Info.plist */,
+				F940718D84F790C041ECA45E9E7C3116 /* SwiftyJSON-prefix.pch */,
+				9E9E3FCF4D152B2F532520F1A3F0CD97 /* SwiftyJSON-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		E1BEE35C647F5DD11B8A3FCB234C3013 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F36373BA4A94EAC0D5E533E869ED841 /* IQKeyboardManager.modulemap */,
+				9111C3DD7F4DE634FF65936BEADD06E4 /* IQKeyboardManager.xcconfig */,
+				B0B8B09480FAD38A00028A45EC9A9776 /* IQKeyboardManager-dummy.m */,
+				00164BAF57E43AA3F5B0A1B699BFAAFE /* IQKeyboardManager-Info.plist */,
+				4B8A210896143652E0023793B231D067 /* IQKeyboardManager-prefix.pch */,
+				B055E47DAA75FB2E44BCF789F56D54DB /* IQKeyboardManager-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IQKeyboardManager";
+			sourceTree = "<group>";
+		};
+		F139EA2C10C24EBEE83E99E63928CE1D /* QRCodeReader.swift */ = {
+			isa = PBXGroup;
+			children = (
+				FAE140986275ADA31A5E2FF5291C9F20 /* QRCodeReader.swift */,
+				07BFFEC12A73B8E005FE683B9BE2C372 /* QRCodeReaderResult.swift */,
+				A5162AB50A16790CA2F77FB557AD4D92 /* QRCodeReaderView.swift */,
+				E8F81B83CC6678A35EBE4ACF5B1E7817 /* QRCodeReaderViewContainer.swift */,
+				C3A9360561632E7F5DD9F5753471CB75 /* QRCodeReaderViewController.swift */,
+				BC690945D9BCBFD2CE1158F9DBEE4C41 /* QRCodeReaderViewControllerBuilder.swift */,
+				3BF9052F34AD9BBF7BA73D5ED297D0F8 /* QRCodeReaderViewControllerDelegate.swift */,
+				C0BF44C85FA30CF3785C325538913887 /* ReaderOverlayView.swift */,
+				91D4B9DA27A6A75FCF72572B4C909B40 /* SwitchCameraButton.swift */,
+				FF22C3B6C761C8009186D18829E058BE /* ToggleTorchButton.swift */,
+				81D2F0B39EB1FC2031854CA3803BBA46 /* Support Files */,
+			);
+			name = QRCodeReader.swift;
+			path = QRCodeReader.swift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -655,19 +794,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		74BB3829BD63017734FFE2EC17C79E1B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CD1AE8626ED8E244A82561100F15BBF /* SPAlert-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9271216CEBB67BB4E1DB250ACF74C91E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7F74F071867B13EADBE8A2F3CF13AF06 /* QRCodeReader.swift-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A29D4EB414DA132155C976DDE56E8B0B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A515CC7F86BF7EBC950FF9E903D4969F /* Pods-instapass-guard-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -687,26 +826,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F48012A46924710AAE3FCF461E3B6A56 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DFD7599E3A19075E5CB9AB40DD5F658 /* Pods-instapass-guard-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		1136F07BD2BD9B0E27C45D9C3E619924 /* Pods-instapass-guard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 819C0DED4721CBB7CF310B6C6617D5B2 /* Build configuration list for PBXNativeTarget "Pods-instapass-guard" */;
+			buildConfigurationList = A9DF03CE88BF5ABA409BECE3B48BF44B /* Build configuration list for PBXNativeTarget "Pods-instapass-guard" */;
 			buildPhases = (
-				A29D4EB414DA132155C976DDE56E8B0B /* Headers */,
-				BCB197327168B5B68DA88C31238856AE /* Sources */,
-				7B24C71B7BC28CD597CEE07F29F0337B /* Frameworks */,
-				087A0A12B2FDAE16A72D5DFB11AC2214 /* Resources */,
+				F48012A46924710AAE3FCF461E3B6A56 /* Headers */,
+				DF67576872D7434BB38D8A060060013A /* Sources */,
+				7DA2E85F13A47DB65D9C2AD91D79C65A /* Frameworks */,
+				68A2B38FDDD37DE4AB54A720D9E58BBB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3A4DDD0581A4E7E4949CE874DBD0A760 /* PBXTargetDependency */,
-				E5F5C659CC2AFA254FF244583197C61B /* PBXTargetDependency */,
-				291FA0CCC30D6AA8F956C6B8AC1EFE8C /* PBXTargetDependency */,
-				69839FBE9B294691CF08C39DEBE5CF04 /* PBXTargetDependency */,
-				071395B98A14935F1B834BA056C71B80 /* PBXTargetDependency */,
+				8C8B39DF385702535903FF07E8C40AC4 /* PBXTargetDependency */,
+				441E6E14A04B8299D60EA8FB9B17D807 /* PBXTargetDependency */,
+				FC896FF0EAC5042EE68D245B5A289A96 /* PBXTargetDependency */,
+				4F8D5A4026AC5F533635DB261EBA60D5 /* PBXTargetDependency */,
+				A5ADBA1D72B1399FACD5F9AD43276526 /* PBXTargetDependency */,
+				E0FA3E25C42898862580E553C92B8F45 /* PBXTargetDependency */,
 			);
 			name = "Pods-instapass-guard";
 			productName = "Pods-instapass-guard";
@@ -749,6 +897,24 @@
 			name = "Alamofire-SwiftyJSON";
 			productName = "Alamofire-SwiftyJSON";
 			productReference = BDF6136650C912756E10B2E3F289789C /* Alamofire_SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B4652B2924FE3B941944F77DA8477ABD /* SPAlert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F35B89C33482B95A50D35C9AA3A1737 /* Build configuration list for PBXNativeTarget "SPAlert" */;
+			buildPhases = (
+				74BB3829BD63017734FFE2EC17C79E1B /* Headers */,
+				2DCEBED2B85ADC3050BD04AD66425765 /* Sources */,
+				A4BE5689AA381FCCB294FB8044E12140 /* Frameworks */,
+				F7DBB9DD23A261E49FE6BDD4E44F7F54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SPAlert;
+			productName = SPAlert;
+			productReference = BE629661A28417489F63DBC74196BBD6 /* SPAlert.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */ = {
@@ -834,7 +1000,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -842,7 +1008,7 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = DB02A28EA8DD6F80DA688931282ACB01 /* Products */;
+			productRefGroup = 594EC3744DE361893E5C00F0ACC03620 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -852,19 +1018,13 @@
 				1136F07BD2BD9B0E27C45D9C3E619924 /* Pods-instapass-guard */,
 				F65E1C392EA66EC9E0B02B109C97BFE1 /* Pods-instapass-guardTests */,
 				29F475E46142FCD224E52A385AD26DB6 /* QRCodeReader.swift */,
+				B4652B2924FE3B941944F77DA8477ABD /* SPAlert */,
 				D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		087A0A12B2FDAE16A72D5DFB11AC2214 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1251C8C3E80DC124F64D7818201EECA8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -893,6 +1053,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		68A2B38FDDD37DE4AB54A720D9E58BBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B85923D0EB4611B7AFD80A7DA0E78598 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -901,6 +1068,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CA228636590A3847FB720039AE664010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DBB9DD23A261E49FE6BDD4E44F7F54 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -924,6 +1098,43 @@
 			files = (
 				1E57243855864342901DA2D577ED32BF /* Alamofire-SwiftyJSON-dummy.m in Sources */,
 				F6D72FF41E6DA79B23CC6581E993D4D4 /* Alamofire-SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DCEBED2B85ADC3050BD04AD66425765 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55E9BE5C94449A89DDA620CC7CD8D963 /* SPAlert-dummy.m in Sources */,
+				62469D28BEF369846DE0363847B2BBF0 /* SPAlert.swift in Sources */,
+				E586B14CD3CDAA734B5D21B6180B7337 /* SPAlertHaptic.swift in Sources */,
+				9A16A01BDFAF2732A834D9AE7B3DA4F4 /* SPAlertIconAddView.swift in Sources */,
+				1D0CF762FBEC65B4A8B54ECE47BD0EF4 /* SPAlertIconAnimatable.swift in Sources */,
+				B342B7923F83478FCA1F34E35F246FF7 /* SPAlertIconBoltView.swift in Sources */,
+				C62456707B7B4B1808640EB45BA5F1CF /* SPAlertIconBookmarkView.swift in Sources */,
+				AE7F380121838061BFEB5AE13409CF5D /* SPAlertIconCardView.swift in Sources */,
+				912EA6EFBB309291B18DA40BACDB4EB4 /* SPAlertIconCartView.swift in Sources */,
+				5228087BBD99D3884C2A82B2F9780AB9 /* SPAlertIconDislikeView.swift in Sources */,
+				8DBD9A7F5FBF18D00DEAAC0E2D5B23D4 /* SPAlertIconDocView.swift in Sources */,
+				8B1285453AA9FD9A725AAB9E6288A826 /* SPAlertIconDoneView.swift in Sources */,
+				48CFAF902B40514E00AA1458395218AD /* SPAlertIconEjectView.swift in Sources */,
+				A8451C8DBC33B8B4D9DF3F2372DE6260 /* SPAlertIconErrorView.swift in Sources */,
+				858720387837E0AB13C8068A0FF2C771 /* SPAlertIconExclamationView.swift in Sources */,
+				161FBB221B786E78A6D9B9B402EB794B /* SPAlertIconFlagView.swift in Sources */,
+				CE872D535C7C19E9930A8B5EF9E03060 /* SPAlertIconHeartView.swift in Sources */,
+				18EF6526C3F2639E944E9494EDE0A357 /* SPAlertIconLikeView.swift in Sources */,
+				0E6439134E5F915B48C7421A462B2A5A /* SPAlertIconMessageView.swift in Sources */,
+				561F3EA35F1EADE9A15E6416EF2409EA /* SPAlertIconMoonView.swift in Sources */,
+				34D111B03F09C063F0EA283A3A8A48C2 /* SPAlertIconPrivacyView.swift in Sources */,
+				B8FE45402E6BB8AF9D65BECCF8A807F4 /* SPAlertIconQuestionView.swift in Sources */,
+				9ECFFC120A53B933BBF5ECA791822A14 /* SPAlertIconRepeatView.swift in Sources */,
+				4F508BF7125DE338B06FD3BDB8B00452 /* SPAlertIconRotateView.swift in Sources */,
+				9AA562C9B78B53B926EB329E496310C4 /* SPAlertIconSearchView.swift in Sources */,
+				A87FE0E352F9754F8361D58A2159E0DE /* SPAlertIconShuffleView.swift in Sources */,
+				9B001D82A37E3327948CD1769630EA2C /* SPAlertIconStarView.swift in Sources */,
+				F2D313F366EB899FC63EF01A50ED23A9 /* SPAlertLayout.swift in Sources */,
+				C9EFDE3D7436287B2F5C198FC0A8DB68 /* SPAlertPreset.swift in Sources */,
+				EA700BFB4616897545550ED4A5458BB4 /* SPAlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1000,34 +1211,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BCB197327168B5B68DA88C31238856AE /* Sources */ = {
+		DF67576872D7434BB38D8A060060013A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFCC9A3424D831242CFE74E85E068E77 /* Pods-instapass-guard-dummy.m in Sources */,
+				EA239FEC3E6423F87606D8B0F285BD90 /* Pods-instapass-guard-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		071395B98A14935F1B834BA056C71B80 /* PBXTargetDependency */ = {
+		441E6E14A04B8299D60EA8FB9B17D807 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SwiftyJSON;
-			target = D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */;
-			targetProxy = 66AEA58E8E84DD544FF90EA81AE50F82 /* PBXContainerItemProxy */;
+			name = "Alamofire-SwiftyJSON";
+			target = 78B0645ACBF4869373A8E6BBCFAA7F63 /* Alamofire-SwiftyJSON */;
+			targetProxy = 85E9C5D3E1793C01918C4239AB846A7B /* PBXContainerItemProxy */;
 		};
-		291FA0CCC30D6AA8F956C6B8AC1EFE8C /* PBXTargetDependency */ = {
+		4F8D5A4026AC5F533635DB261EBA60D5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = IQKeyboardManager;
-			target = FBA456CB50E371584C11231929A0971E /* IQKeyboardManager */;
-			targetProxy = 9664A3089391662A8B45EFC2F81D95C9 /* PBXContainerItemProxy */;
-		};
-		3A4DDD0581A4E7E4949CE874DBD0A760 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
-			targetProxy = 9DC27E308160458902C3E67CBAC56925 /* PBXContainerItemProxy */;
+			name = QRCodeReader.swift;
+			target = 29F475E46142FCD224E52A385AD26DB6 /* QRCodeReader.swift */;
+			targetProxy = 688DBABB58D7F15AFB9E9F5B540FD2AF /* PBXContainerItemProxy */;
 		};
 		5134CF9E00B14BA8FE8E7599EA588A33 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1035,11 +1240,17 @@
 			target = 1136F07BD2BD9B0E27C45D9C3E619924 /* Pods-instapass-guard */;
 			targetProxy = 78CC7B94539CEAB52C8E2E955324B5B5 /* PBXContainerItemProxy */;
 		};
-		69839FBE9B294691CF08C39DEBE5CF04 /* PBXTargetDependency */ = {
+		8C8B39DF385702535903FF07E8C40AC4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = QRCodeReader.swift;
-			target = 29F475E46142FCD224E52A385AD26DB6 /* QRCodeReader.swift */;
-			targetProxy = F856FEEF9427DF026C040085216D838D /* PBXContainerItemProxy */;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 7D057CA8B3826E3E144A5C50C4D1F774 /* PBXContainerItemProxy */;
+		};
+		A5ADBA1D72B1399FACD5F9AD43276526 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SPAlert;
+			target = B4652B2924FE3B941944F77DA8477ABD /* SPAlert */;
+			targetProxy = F75BD0370C989C760E4568A5F535685E /* PBXContainerItemProxy */;
 		};
 		B51A4AF221A22763BBF8B0DF5012CFDA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1053,11 +1264,17 @@
 			target = D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */;
 			targetProxy = 72AFF7E30805A6622083BD59EC5F1F69 /* PBXContainerItemProxy */;
 		};
-		E5F5C659CC2AFA254FF244583197C61B /* PBXTargetDependency */ = {
+		E0FA3E25C42898862580E553C92B8F45 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Alamofire-SwiftyJSON";
-			target = 78B0645ACBF4869373A8E6BBCFAA7F63 /* Alamofire-SwiftyJSON */;
-			targetProxy = 3AD61DF078B01D4FAD1CD64D1A237BA3 /* PBXContainerItemProxy */;
+			name = SwiftyJSON;
+			target = D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */;
+			targetProxy = FA5597CBBFA7D8017256EE073E0CD6FB /* PBXContainerItemProxy */;
+		};
+		FC896FF0EAC5042EE68D245B5A289A96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IQKeyboardManager;
+			target = FBA456CB50E371584C11231929A0971E /* IQKeyboardManager */;
+			targetProxy = 0F3C1BAE7A96BFF4E86D61735BE775B0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1122,9 +1339,46 @@
 			};
 			name = Release;
 		};
+		210AF6AAC6F96497B4F9321E859A23DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8F085578A02B4AE4D67E7EEA8CE3F2F /* SPAlert.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SPAlert/SPAlert-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SPAlert/SPAlert-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SPAlert/SPAlert.modulemap";
+				PRODUCT_MODULE_NAME = SPAlert;
+				PRODUCT_NAME = SPAlert;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		248DEA7E0ECA7C1B15225A94932B7B19 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B2388382C884FFE601CA3C862455F5B /* IQKeyboardManager.xcconfig */;
+			baseConfigurationReference = 9111C3DD7F4DE634FF65936BEADD06E4 /* IQKeyboardManager.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1160,7 +1414,7 @@
 		};
 		30783569826D674FBC49A064A2BAEDA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E19728FFC328CF76C28DCAE5E7467967 /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = E8D5945A7C9649CDD389829A470DB829 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1195,7 +1449,7 @@
 		};
 		3DB965EF751BB9473EDBC81836D7003D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D5BA31FE4D3B12C86F02B456F2811D0 /* QRCodeReader.swift.xcconfig */;
+			baseConfigurationReference = 1372AB9A9DADC0CE86EAA2CDF02F538E /* QRCodeReader.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1228,7 +1482,78 @@
 			};
 			name = Debug;
 		};
-		66B9F3F3C2D657821FF735235DC86D12 /* Debug */ = {
+		5F3B940D85A846357192B125DA683616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8F085578A02B4AE4D67E7EEA8CE3F2F /* SPAlert.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SPAlert/SPAlert-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SPAlert/SPAlert-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SPAlert/SPAlert.modulemap";
+				PRODUCT_MODULE_NAME = SPAlert;
+				PRODUCT_NAME = SPAlert;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		75BBB760DFD877E344322B54D29DFE64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08B11BDEA5EDE2DAD2AEAE1706425830 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		80CCA4CFB7B5F3589A0CDED2836F2B27 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 19D04B18E5588749BE9B580BA3F399D5 /* Pods-instapass-guard.debug.xcconfig */;
 			buildSettings = {
@@ -1266,78 +1591,7 @@
 			};
 			name = Debug;
 		};
-		75BBB760DFD877E344322B54D29DFE64 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57A46C0AB1267113032F8E57EE93598E /* Alamofire.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				PRODUCT_MODULE_NAME = Alamofire;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A16FCCC7958DC5015B4163DB933AAF88 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D5BA31FE4D3B12C86F02B456F2811D0 /* QRCodeReader.swift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/QRCodeReader.swift/QRCodeReader.swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/QRCodeReader.swift/QRCodeReader.swift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/QRCodeReader.swift/QRCodeReader.swift.modulemap";
-				PRODUCT_MODULE_NAME = QRCodeReader;
-				PRODUCT_NAME = QRCodeReader;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B6525BDC80187974E0F9F1791058182E /* Release */ = {
+		8670A33ED8D825BB7E7DAF3114A2891F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 28C820A095C651B4C7B0734B0D351A29 /* Pods-instapass-guard.release.xcconfig */;
 			buildSettings = {
@@ -1376,9 +1630,45 @@
 			};
 			name = Release;
 		};
+		A16FCCC7958DC5015B4163DB933AAF88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1372AB9A9DADC0CE86EAA2CDF02F538E /* QRCodeReader.swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/QRCodeReader.swift/QRCodeReader.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QRCodeReader.swift/QRCodeReader.swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/QRCodeReader.swift/QRCodeReader.swift.modulemap";
+				PRODUCT_MODULE_NAME = QRCodeReader;
+				PRODUCT_NAME = QRCodeReader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		BA73513CFB3B2595344CAC5898246720 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49ABC5D0FC60CE0E9825E94EF563FE70 /* Alamofire-SwiftyJSON.xcconfig */;
+			baseConfigurationReference = C0FAEB59B1DBD7ACFB335150762DFC0E /* Alamofire-SwiftyJSON.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1414,7 +1704,7 @@
 		};
 		C3ABEB0A5B7DFEE4C27F58A330A13B68 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B2388382C884FFE601CA3C862455F5B /* IQKeyboardManager.xcconfig */;
+			baseConfigurationReference = 9111C3DD7F4DE634FF65936BEADD06E4 /* IQKeyboardManager.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1449,7 +1739,7 @@
 		};
 		E3092E276AA8094132BD8B1391F1CC2F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E19728FFC328CF76C28DCAE5E7467967 /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = E8D5945A7C9649CDD389829A470DB829 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1626,7 +1916,7 @@
 		};
 		F3924E67E488C5BE2014F2CAC1571025 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49ABC5D0FC60CE0E9825E94EF563FE70 /* Alamofire-SwiftyJSON.xcconfig */;
+			baseConfigurationReference = C0FAEB59B1DBD7ACFB335150762DFC0E /* Alamofire-SwiftyJSON.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1661,7 +1951,7 @@
 		};
 		F94FD07C591B17B7E61A1528AB9BCB3B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57A46C0AB1267113032F8E57EE93598E /* Alamofire.xcconfig */;
+			baseConfigurationReference = 08B11BDEA5EDE2DAD2AEAE1706425830 /* Alamofire.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1725,11 +2015,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		819C0DED4721CBB7CF310B6C6617D5B2 /* Build configuration list for PBXNativeTarget "Pods-instapass-guard" */ = {
+		9F35B89C33482B95A50D35C9AA3A1737 /* Build configuration list for PBXNativeTarget "SPAlert" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				66B9F3F3C2D657821FF735235DC86D12 /* Debug */,
-				B6525BDC80187974E0F9F1791058182E /* Release */,
+				5F3B940D85A846357192B125DA683616 /* Debug */,
+				210AF6AAC6F96497B4F9321E859A23DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1739,6 +2029,15 @@
 			buildConfigurations = (
 				F3924E67E488C5BE2014F2CAC1571025 /* Debug */,
 				BA73513CFB3B2595344CAC5898246720 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9DF03CE88BF5ABA409BECE3B48BF44B /* Build configuration list for PBXNativeTarget "Pods-instapass-guard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80CCA4CFB7B5F3589A0CDED2836F2B27 /* Debug */,
+				8670A33ED8D825BB7E7DAF3114A2891F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

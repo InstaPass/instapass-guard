@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		57B32FFAC1D451ACA78362A3 /* Pods_instapass_guard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083FE2A2BC5C127FEAFB14FD /* Pods_instapass_guard.framework */; };
 		82ACD892942DCEDBE6610341 /* Pods_instapass_guardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77999AFF8ED6DBDF28351B01 /* Pods_instapass_guardTests.framework */; };
+		8A13C6902468D0C3006CA98B /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A13C68F2468D0C3006CA98B /* UserTableViewController.swift */; };
+		8A13C69F2468D19C006CA98B /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A13C69D2468D19C006CA98B /* RequestManager.swift */; };
+		8A13C6A02468D19C006CA98B /* RequestEnumerates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A13C69E2468D19C006CA98B /* RequestEnumerates.swift */; };
+		8A13C6A22468D1A9006CA98B /* UserPrefInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A13C6A12468D1A9006CA98B /* UserPrefInitializer.swift */; };
+		8A13C6A42468D1B2006CA98B /* LoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A13C6A32468D1B2006CA98B /* LoginHelper.swift */; };
+		8A13C6A62468D241006CA98B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A13C6A52468D241006CA98B /* LoginViewController.swift */; };
+		8A13C6A82468D2A0006CA98B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A13C6A72468D2A0006CA98B /* Utils.swift */; };
 		8A5F2C20245303BC003E636C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5F2C1F245303BC003E636C /* AppDelegate.swift */; };
 		8A5F2C22245303BC003E636C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5F2C21245303BC003E636C /* SceneDelegate.swift */; };
 		8A5F2C24245303BC003E636C /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5F2C23245303BC003E636C /* ScanViewController.swift */; };
@@ -35,6 +42,13 @@
 		08ED6AFFE276571FE8B95CB3 /* Pods-instapass-guardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instapass-guardTests.debug.xcconfig"; path = "Target Support Files/Pods-instapass-guardTests/Pods-instapass-guardTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3BEA930918EC248EF3EEB851 /* Pods-instapass-guardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instapass-guardTests.release.xcconfig"; path = "Target Support Files/Pods-instapass-guardTests/Pods-instapass-guardTests.release.xcconfig"; sourceTree = "<group>"; };
 		77999AFF8ED6DBDF28351B01 /* Pods_instapass_guardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instapass_guardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A13C68F2468D0C3006CA98B /* UserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
+		8A13C69D2468D19C006CA98B /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		8A13C69E2468D19C006CA98B /* RequestEnumerates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestEnumerates.swift; sourceTree = "<group>"; };
+		8A13C6A12468D1A9006CA98B /* UserPrefInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPrefInitializer.swift; sourceTree = "<group>"; };
+		8A13C6A32468D1B2006CA98B /* LoginHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginHelper.swift; sourceTree = "<group>"; };
+		8A13C6A52468D241006CA98B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8A13C6A72468D2A0006CA98B /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		8A5F2C1C245303BC003E636C /* InstaPass (Guard).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InstaPass (Guard).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5F2C1F245303BC003E636C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A5F2C21245303BC003E636C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +95,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8A13C6922468D13C006CA98B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8A13C6A32468D1B2006CA98B /* LoginHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		8A13C6952468D155006CA98B /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				8A13C6A12468D1A9006CA98B /* UserPrefInitializer.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		8A13C6982468D161006CA98B /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				8A13C69E2468D19C006CA98B /* RequestEnumerates.swift */,
+				8A13C69D2468D19C006CA98B /* RequestManager.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
 		8A5F2C13245303BC003E636C = {
 			isa = PBXGroup;
 			children = (
@@ -105,12 +144,16 @@
 		8A5F2C1E245303BC003E636C /* instapass-guard */ = {
 			isa = PBXGroup;
 			children = (
+				8A13C6982468D161006CA98B /* Requests */,
+				8A13C6952468D155006CA98B /* Preferences */,
+				8A13C6922468D13C006CA98B /* Helper */,
 				8A9F444C245477150005FD01 /* Delegate */,
 				8A9F444B2454770F0005FD01 /* VC */,
 				8A5F2C27245303BC003E636C /* Main.storyboard */,
 				8A5F2C2A245303BD003E636C /* Assets.xcassets */,
 				8A5F2C2C245303BD003E636C /* LaunchScreen.storyboard */,
 				8A5F2C2F245303BD003E636C /* Info.plist */,
+				8A13C6A72468D2A0006CA98B /* Utils.swift */,
 			);
 			path = "instapass-guard";
 			sourceTree = "<group>";
@@ -137,6 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				8A5F2C23245303BC003E636C /* ScanViewController.swift */,
+				8A13C68F2468D0C3006CA98B /* UserTableViewController.swift */,
+				8A13C6A52468D241006CA98B /* LoginViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -331,9 +376,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A13C6A62468D241006CA98B /* LoginViewController.swift in Sources */,
 				8A5F2C24245303BC003E636C /* ScanViewController.swift in Sources */,
 				8A5F2C20245303BC003E636C /* AppDelegate.swift in Sources */,
+				8A13C6902468D0C3006CA98B /* UserTableViewController.swift in Sources */,
 				8A5F2C22245303BC003E636C /* SceneDelegate.swift in Sources */,
+				8A13C6A82468D2A0006CA98B /* Utils.swift in Sources */,
+				8A13C6A22468D1A9006CA98B /* UserPrefInitializer.swift in Sources */,
+				8A13C6A42468D1B2006CA98B /* LoginHelper.swift in Sources */,
+				8A13C6A02468D19C006CA98B /* RequestEnumerates.swift in Sources */,
+				8A13C69F2468D19C006CA98B /* RequestManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,12 +5,14 @@ PODS:
     - SwiftyJSON (~> 4.0.0)
   - IQKeyboardManager (6.5.5)
   - QRCodeReader.swift (10.1.0)
+  - SPAlert (2.1.4)
   - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
   - Alamofire-SwiftyJSON
   - IQKeyboardManager
   - QRCodeReader.swift
+  - SPAlert
 
 SPEC REPOS:
   trunk:
@@ -18,6 +20,7 @@ SPEC REPOS:
     - Alamofire-SwiftyJSON
     - IQKeyboardManager
     - QRCodeReader.swift
+    - SPAlert
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -25,8 +28,9 @@ SPEC CHECKSUMS:
   Alamofire-SwiftyJSON: 2b3649d57dc7bb2880fb8b86f8bb969397666916
   IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
   QRCodeReader.swift: 373a389fe9a22d513c879a32a6f647c58f4ef572
+  SPAlert: 1a8afa1c6ac86a82ab5b2cfdf7f9a51e68cb6c0c
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 52e9cdfe240bc06272e0d5501bfe0a8d4317f18d
+PODFILE CHECKSUM: 87c999e45d02b9f80c5aa06788983336c7d08f2b
 
 COCOAPODS: 1.8.4

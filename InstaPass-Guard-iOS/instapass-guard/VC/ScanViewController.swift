@@ -9,6 +9,7 @@
 import AVFoundation
 import QRCodeReader
 import UIKit
+import SPAlert
 
 class ScanViewController: UIViewController, QRCodeReaderViewControllerDelegate {
     override func viewDidLoad() {
@@ -23,7 +24,7 @@ class ScanViewController: UIViewController, QRCodeReaderViewControllerDelegate {
             $0.reader = QRCodeReader(metadataObjectTypes: [.qr], captureDevicePosition: .back)
 
             // Configure the view controller (optional)
-            $0.showTorchButton = true
+            $0.showTorchButton = false
             $0.showSwitchCameraButton = false
             $0.showCancelButton = true
             $0.showOverlayView = true
@@ -40,15 +41,35 @@ class ScanViewController: UIViewController, QRCodeReaderViewControllerDelegate {
 
         // Or by using the closure pattern
         readerVC.completionBlock = { (result: QRCodeReaderResult?) in
-            print("scan qrcode content: \(String(describing: result))")
+            if result == nil {
+                return
+            }
+            print("scan qrcode content: \(result!.value)")
             
-            DispatchQueue.main.async {
-                let alert = UIAlertController(title: "Scan Result", message: String(describing: result), preferredStyle: .alert)
-
-                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                alert.addAction(UIAlertAction(title: "Copy", style: .cancel, handler: nil))
-
-                self.present(alert, animated: true)
+//            DispatchQueue.main.async {
+//                let alert = UIAlertController(title: "Scan Result", message: String(describing: result), preferredStyle: .alert)
+//
+//                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+//                alert.addAction(UIAlertAction(title: "Copy", style: .cancel, handler: nil))
+//
+//                self.present(alert, animated: true)
+//            }
+            let secretValue = result!.value
+            if secretValue.hasPrefix("instapass{") && secretValue.hasSuffix("}") {
+                RequestManager.request(type: .post,
+                                       feature: .validate,
+                                       params: [
+                                        "secret": secretValue,
+                                        "reason": "TODO: 这里还没写"
+                ], success: { jsonResponse in
+                    DispatchQueue.main.async {
+                        SPAlert.present(title: "请求成功", message: "此出入申请已被批准。服务器说「\(jsonResponse["validation"].stringValue)」。", image: UIImage(systemName: "checkmark.shield")!)
+                    }
+                }, failure: { errorMsg in
+                    SPAlert.present(title: "请求失败", message: "此出入申请未被批准。服务器报告了一个「 \(errorMsg)」错误。", image: UIImage(systemName: "multiply")!)
+                })
+            } else {
+                SPAlert.present(title: "扫描 QR 码失败", message: "这不是一个合法的 InstaPass QR 码。", image: UIImage(systemName: "multiply")!)
             }
         }
 
