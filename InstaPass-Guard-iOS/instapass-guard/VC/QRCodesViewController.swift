@@ -19,9 +19,13 @@ class QRCodesViewController: PageboyViewController, PageboyViewControllerDataSou
         refreshCommunities()
         delegate = self
         dataSource = self
-        isUserInteractionEnabled = false
     }
     
+    func reloadCards() {
+        for viewController in viewControllers {
+            (viewController as? QRCodeChildPageViewController)?.refreshQRCode()
+        }
+    }
 
     var viewControllers: [UIViewController] = []
     
@@ -50,21 +54,25 @@ class QRCodesViewController: PageboyViewController, PageboyViewControllerDataSou
                                didScrollTo position: CGPoint,
                                direction: NavigationDirection,
                                animated: Bool) {
-        
     }
 
     func pageboyViewController(_ pageboyViewController: PageboyViewController, didReloadWith currentViewController: UIViewController, currentPageIndex: PageboyViewController.PageIndex) {
-        // idiot PageBoy
+        
     }
     
     func pageboyViewController(_ pageboyViewController: PageboyViewController, willScrollToPageAt index: PageboyViewController.PageIndex, direction: PageboyViewController.NavigationDirection, animated: Bool) {
-//        pgDelegate?.setCurrentPage(current: index)
+
     }
     
     
     func pageboyViewController(_ pageboyViewController: PageboyViewController, didScrollToPageAt index: PageboyViewController.PageIndex, direction: PageboyViewController.NavigationDirection, animated: Bool) {
-        // idiot PageBoy
-//        pgDelegate?.setCurrentPage(current: index)
+        if index == 0 {
+            parentVC?.typeSegmentationControl.selectedSegmentIndex = 0
+        } else {
+            parentVC?.typeSegmentationControl.selectedSegmentIndex = 1
+        }
+        
+        parentVC?.updateIssueLabel()
     }
     
     func pageboyViewController(_ pageboyViewController: PageboyViewController, didCancelScrollToPageAt index: PageboyViewController.PageIndex, returnToPageAt previousIndex: PageboyViewController.PageIndex) {

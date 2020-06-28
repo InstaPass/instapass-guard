@@ -37,6 +37,7 @@ class ScanViewController: UIViewController, QRCodeReaderViewControllerDelegate {
     }()
 
     @IBAction func startScan(_ sender: UIButton) {
+        sender.isEnabled = false
         // Retrieve the QRCode content
         // By using the delegate pattern
         readerVC.delegate = self
@@ -58,7 +59,9 @@ class ScanViewController: UIViewController, QRCodeReaderViewControllerDelegate {
         // Presents the readerVC as modal form sheet
         readerVC.modalPresentationStyle = .formSheet
 
-        present(readerVC, animated: true, completion: nil)
+        present(readerVC, animated: true, completion: {
+            sender.isEnabled = true
+        })
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -360,19 +360,21 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="b3W-Yr-4oP">
                                         <rect key="frame" x="0.0" y="230" width="160" height="34"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="其他" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MTP-rX-mpJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="118" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="其他事由" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MTP-rX-mpJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="123" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
-                                                    <action selector="onTextChanged:" destination="NDy-7X-mOQ" eventType="valueChanged" id="RLW-8y-j7O"/>
+                                                    <action selector="onTextChanged:" destination="NDy-7X-mOQ" eventType="editingDidBegin" id="QDq-8p-e8k"/>
+                                                    <action selector="onTextChanged:" destination="NDy-7X-mOQ" eventType="editingDidEnd" id="Y4q-sl-XEr"/>
+                                                    <action selector="onTextChanged:" destination="NDy-7X-mOQ" eventType="editingChanged" id="xz0-fS-WzT"/>
                                                 </connections>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5Q-n1-neT" customClass="RadiusButton" customModule="InstaPass__Guard_" customModuleProvider="target">
-                                                <rect key="frame" x="130" y="0.0" width="30" height="34"/>
-                                                <color key="backgroundColor" red="0.35102513429999999" green="0.58209806679999998" blue="0.67844754460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="好">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5Q-n1-neT" customClass="RadiusButton" customModule="InstaPass__Guard_" customModuleProvider="target">
+                                                <rect key="frame" x="135" y="0.0" width="25" height="34"/>
+                                                <color key="tintColor" red="0.35102513429999999" green="0.58209806679999998" blue="0.67844754460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal">
+                                                    <imageReference key="image" image="checkmark.circle.fill" catalog="system" symbolScale="large"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="customReasonTapped:" destination="NDy-7X-mOQ" eventType="touchUpInside" id="xpq-Xo-dmS"/>
@@ -421,18 +423,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OcM-qf-0Em">
-                                <rect key="frame" x="21.5" y="476" width="277" height="31"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7q-WC-csV">
+                                <rect key="frame" x="0.0" y="91" width="320" height="371"/>
+                                <connections>
+                                    <segue destination="p4E-JV-v04" kind="embed" identifier="QRCodeSegue" id="Yx4-ix-NWA"/>
+                                </connections>
+                            </containerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OcM-qf-0Em">
+                                <rect key="frame" x="61.5" y="438" width="197" height="69"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q11-Bc-Z8I">
-                                        <rect key="frame" x="0.0" y="0.0" width="72" height="31"/>
-                                        <state key="normal" title="Reasoning"/>
+                                        <rect key="frame" x="62.5" y="0.0" width="72" height="30"/>
+                                        <state key="normal" title="Reasoning">
+                                            <color key="titleColor" red="0.35102513429999999" green="0.58209806679999998" blue="0.67844754460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
                                         <connections>
                                             <action selector="reasoningButtonTapped:" destination="uke-gV-LNK" eventType="touchUpInside" id="tMs-iA-VuP"/>
                                         </connections>
                                     </button>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yvb-uA-ZaT">
-                                        <rect key="frame" x="80" y="0.0" width="197" height="32"/>
+                                        <rect key="frame" x="0.0" y="38" width="197" height="32"/>
                                         <segments>
                                             <segment title="临时出入凭证"/>
                                             <segment title="常住凭证"/>
@@ -443,12 +453,6 @@
                                     </segmentedControl>
                                 </subviews>
                             </stackView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7q-WC-csV">
-                                <rect key="frame" x="0.0" y="91" width="320" height="373"/>
-                                <connections>
-                                    <segue destination="p4E-JV-v04" kind="embed" identifier="QRCodeSegue" id="Yx4-ix-NWA"/>
-                                </connections>
-                            </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Eup-UZ-PMC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -457,7 +461,7 @@
                             <constraint firstItem="Eup-UZ-PMC" firstAttribute="bottom" secondItem="OcM-qf-0Em" secondAttribute="bottom" constant="12" id="C4b-Of-gCE"/>
                             <constraint firstItem="OcM-qf-0Em" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Eup-UZ-PMC" secondAttribute="leading" constant="12" id="Ec6-wY-DDF"/>
                             <constraint firstItem="e7q-WC-csV" firstAttribute="leading" secondItem="Eup-UZ-PMC" secondAttribute="leading" id="Qx5-Ct-dVt"/>
-                            <constraint firstItem="OcM-qf-0Em" firstAttribute="top" secondItem="e7q-WC-csV" secondAttribute="bottom" constant="12" id="VU9-wj-Ehi"/>
+                            <constraint firstItem="OcM-qf-0Em" firstAttribute="top" secondItem="e7q-WC-csV" secondAttribute="bottom" constant="-24" id="VU9-wj-Ehi"/>
                             <constraint firstItem="OcM-qf-0Em" firstAttribute="centerX" secondItem="wL1-Tu-AWa" secondAttribute="centerX" id="mDN-mO-Bmo"/>
                             <constraint firstItem="Eup-UZ-PMC" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OcM-qf-0Em" secondAttribute="trailing" constant="12" id="v12-4P-4QO"/>
                             <constraint firstItem="Eup-UZ-PMC" firstAttribute="trailing" secondItem="e7q-WC-csV" secondAttribute="trailing" id="zsg-BE-kUZ"/>
@@ -467,6 +471,7 @@
                     <connections>
                         <outlet property="navigationTitle" destination="8gn-CC-JAI" id="MpV-X3-eRY"/>
                         <outlet property="reasoningButton" destination="Q11-Bc-Z8I" id="VMd-hS-1dS"/>
+                        <outlet property="typeSegmentationControl" destination="yvb-uA-ZaT" id="GHN-Do-5ZX"/>
                         <segue destination="NDy-7X-mOQ" kind="show" identifier="tokenReasoningSegue" id="v0q-xJ-H4b"/>
                     </connections>
                 </viewController>
@@ -624,7 +629,7 @@
             <objects>
                 <viewController id="p4E-JV-v04" customClass="QRCodesViewController" customModule="InstaPass__Guard_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="woc-0a-Z24">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="373"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="371"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
                 </viewController>
@@ -640,6 +645,7 @@
         <image name="ProfileBg" width="2000" height="2000"/>
         <image name="arrow.clockwise.circle.fill" catalog="system" width="128" height="121"/>
         <image name="arrow.right.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.crop.square.fill.and.at.rectangle" catalog="system" width="128" height="93"/>
         <image name="qrcode.viewfinder" catalog="system" width="128" height="115"/>

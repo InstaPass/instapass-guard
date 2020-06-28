@@ -12,6 +12,8 @@ class ReleaseTokenViewController: UIViewController {
     
     var releaseTemporaryToken = true
 
+    @IBOutlet weak var typeSegmentationControl: UISegmentedControl!
+    
     var childVC: QRCodesViewController?
     
     @IBOutlet weak var navigationTitle: UINavigationItem!
@@ -23,7 +25,7 @@ class ReleaseTokenViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         updateNavigationTitle()
-        
+
         reasoningButton.setTitle(QRCodeManager.outingReason ?? "设定事由", for: .normal)
     }
     
@@ -31,15 +33,32 @@ class ReleaseTokenViewController: UIViewController {
         performSegue(withIdentifier: "tokenReasoningSegue", sender: self)
     }
     
+    func releaseTokenCallback() {
+        childVC?.reloadCards()
+        reasoningButton.setTitle(QRCodeManager.outingReason ?? "设定事由", for: .normal)
+    }
+    
     @IBAction func onSelectionChanged(_ sender: UISegmentedControl) {
-        releaseTemporaryToken = sender.selectedSegmentIndex == 0
-        updateNavigationTitle()
-        
+        updateIssueLabel()
         sender.isEnabled = false
         childVC?.scrollToPage(.at(index: sender.selectedSegmentIndex),
                               animated: true, completion: {_,_,_ in 
                                 sender.isEnabled = true
                               })
+    }
+    
+    func updateIssueLabel() {
+        releaseTemporaryToken = typeSegmentationControl.selectedSegmentIndex == 0
+        if releaseTemporaryToken {
+            UIButton.animate(withDuration: 0.2, animations: {
+                self.reasoningButton.alpha = 1
+            })
+        } else {
+            UIButton.animate(withDuration: 0.2, animations: {
+                self.reasoningButton.alpha = 0
+            })
+        }
+        updateNavigationTitle()
     }
     
     func updateNavigationTitle() {
@@ -63,6 +82,7 @@ class ReleaseTokenViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "QRCodeSegue" {
             childVC = segue.destination as? QRCodesViewController
+            childVC?.parentVC = self
         } else if segue.identifier == "tokenReasoningSegue" {
             (segue.destination as? ReasoningViewController)?.tokenParentVC = self
         }

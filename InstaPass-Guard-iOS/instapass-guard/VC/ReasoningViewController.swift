@@ -15,37 +15,48 @@ class ReasoningViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         onTextChanged(otherReasonText)
     }
+    
     @IBOutlet weak var okButton: RadiusButton!
     
     @IBAction func onTextChanged(_ sender: UITextField) {
-        okButton.isEnabled = (sender.text != nil && sender.text != "")
+        if sender.text == nil || sender.text == "" {
+            okButton.isEnabled = false
+        } else {
+            okButton.isEnabled = true
+        }
     }
     
+    var tapped: Bool = false
     @IBOutlet weak var otherReasonText: UITextField!
     override func viewDidDisappear(_ animated: Bool) {
-        parentVC?.reasoningCallback(reason: "未列明")
+        if !tapped {
+            parentVC?.reasoningCallback(reason: "未列明")
+        }
         super.viewDidDisappear(animated)
     }
     
     @IBAction func presetReasonTapped(_ sender: UIButton) {
+        tapped = true
+        navigationController?.popViewController(animated: true)
         if parentVC != nil {
             parentVC?.reasoningCallback(reason: sender.currentTitle ?? "未列明")
         } else {
             QRCodeManager.outingReason = sender.currentTitle
-            tokenParentVC?.reasoningButton.setTitle(sender.currentTitle ?? "设定事由", for: .normal)
+            tokenParentVC?.releaseTokenCallback()
         }
     }
     
     @IBAction func customReasonTapped(_ sender: UIButton) {
+        tapped = true
+        navigationController?.popViewController(animated: true)
         if parentVC != nil {
             parentVC?.reasoningCallback(reason: otherReasonText.text ?? "未列明")
         } else {
             QRCodeManager.outingReason = otherReasonText.text
-            tokenParentVC?.reasoningButton.setTitle(sender.currentTitle ?? "设定事由", for: .normal)
+            tokenParentVC?.releaseTokenCallback()
         }
     }
 
