@@ -22,8 +22,8 @@ class QRCodesViewController: PageboyViewController, PageboyViewControllerDataSou
     }
     
     func reloadCards() {
-        for viewController in viewControllers {
-            (viewController as? QRCodeChildPageViewController)?.refreshQRCode()
+        if viewControllers.count > 0 {
+            (viewControllers[0] as? QRCodeChildPageViewController)?.refreshQRCode()
         }
     }
 
