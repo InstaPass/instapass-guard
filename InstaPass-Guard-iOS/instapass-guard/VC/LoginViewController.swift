@@ -116,6 +116,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
         alertController.addAction(cancelAction)
+        
+        alertController.popoverPresentationController?.sourceView = loginImageView
+        alertController.popoverPresentationController?.sourceRect = loginImageView.bounds
         present(alertController, animated: true, completion: nil)
     }
 

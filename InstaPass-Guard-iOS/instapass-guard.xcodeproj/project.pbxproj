@@ -25,6 +25,12 @@
 		8A5F2C39245303BD003E636C /* instapass_guardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5F2C38245303BD003E636C /* instapass_guardTests.swift */; };
 		8A81ACB024552BBD008CF847 /* raw_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A81ACAF24552BBD008CF847 /* raw_dark.png */; };
 		8A82E3D424551B2F00008610 /* raw.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A82E3D324551B2F00008610 /* raw.png */; };
+		8A9D707E24A8649400B68040 /* ReleaseTokenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9D707D24A8649400B68040 /* ReleaseTokenViewController.swift */; };
+		8A9D708024A8673000B68040 /* QRCodeChildPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9D707F24A8673000B68040 /* QRCodeChildPageViewController.swift */; };
+		8A9D708224A867C200B68040 /* QRCodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9D708124A867C200B68040 /* QRCodeManager.swift */; };
+		8A9D708424A86AF200B68040 /* QRCodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9D708324A86AF200B68040 /* QRCodesViewController.swift */; };
+		8A9D708624A8707400B68040 /* RadiusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9D708524A8707400B68040 /* RadiusView.swift */; };
+		8A9D708824A8715400B68040 /* ReasoningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9D708724A8715400B68040 /* ReasoningViewController.swift */; };
 		8AEBB21224A85D98003E71BE /* Community.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBB21124A85D98003E71BE /* Community.swift */; };
 		8AEBB21524A85F4F003E71BE /* FadeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBB21424A85F4F003E71BE /* FadeAnimation.swift */; };
 		8AEBB21724A85F7E003E71BE /* BlurredTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBB21624A85F7E003E71BE /* BlurredTabBar.swift */; };
@@ -66,6 +72,12 @@
 		8A5F2C3A245303BD003E636C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A81ACAF24552BBD008CF847 /* raw_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = raw_dark.png; path = ../../Icons/raw_dark.png; sourceTree = "<group>"; };
 		8A82E3D324551B2F00008610 /* raw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = raw.png; path = ../../Icons/raw.png; sourceTree = "<group>"; };
+		8A9D707D24A8649400B68040 /* ReleaseTokenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseTokenViewController.swift; sourceTree = "<group>"; };
+		8A9D707F24A8673000B68040 /* QRCodeChildPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeChildPageViewController.swift; sourceTree = "<group>"; };
+		8A9D708124A867C200B68040 /* QRCodeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeManager.swift; sourceTree = "<group>"; };
+		8A9D708324A86AF200B68040 /* QRCodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodesViewController.swift; sourceTree = "<group>"; };
+		8A9D708524A8707400B68040 /* RadiusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusView.swift; sourceTree = "<group>"; };
+		8A9D708724A8715400B68040 /* ReasoningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReasoningViewController.swift; sourceTree = "<group>"; };
 		8AEBB21124A85D98003E71BE /* Community.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Community.swift; sourceTree = "<group>"; };
 		8AEBB21424A85F4F003E71BE /* FadeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeAnimation.swift; sourceTree = "<group>"; };
 		8AEBB21624A85F7E003E71BE /* BlurredTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurredTabBar.swift; sourceTree = "<group>"; };
@@ -107,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				8A13C6A32468D1B2006CA98B /* LoginHelper.swift */,
+				8A9D708124A867C200B68040 /* QRCodeManager.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -194,6 +207,11 @@
 				8A13C6A52468D241006CA98B /* LoginViewController.swift */,
 				8AEBB21624A85F7E003E71BE /* BlurredTabBar.swift */,
 				8AEBB21824A85FAA003E71BE /* MainTabViewController.swift */,
+				8A9D707D24A8649400B68040 /* ReleaseTokenViewController.swift */,
+				8A9D707F24A8673000B68040 /* QRCodeChildPageViewController.swift */,
+				8A9D708324A86AF200B68040 /* QRCodesViewController.swift */,
+				8A9D708524A8707400B68040 /* RadiusView.swift */,
+				8A9D708724A8715400B68040 /* ReasoningViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -404,6 +422,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A9D707E24A8649400B68040 /* ReleaseTokenViewController.swift in Sources */,
 				8A13C6A62468D241006CA98B /* LoginViewController.swift in Sources */,
 				8A5F2C24245303BC003E636C /* ScanViewController.swift in Sources */,
 				8A5F2C20245303BC003E636C /* AppDelegate.swift in Sources */,
@@ -413,10 +432,15 @@
 				8A13C6A22468D1A9006CA98B /* UserPrefInitializer.swift in Sources */,
 				8A13C6A42468D1B2006CA98B /* LoginHelper.swift in Sources */,
 				8A13C6A02468D19C006CA98B /* RequestEnumerates.swift in Sources */,
+				8A9D708424A86AF200B68040 /* QRCodesViewController.swift in Sources */,
 				8AEBB21224A85D98003E71BE /* Community.swift in Sources */,
 				8AEBB21924A85FAA003E71BE /* MainTabViewController.swift in Sources */,
+				8A9D708024A8673000B68040 /* QRCodeChildPageViewController.swift in Sources */,
+				8A9D708224A867C200B68040 /* QRCodeManager.swift in Sources */,
 				8AEBB21724A85F7E003E71BE /* BlurredTabBar.swift in Sources */,
 				8AEBB21524A85F4F003E71BE /* FadeAnimation.swift in Sources */,
+				8A9D708824A8715400B68040 /* ReasoningViewController.swift in Sources */,
+				8A9D708624A8707400B68040 /* RadiusView.swift in Sources */,
 				8A13C69F2468D19C006CA98B /* RequestManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

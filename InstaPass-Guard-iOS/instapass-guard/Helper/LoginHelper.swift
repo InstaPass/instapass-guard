@@ -25,11 +25,9 @@ class LoginHelper {
                                subUrl: nil,
                                params: loginParams,
                                success: { jsonResp in
-                                   LoginHelper.isLogin = true
                                    UserPrefInitializer.jwtToken = jsonResp["jwt_token"].stringValue
                                    handler(.ok)
                                }, failure: { _ in
-                                   LoginHelper.isLogin = false
                                    handler(.unauthorized)
                                    // TODO: fix this foolish response
                                    handler(.ok)

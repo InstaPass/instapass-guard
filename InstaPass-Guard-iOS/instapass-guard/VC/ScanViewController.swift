@@ -17,6 +17,8 @@ class ScanViewController: UIViewController, QRCodeReaderViewControllerDelegate {
         // Do any additional setup after loading the view.
     }
 
+    var currentSecret: String?
+    
     // Good practice: create the reader lazily to avoid cpu overload during the
     // initialization and each time we need to scan a QRCode
     lazy var readerVC: QRCodeReaderViewController = {
@@ -44,31 +46,10 @@ class ScanViewController: UIViewController, QRCodeReaderViewControllerDelegate {
             if result == nil {
                 return
             }
-            print("scan qrcode content: \(result!.value)")
-            
-//            DispatchQueue.main.async {
-//                let alert = UIAlertController(title: "Scan Result", message: String(describing: result), preferredStyle: .alert)
-//
-//                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-//                alert.addAction(UIAlertAction(title: "Copy", style: .cancel, handler: nil))
-//
-//                self.present(alert, animated: true)
-//            }
+
             let secretValue = result!.value
             if secretValue.hasPrefix("instapass{") && secretValue.hasSuffix("}") {
-                RequestManager.request(type: .post,
-                                       feature: .validate,
-                                       subUrl: nil,
-                                       params: [
-                                        "secret": secretValue,
-                                        "reason": "TODO: 这里还没写"
-                ], success: { jsonResponse in
-                    DispatchQueue.main.async {
-                        SPAlert.present(title: "请求成功", message: "此出入申请已被批准。服务器说「\(jsonResponse["validation"].stringValue)」。", image: UIImage(systemName: "checkmark.shield")!)
-                    }
-                }, failure: { errorMsg in
-                    SPAlert.present(title: "请求失败", message: "此出入申请未被批准。服务器报告了一个「 \(errorMsg)」错误。", image: UIImage(systemName: "multiply")!)
-                })
+                self.prepareRequest(secretValue: secretValue)
             } else {
                 SPAlert.present(title: "扫描 QR 码失败", message: "这不是一个合法的 InstaPass QR 码。", image: UIImage(systemName: "multiply")!)
             }
@@ -79,7 +60,36 @@ class ScanViewController: UIViewController, QRCodeReaderViewControllerDelegate {
 
         present(readerVC, animated: true, completion: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "outingReasonSegue" {
+            (segue.destination as? ReasoningViewController)?.parentVC = self
+        }
+    }
+    
+    func prepareRequest(secretValue: String) {
+        currentSecret = secretValue
+        performSegue(withIdentifier: "outingReasonSegue", sender: self)
+    }
 
+    func reasoningCallback(reason: String) {
+        if currentSecret == nil {
+            return
+        }
+        RequestManager.request(type: .post,
+                               feature: .validate,
+                               subUrl: nil,
+                               params: [
+                                "secret": currentSecret!,
+                                "reason": reason
+        ], success: { jsonResponse in
+            DispatchQueue.main.async {
+                SPAlert.present(title: "请求成功", message: "此出入申请已被批准。服务器说「\(jsonResponse["validation"].stringValue)」。", image: UIImage(systemName: "checkmark.shield")!)
+            }
+        }, failure: { errorMsg in
+            SPAlert.present(title: "请求失败", message: "此出入申请未被批准。服务器报告了一个「\(errorMsg)」错误。", image: UIImage(systemName: "multiply")!)
+        })
+    }
     // MARK: - QRCodeReaderViewController Delegate Methods
 
     func reader(_ reader: QRCodeReaderViewController, didScanResult result: QRCodeReaderResult) {

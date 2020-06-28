@@ -42,6 +42,10 @@ class UserTableViewController: UITableViewController {
         alertController.addAction(leaveAction)
         alertController.addAction(cancelAction)
         
+        let targetCell = tableView.cellForRow(at: IndexPath(row: 1, section: 1))
+        alertController.popoverPresentationController?.sourceView = targetCell
+        alertController.popoverPresentationController?.sourceRect = targetCell?.bounds ?? CGRect.zero
+        
         present(alertController, animated: true, completion: nil)
     }
     
