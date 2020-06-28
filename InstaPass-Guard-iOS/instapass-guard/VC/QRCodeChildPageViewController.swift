@@ -17,7 +17,7 @@ class QRCodeChildPageViewController: UIViewController {
     @IBOutlet var lastUpdateTextField: UILabel!
     
     var temporary: Bool = true
-    var reason: String?
+//    var reason: String?
     
     var parentVC: ReleaseTokenViewController?
     
@@ -89,7 +89,7 @@ class QRCodeChildPageViewController: UIViewController {
 
         refreshButton.isEnabled = false
         QRCodeManager.refreshQrCode(temporary: temporary,
-                                    reason: reason,
+                                    reason: QRCodeManager.outingReason,
                                     success: { _, time in
             self.flushQRCode()
             self.lastUpdateTextField.text = "已于 \(dateToString(time, dateFormat: "HH:mm")) 更新"
