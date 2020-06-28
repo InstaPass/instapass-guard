@@ -22,6 +22,7 @@ class LoginHelper {
         ]
         RequestManager.request(type: .post,
                                feature: .login,
+                               subUrl: nil,
                                params: loginParams,
                                success: { jsonResp in
                                    LoginHelper.isLogin = true
@@ -38,5 +39,6 @@ class LoginHelper {
     static func logout(handler: (RequestResponse) -> Void) {
         isLogin = false
         UserPrefInitializer.jwtToken = ""
+        handler(.ok)
     }
 }

@@ -3,14 +3,20 @@ PODS:
   - Alamofire-SwiftyJSON (3.0.0):
     - Alamofire (~> 4.5)
     - SwiftyJSON (~> 4.0.0)
+  - EFQRCode (5.1.6):
+    - EFQRCode/Core (= 5.1.6)
+  - EFQRCode/Core (5.1.6)
   - IQKeyboardManager (6.5.5)
+  - Pageboy (3.6.1)
   - QRCodeReader.swift (10.1.0)
   - SPAlert (2.1.4)
   - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
   - Alamofire-SwiftyJSON
+  - EFQRCode (~> 5.1.6)
   - IQKeyboardManager
+  - Pageboy (~> 3.6)
   - QRCodeReader.swift
   - SPAlert
 
@@ -18,7 +24,9 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - Alamofire-SwiftyJSON
+    - EFQRCode
     - IQKeyboardManager
+    - Pageboy
     - QRCodeReader.swift
     - SPAlert
     - SwiftyJSON
@@ -26,11 +34,13 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   Alamofire-SwiftyJSON: 2b3649d57dc7bb2880fb8b86f8bb969397666916
+  EFQRCode: a7ea2e517912f5bf6ba258b631327a83cd8084a5
   IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
+  Pageboy: 29a2d474ad99404b4d77f325e0ab6d705930a4fb
   QRCodeReader.swift: 373a389fe9a22d513c879a32a6f647c58f4ef572
   SPAlert: 1a8afa1c6ac86a82ab5b2cfdf7f9a51e68cb6c0c
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 87c999e45d02b9f80c5aa06788983336c7d08f2b
+PODFILE CHECKSUM: a6021085ac2c5b5dea107ccc72277ac659a3fc43
 
 COCOAPODS: 1.8.4

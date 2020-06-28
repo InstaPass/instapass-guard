@@ -21,24 +21,39 @@ class UserTableViewController: UITableViewController {
     }
     
     func switchUser() {
-        LoginHelper.logout(handler: { _ in
-            // handle logout stuff
-        })
-        performSegue(withIdentifier: "loginSegue", sender: self)
+        let alertController = UIAlertController(title: "真的要注销登录吗？",
+                                                message: "您将需要重新提供身份证明来再次登录。",
+                                                preferredStyle: .actionSheet)
+        
+        alertController.view.setTintColor()
+        
+        let leaveAction = UIAlertAction(title: "注销",
+                                        style: .destructive,
+                                        handler: { _ in
+                                            LoginHelper.logout(handler: { _ in
+                                                // handle logout stuff
+                                            })
+                                            self.performSegue(withIdentifier: "loginSegue", sender: self)
+                                         })
+        let cancelAction = UIAlertAction(title: "取消",
+                                         style: .cancel,
+                                         handler: nil)
+        
+        alertController.addAction(leaveAction)
+        alertController.addAction(cancelAction)
+        
+        present(alertController, animated: true, completion: nil)
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
 
-        if indexPath.section == 2 {
+        if indexPath.section == 1 {
             if indexPath.row == 0 {
-                // switch user
-                switchUser()
+                // preference
             } else if indexPath.section == 1 {
                 // quit
-                LoginHelper.logout(handler: {_ in
-                    // flush personal info
-                })
+                switchUser()
             }
         }
     }

@@ -11,9 +11,10 @@ target 'instapass-guard' do
     inherit! :search_paths
     # Pods for testing
   end
-
+  pod 'EFQRCode', '~> 5.1.6'
   pod 'Alamofire-SwiftyJSON'
   pod 'QRCodeReader.swift'
   pod 'IQKeyboardManager'
   pod 'SPAlert'
+  pod 'Pageboy', '~> 3.6'
 end

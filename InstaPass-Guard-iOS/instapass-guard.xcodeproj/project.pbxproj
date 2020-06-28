@@ -25,6 +25,10 @@
 		8A5F2C39245303BD003E636C /* instapass_guardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5F2C38245303BD003E636C /* instapass_guardTests.swift */; };
 		8A81ACB024552BBD008CF847 /* raw_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A81ACAF24552BBD008CF847 /* raw_dark.png */; };
 		8A82E3D424551B2F00008610 /* raw.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A82E3D324551B2F00008610 /* raw.png */; };
+		8AEBB21224A85D98003E71BE /* Community.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBB21124A85D98003E71BE /* Community.swift */; };
+		8AEBB21524A85F4F003E71BE /* FadeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBB21424A85F4F003E71BE /* FadeAnimation.swift */; };
+		8AEBB21724A85F7E003E71BE /* BlurredTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBB21624A85F7E003E71BE /* BlurredTabBar.swift */; };
+		8AEBB21924A85FAA003E71BE /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBB21824A85FAA003E71BE /* MainTabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,10 @@
 		8A5F2C3A245303BD003E636C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A81ACAF24552BBD008CF847 /* raw_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = raw_dark.png; path = ../../Icons/raw_dark.png; sourceTree = "<group>"; };
 		8A82E3D324551B2F00008610 /* raw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = raw.png; path = ../../Icons/raw.png; sourceTree = "<group>"; };
+		8AEBB21124A85D98003E71BE /* Community.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Community.swift; sourceTree = "<group>"; };
+		8AEBB21424A85F4F003E71BE /* FadeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeAnimation.swift; sourceTree = "<group>"; };
+		8AEBB21624A85F7E003E71BE /* BlurredTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurredTabBar.swift; sourceTree = "<group>"; };
+		8AEBB21824A85FAA003E71BE /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		B1D5F574E1F290EDC011291A /* Pods-instapass-guard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instapass-guard.debug.xcconfig"; path = "Target Support Files/Pods-instapass-guard/Pods-instapass-guard.debug.xcconfig"; sourceTree = "<group>"; };
 		FAD101A56FABCCBC4824824F /* Pods-instapass-guard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instapass-guard.release.xcconfig"; path = "Target Support Files/Pods-instapass-guard/Pods-instapass-guard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +152,8 @@
 		8A5F2C1E245303BC003E636C /* instapass-guard */ = {
 			isa = PBXGroup;
 			children = (
+				8AEBB21324A85F33003E71BE /* Animation */,
+				8AEBB21024A85D8E003E71BE /* Model */,
 				8A13C6982468D161006CA98B /* Requests */,
 				8A13C6952468D155006CA98B /* Preferences */,
 				8A13C6922468D13C006CA98B /* Helper */,
@@ -182,6 +192,8 @@
 				8A5F2C23245303BC003E636C /* ScanViewController.swift */,
 				8A13C68F2468D0C3006CA98B /* UserTableViewController.swift */,
 				8A13C6A52468D241006CA98B /* LoginViewController.swift */,
+				8AEBB21624A85F7E003E71BE /* BlurredTabBar.swift */,
+				8AEBB21824A85FAA003E71BE /* MainTabViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -193,6 +205,22 @@
 				8A5F2C21245303BC003E636C /* SceneDelegate.swift */,
 			);
 			path = Delegate;
+			sourceTree = "<group>";
+		};
+		8AEBB21024A85D8E003E71BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8AEBB21124A85D98003E71BE /* Community.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8AEBB21324A85F33003E71BE /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				8AEBB21424A85F4F003E71BE /* FadeAnimation.swift */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 		998FA45315F2D182A142B138 /* Pods */ = {
@@ -385,6 +413,10 @@
 				8A13C6A22468D1A9006CA98B /* UserPrefInitializer.swift in Sources */,
 				8A13C6A42468D1B2006CA98B /* LoginHelper.swift in Sources */,
 				8A13C6A02468D19C006CA98B /* RequestEnumerates.swift in Sources */,
+				8AEBB21224A85D98003E71BE /* Community.swift in Sources */,
+				8AEBB21924A85FAA003E71BE /* MainTabViewController.swift in Sources */,
+				8AEBB21724A85F7E003E71BE /* BlurredTabBar.swift in Sources */,
+				8AEBB21524A85F4F003E71BE /* FadeAnimation.swift in Sources */,
 				8A13C69F2468D19C006CA98B /* RequestManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -547,14 +579,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 24XARD42BP;
+				CURRENT_PROJECT_VERSION = 14;
+				DEVELOPMENT_TEAM = YK97T6795C;
 				INFOPLIST_FILE = "instapass-guard/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.yuetsin.instapass.guard;
+				MARKETING_VERSION = 0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.yuetsin.instapass.guards;
 				PRODUCT_NAME = "InstaPass (Guard)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -567,14 +601,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 24XARD42BP;
+				CURRENT_PROJECT_VERSION = 14;
+				DEVELOPMENT_TEAM = YK97T6795C;
 				INFOPLIST_FILE = "instapass-guard/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.yuetsin.instapass.guard;
+				MARKETING_VERSION = 0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.yuetsin.instapass.guards;
 				PRODUCT_NAME = "InstaPass (Guard)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

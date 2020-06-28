@@ -58,6 +58,7 @@ class ScanViewController: UIViewController, QRCodeReaderViewControllerDelegate {
             if secretValue.hasPrefix("instapass{") && secretValue.hasSuffix("}") {
                 RequestManager.request(type: .post,
                                        feature: .validate,
+                                       subUrl: nil,
                                        params: [
                                         "secret": secretValue,
                                         "reason": "TODO: 这里还没写"

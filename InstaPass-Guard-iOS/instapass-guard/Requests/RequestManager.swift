@@ -7,7 +7,11 @@
 //
 
 import Alamofire
+
+#if canImport(Alamofire_SwiftyJSON)
 import Alamofire_SwiftyJSON
+#endif
+
 import Foundation
 import SwiftyJSON
 
@@ -19,23 +23,32 @@ class RequestManager {
 //    static var jwtToken: String?
 
     static func request(type requestType: RequestType, feature featureType: FeatureType,
+                        subUrl requestSubUrl: [String]?,
                         params parameters: Parameters?,
                         success successHandler: @escaping (JSON) -> Void, failure failureHandler: @escaping (String) -> Void) {
-        var method: HTTPMethod!
-
+        var method: HTTPMethod = .get
+        var encoding: ParameterEncoding = URLEncoding.queryString
         if requestType == .get {
             method = .get
+            encoding = URLEncoding.queryString
         } else if requestType == .post {
             method = .post
-        } else {
-            // fallback
-            method = .get
+            encoding = JSONEncoding.default
         }
-        Alamofire.request(URL.init(string: featureType.rawValue, relativeTo: baseUrl)!,
+        
+        var requestUrl: URL = URL.init(string: featureType.rawValue, relativeTo: baseUrl)!
+        
+        for subUrl in requestSubUrl ?? [] {
+            requestUrl.appendPathComponent(subUrl)
+        }
+        
+        Alamofire.request(requestUrl,
                           method: method,
                           parameters: parameters,
-                          encoding: JSONEncoding.default,
+                          encoding: encoding,
                           headers: ["Jwt-Token" : UserPrefInitializer.jwtToken ]).responseSwiftyJSON(completionHandler: { responseJSON in
+                            NSLog(String(data: responseJSON.data!, encoding: .utf8)!)
+                            NSLog("requestUrl: \(requestUrl)")
             if responseJSON.error != nil {
                 failureHandler(responseJSON.error!.localizedDescription)
             } else {
@@ -54,4 +67,5 @@ class RequestManager {
         })
     }
 }
+
 

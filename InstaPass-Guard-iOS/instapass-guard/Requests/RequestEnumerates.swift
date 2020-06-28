@@ -22,7 +22,7 @@ enum RequestResponse {
 
 enum FeatureType: String {
     // TODO: separate user login and guard login
-    case login = "/login"
+    case login = "/guard/login"
     case validate = "/guard/validate"
 }
 
