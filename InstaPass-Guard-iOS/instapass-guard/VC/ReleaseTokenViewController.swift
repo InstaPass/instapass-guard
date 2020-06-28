@@ -34,7 +34,7 @@ class ReleaseTokenViewController: UIViewController {
     }
     
     func releaseTokenCallback() {
-//        childVC?.reloadCards()
+        childVC?.reloadCards()
         reasoningButton.setTitle(QRCodeManager.outingReason ?? "设定事由", for: .normal)
     }
     

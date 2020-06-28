@@ -70,8 +70,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                                       UserPrefInitializer.userName = userName
                                       UserPrefInitializer.passWord = passWord
                                       var communities: [Community] = []
-                                    NSLog(jsonResp.stringValue)
-                                    
+                                    UserPrefInitializer.jwtToken = jsonResp["jwt_token"].stringValue
                                     for commObject in jsonResp["working_communities"].arrayValue {
                                         communities.append(Community(id: commObject["community_id"].intValue,
                                                                      name: commObject["community"].stringValue, address: commObject["address"].stringValue))

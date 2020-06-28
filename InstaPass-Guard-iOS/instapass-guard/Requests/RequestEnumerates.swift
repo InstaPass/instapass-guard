@@ -24,6 +24,6 @@ enum FeatureType: String {
     // TODO: separate user login and guard login
     case login = "/guard/login"
     case validate = "/guard/validate"
-    case generate = "/guard/generate"
+    case generate = "/generate/qrcode"
 }
 

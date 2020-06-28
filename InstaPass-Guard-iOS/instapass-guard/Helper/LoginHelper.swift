@@ -29,8 +29,6 @@ class LoginHelper {
                                    handler(.ok)
                                }, failure: { _ in
                                    handler(.unauthorized)
-                                   // TODO: fix this foolish response
-                                   handler(.ok)
         })
     }
 

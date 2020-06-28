@@ -55,25 +55,20 @@ class QRCodeChildPageViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        flushQRCode()
         refreshQRCode()
     }
+    
+    var secret: String?
 
     func flushQRCode() {
         //        let style = traitCollection.userInterfaceStyle
 
-        QRCodeView.image = QRCodeManager.getQRCodeImage()
+        QRCodeView.image = QRCodeManager.getQRCodeImage(secret: secret)
 
         if QRCodeView.image == nil {
             QRCodeView.image = UIImage(systemName: "multiply")
         }
     }
-
-    //
-    //    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-    //        super.traitCollectionDidChange(previousTraitCollection)
-    //        flushQRCode()
-    //    }
 
     @IBAction func onRefreshButtonTapped(_ sender: UIButton) {
         refreshQRCode()
@@ -90,7 +85,8 @@ class QRCodeChildPageViewController: UIViewController {
         refreshButton.isEnabled = false
         QRCodeManager.refreshQrCode(temporary: temporary,
                                     reason: QRCodeManager.outingReason,
-                                    success: { _, time in
+                                    success: { secret, time in
+            self.secret = secret
             self.flushQRCode()
             self.lastUpdateTextField.text = "已于 \(dateToString(time, dateFormat: "HH:mm")) 更新"
             self.refreshButton.isEnabled = true

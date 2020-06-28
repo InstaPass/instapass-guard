@@ -37,7 +37,7 @@ class QRCodesViewController: PageboyViewController, PageboyViewControllerDataSou
         tempViewController.temporary = true
         
         let constantViewController = self.storyboard?.instantiateViewController(withIdentifier: "QrCodeChildVC") as! QRCodeChildPageViewController
-        tempViewController.temporary = false
+        constantViewController.temporary = false
         
         self.viewControllers.append(tempViewController)
         self.viewControllers.append(constantViewController)
