@@ -11,13 +11,16 @@ import SPAlert
 
 class QRCodeChildPageViewController: UIViewController {
     
+    @IBOutlet weak var previousQRCodeView: UIImageView!
     @IBOutlet var cardView: UIVisualEffectView!
     @IBOutlet var QRCodeView: UIImageView!
     @IBOutlet var refreshButton: UIButton!
     @IBOutlet var lastUpdateTextField: UILabel!
     
     var temporary: Bool = true
+    var secret: String?
 //    var reason: String?
+    var timer: Timer?
     
     var parentVC: ReleaseTokenViewController?
     
@@ -26,6 +29,10 @@ class QRCodeChildPageViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         redrawPageShadow()
+        QRCodeView.image = UIImage(systemName: "qrcode")
+        
+        timer = Timer(timeInterval: 10, target: self, selector: #selector(refreshQRCode), userInfo: nil, repeats: true)
+        RunLoop.main.add(timer!, forMode: RunLoop.Mode.default)
     }
     
     func redrawPageShadow() {
@@ -57,17 +64,24 @@ class QRCodeChildPageViewController: UIViewController {
 
         refreshQRCode()
     }
-    
-    var secret: String?
 
     func flushQRCode() {
         //        let style = traitCollection.userInterfaceStyle
 
+        previousQRCodeView.image = QRCodeView.image
         QRCodeView.image = QRCodeManager.getQRCodeImage(secret: secret)
-
+        
         if QRCodeView.image == nil {
-            QRCodeView.image = UIImage(systemName: "multiply")
+            QRCodeView.image = UIImage(systemName: "qrcode")
         }
+        
+        previousQRCodeView.alpha = 1
+        QRCodeView.alpha = 0
+
+        UIView.animate(withDuration: 0.1, animations: {
+            self.previousQRCodeView.alpha = 0
+            self.QRCodeView.alpha = 1
+        })
     }
 
     @IBAction func onRefreshButtonTapped(_ sender: UIButton) {
@@ -77,7 +91,7 @@ class QRCodeChildPageViewController: UIViewController {
     
 //    var canRefresh: Bool = true
 
-    func refreshQRCode() {
+    @objc func refreshQRCode() {
         if !self.refreshButton.isEnabled {
             return
         }
@@ -92,9 +106,10 @@ class QRCodeChildPageViewController: UIViewController {
             self.refreshButton.isEnabled = true
         }, failure: { error in
             // show ${error} message
+            self.secret = nil
             self.flushQRCode()
-            self.lastUpdateTextField.text = "请求失败"
-            SPAlert.present(title: "请求 QR 码失败", message: error, image: UIImage(systemName: "wifi.exclamationmark")!)
+            self.lastUpdateTextField.text = "请求失败：\(error)"
+//            SPAlert.present(title: "请求 QR 码失败", message: error, image: UIImage(systemName: "wifi.exclamationmark")!)
             self.refreshButton.isEnabled = true
         })
     }

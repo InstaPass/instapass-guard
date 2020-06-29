@@ -26,7 +26,11 @@ class ReleaseTokenViewController: UIViewController {
         // Do any additional setup after loading the view.
         updateNavigationTitle()
 
-        reasoningButton.setTitle(QRCodeManager.outingReason ?? "设定事由", for: .normal)
+        if QRCodeManager.outingReason != nil {
+            reasoningButton.setTitle("用于「\(QRCodeManager.outingReason!)」", for: .normal)
+        } else {
+            reasoningButton.setTitle("设定事由…", for: .normal)
+        }
     }
     
     @IBAction func reasoningButtonTapped(_ sender: UIButton) {
