@@ -49,7 +49,7 @@ class ScanViewController: UIViewController, QRCodeReaderViewControllerDelegate {
             }
 
             let secretValue = result!.value
-            if secretValue.hasPrefix("instapass{") && secretValue.hasSuffix("}") {
+            if secretValue.hasPrefix("instapass{") {
                 self.prepareRequest(secretValue: secretValue)
             } else {
                 SPAlert.present(title: "扫描 QR 码失败", message: "这不是一个合法的 InstaPass QR 码。", image: UIImage(systemName: "multiply")!)
@@ -71,8 +71,12 @@ class ScanViewController: UIViewController, QRCodeReaderViewControllerDelegate {
     }
     
     func prepareRequest(secretValue: String) {
-        currentSecret = secretValue
-        performSegue(withIdentifier: "outingReasonSegue", sender: self)
+        if secretValue.hasSuffix("}reason") {
+            currentSecret = secretValue
+            performSegue(withIdentifier: "outingReasonSegue", sender: self)
+        } else {
+            reasoningCallback(reason: "")
+        }
     }
 
     func reasoningCallback(reason: String) {

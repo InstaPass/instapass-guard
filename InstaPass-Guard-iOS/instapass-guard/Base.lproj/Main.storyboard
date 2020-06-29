@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zv9-1v-MnL">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
@@ -15,22 +15,22 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="ScanViewController" customModule="InstaPass__Guard_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileBg" translatesAutoresizingMaskIntoConstraints="NO" id="wIH-6F-lSG">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                             </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugF-wC-fQm">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WNq-hT-4hQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <blurEffect style="prominent"/>
                             </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prB-ef-J4H">
-                                <rect key="frame" x="40" y="164" width="240" height="240"/>
+                                <rect key="frame" x="40" y="120" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="prB-ef-J4H" secondAttribute="height" multiplier="1:1" id="j2C-qt-Qk1"/>
                                 </constraints>
@@ -77,7 +77,7 @@
                     <tabBarItem key="tabBarItem" title="QR 码扫描" image="qrcode.viewfinder" catalog="system" id="Oc3-hA-8oX"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="PSS-mk-2wh">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -115,14 +115,14 @@
             <objects>
                 <viewController id="Zv9-1v-MnL" customClass="LoginViewController" customModule="InstaPass__Guard_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Sm-Vi-nC8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileBg" translatesAutoresizingMaskIntoConstraints="NO" id="caN-NS-ZyU">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="iAW-p2-GCo">
-                                <rect key="frame" x="24" y="160.5" width="272" height="247"/>
+                                <rect key="frame" x="24" y="116.5" width="272" height="247"/>
                                 <subviews>
                                     <textField opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="用户名" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kns-qH-ReR">
                                         <rect key="frame" x="0.0" y="0.0" width="272" height="48"/>
@@ -160,7 +160,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请联系您的雇主以获取 InstaPass 账户。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5V5-1Y-MEo">
-                                <rect key="frame" x="32" y="536" width="256" height="16"/>
+                                <rect key="frame" x="32" y="448" width="256" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" systemColor="tertiaryLabelColor"/>
                                 <nil key="highlightedColor"/>
@@ -197,7 +197,7 @@
             <objects>
                 <tableViewController id="TJv-QE-ZbU" customClass="UserTableViewController" customModule="InstaPass__Guard_" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Td3-Sp-U4e">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <sections>
                             <tableViewSection headerTitle="考勤" footerTitle="" id="VQU-Rf-dTf">
@@ -296,11 +296,11 @@
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="NDy-7X-mOQ" customClass="ReasoningViewController" customModule="InstaPass__Guard_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zfQ-jm-doG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Slc-u3-mVg">
-                                <rect key="frame" x="80" y="152" width="160" height="264"/>
+                                <rect key="frame" x="80" y="108" width="160" height="264"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0n-OH-Mz3" customClass="RadiusButton" customModule="InstaPass__Guard_" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="160" height="34"/>
@@ -420,17 +420,17 @@
             <objects>
                 <viewController id="uke-gV-LNK" customClass="ReleaseTokenViewController" customModule="InstaPass__Guard_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wL1-Tu-AWa">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7q-WC-csV">
-                                <rect key="frame" x="0.0" y="91" width="320" height="379"/>
+                                <rect key="frame" x="0.0" y="96" width="320" height="286"/>
                                 <connections>
                                     <segue destination="p4E-JV-v04" kind="embed" identifier="QRCodeSegue" id="Yx4-ix-NWA"/>
                                 </connections>
                             </containerView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OcM-qf-0Em">
-                                <rect key="frame" x="61.5" y="438" width="197" height="69"/>
+                                <rect key="frame" x="61.5" y="350" width="197" height="69"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q11-Bc-Z8I">
                                         <rect key="frame" x="62.5" y="0.0" width="72" height="30"/>
@@ -486,7 +486,7 @@
                     <tabBarItem key="tabBarItem" title="凭证发放" image="person.crop.square.fill.and.at.rectangle" catalog="system" id="PsI-l7-lzU"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="B1W-h1-S0c">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -503,7 +503,7 @@
                 <navigationController id="sNo-DG-zZo" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="我的" image="person" catalog="system" id="rUd-RR-MPZ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="q9l-Xy-lmc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -519,23 +519,23 @@
             <objects>
                 <viewController storyboardIdentifier="QrCodeChildVC" id="N3a-bO-Bx9" customClass="QRCodeChildPageViewController" customModule="InstaPass__Guard_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G33-tj-rh1">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z0R-aq-4qE">
-                                <rect key="frame" x="32" y="48" width="256" height="472"/>
+                                <rect key="frame" x="32" y="48" width="256" height="384"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4nt-VD-9ST">
-                                    <rect key="frame" x="0.0" y="0.0" width="256" height="472"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="256" height="384"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IU0-ia-V1z">
-                                            <rect key="frame" x="0.0" y="0.0" width="256" height="472"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="256" height="384"/>
                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Su3-Pg-nby">
-                                                <rect key="frame" x="0.0" y="0.0" width="256" height="472"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="256" height="384"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="载入中" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veF-gv-I3e">
-                                                        <rect key="frame" x="106.5" y="447" width="43" height="17"/>
+                                                        <rect key="frame" x="106.5" y="359" width="43" height="17"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="17" id="S8W-Ih-lHA"/>
                                                         </constraints>
@@ -566,17 +566,17 @@
                                 <blurEffect style="prominent"/>
                             </visualEffectView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wH1-hy-f49">
-                                <rect key="frame" x="32" y="48" width="256" height="472"/>
+                                <rect key="frame" x="32" y="48" width="256" height="384"/>
                                 <subviews>
                                     <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="1GG-yc-PeR" customClass="UIImageView">
-                                        <rect key="frame" x="8" y="116" width="240" height="240"/>
+                                        <rect key="frame" x="8" y="72" width="240" height="240"/>
                                         <color key="tintColor" red="0.35102513429999999" green="0.58209806679999998" blue="0.67844754460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="1GG-yc-PeR" secondAttribute="height" multiplier="1:1" id="zFd-Nl-7uI"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="yH9-tL-5AZ" customClass="UIImageView">
-                                        <rect key="frame" x="8" y="116" width="240" height="240"/>
+                                        <rect key="frame" x="8" y="72" width="240" height="240"/>
                                         <color key="tintColor" red="0.35102513429999999" green="0.58209806679999998" blue="0.67844754460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SXL-b8-1wR">
@@ -605,10 +605,12 @@
                                     <constraint firstItem="yH9-tL-5AZ" firstAttribute="centerY" secondItem="wH1-hy-f49" secondAttribute="centerY" id="bo3-R1-dxC"/>
                                     <constraint firstItem="1GG-yc-PeR" firstAttribute="centerY" secondItem="wH1-hy-f49" secondAttribute="centerY" id="cZk-fy-x5O"/>
                                     <constraint firstItem="1GG-yc-PeR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wH1-hy-f49" secondAttribute="leading" constant="8" id="dsu-Jh-HEj"/>
-                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="yH9-tL-5AZ" secondAttribute="bottom" constant="8" id="gxu-D8-NXr"/>
+                                    <constraint firstItem="1GG-yc-PeR" firstAttribute="top" relation="greaterThanOrEqual" secondItem="SXL-b8-1wR" secondAttribute="bottom" constant="32" id="eRO-Kt-oUG"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="yH9-tL-5AZ" secondAttribute="bottom" constant="32" id="gxu-D8-NXr"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yH9-tL-5AZ" secondAttribute="trailing" constant="8" id="jPp-ac-45E"/>
                                     <constraint firstItem="yH9-tL-5AZ" firstAttribute="width" secondItem="yH9-tL-5AZ" secondAttribute="height" multiplier="1:1" id="lnq-YP-iMT"/>
-                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1GG-yc-PeR" secondAttribute="bottom" constant="8" id="pVJ-HY-uCw"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1GG-yc-PeR" secondAttribute="bottom" constant="32" id="pVJ-HY-uCw"/>
+                                    <constraint firstItem="yH9-tL-5AZ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="SXL-b8-1wR" secondAttribute="bottom" constant="32" id="qls-8q-Nid"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -642,7 +644,7 @@
             <objects>
                 <viewController id="p4E-JV-v04" customClass="QRCodesViewController" customModule="InstaPass__Guard_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="woc-0a-Z24">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="379"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="286"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="288-oq-GYF"/>
                     </view>

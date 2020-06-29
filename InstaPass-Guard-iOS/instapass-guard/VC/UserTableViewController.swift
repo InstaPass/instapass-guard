@@ -54,12 +54,12 @@ class UserTableViewController: UITableViewController {
 
         if indexPath.section == 0 {
             if indexPath.row == 0 {
-                RequestManager.request(type: .post,
-                                       feature: <#T##FeatureType#>,
-                                       subUrl: <#T##[String]?#>,
-                                       params: <#T##Parameters?#>,
-                                       success: <#T##(JSON) -> Void#>,
-                                       failure: <#T##(String) -> Void#>)
+//                RequestManager.request(type: .post,
+//                                       feature: <#T##FeatureType#>,
+//                                       subUrl: <#T##[String]?#>,
+//                                       params: <#T##Parameters?#>,
+//                                       success: <#T##(JSON) -> Void#>,
+//                                       failure: <#T##(String) -> Void#>)
             } else if indexPath.row == 1 {
                 // check-out
             }
