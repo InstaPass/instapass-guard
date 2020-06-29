@@ -39,7 +39,11 @@ class ReleaseTokenViewController: UIViewController {
     
     func releaseTokenCallback() {
         childVC?.reloadCards()
-        reasoningButton.setTitle(QRCodeManager.outingReason ?? "设定事由", for: .normal)
+        if QRCodeManager.outingReason != nil {
+            reasoningButton.setTitle("用于「\(QRCodeManager.outingReason!)」", for: .normal)
+        } else {
+            reasoningButton.setTitle("设定事由…", for: .normal)
+        }
     }
     
     @IBAction func onSelectionChanged(_ sender: UISegmentedControl) {

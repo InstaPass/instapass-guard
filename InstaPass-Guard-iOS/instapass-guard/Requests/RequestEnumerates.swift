@@ -25,5 +25,7 @@ enum FeatureType: String {
     case login = "/guard/login"
     case validate = "/guard/validate"
     case generate = "/generate/qrcode"
+    case checkin = "/guard/checkin"
+    case checkout = "/guard/checkout"
 }
 

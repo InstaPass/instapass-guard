@@ -52,7 +52,19 @@ class UserTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
 
-        if indexPath.section == 1 {
+        if indexPath.section == 0 {
+            if indexPath.row == 0 {
+                RequestManager.request(type: .post,
+                                       feature: <#T##FeatureType#>,
+                                       subUrl: <#T##[String]?#>,
+                                       params: <#T##Parameters?#>,
+                                       success: <#T##(JSON) -> Void#>,
+                                       failure: <#T##(String) -> Void#>)
+            } else if indexPath.row == 1 {
+                // check-out
+            }
+        }
+        else if indexPath.section == 1 {
             if indexPath.row == 0 {
                 // preference
             } else if indexPath.section == 1 {
