@@ -7,9 +7,11 @@
 //
 
 import UIKit
-
+import SPAlert
 
 class UserTableViewController: UITableViewController {
+    
+    var locationHelper: LocationHelper?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -53,15 +55,50 @@ class UserTableViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
 
         if indexPath.section == 0 {
+            if Community.activeCommunity == nil {
+                SPAlert.present(message: "没有选择任何小区。请重新登录。", haptic: .error)
+                return
+            }
             if indexPath.row == 0 {
-//                RequestManager.request(type: .post,
-//                                       feature: <#T##FeatureType#>,
-//                                       subUrl: <#T##[String]?#>,
-//                                       params: <#T##Parameters?#>,
-//                                       success: <#T##(JSON) -> Void#>,
-//                                       failure: <#T##(String) -> Void#>)
+                locationHelper = LocationHelper(success: { location in
+                    RequestManager.request(type: .post,
+                                           feature: .checkin,
+                                           subUrl: nil,
+                                           params: [
+                                            "community_id": Community.activeCommunity!.id,
+                                            "community": Community.activeCommunity!.name,
+                                            "address": Community.activeCommunity!.address,
+                                            "longitude": location.longitude,
+                                            "latitude": location.latitude
+                                           ],
+                                           success: { _ in
+                                            SPAlert.present(title: "已成功打卡上班。", image: UIImage(systemName: "checkmark")!)
+                                           }) { error in
+                        SPAlert.present(title: "未能成功打卡，因为「\(error)」。", image: UIImage(systemName: "multiply")!)
+                    }
+                }, failure: { error in
+                    SPAlert.present(title: "未能获取位置信息，请再试一次。", image: UIImage(systemName: "multiply")!)
+                })
             } else if indexPath.row == 1 {
-                // check-out
+                locationHelper = LocationHelper(success: { location in
+                    RequestManager.request(type: .post,
+                                           feature: .checkout,
+                                           subUrl: nil,
+                                           params: [
+                                            "community_id": Community.activeCommunity!.id,
+                                            "community": Community.activeCommunity!.name,
+                                            "address": Community.activeCommunity!.address,
+                                            "longitude": location.longitude,
+                                            "latitude": location.latitude
+                                           ],
+                                           success: { _ in
+                                            SPAlert.present(title: "已成功打卡下班。", image: UIImage(systemName: "checkmark")!)
+                                           }) { error in
+                        SPAlert.present(title: "未能成功打卡，因为「\(error)」。", image: UIImage(systemName: "multiply")!)
+                    }
+                }, failure: { error in
+                    SPAlert.present(title: "未能获取位置信息，请再试一次。", image: UIImage(systemName: "multiply")!)
+                })
             }
         }
         else if indexPath.section == 1 {

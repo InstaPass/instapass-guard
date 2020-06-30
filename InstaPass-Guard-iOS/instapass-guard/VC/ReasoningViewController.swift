@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ReasoningViewController: UIViewController {
+class ReasoningViewController: UIViewController, UITextFieldDelegate {
 
     var parentVC: ScanViewController?
     var tokenParentVC: ReleaseTokenViewController?
@@ -17,6 +17,17 @@ class ReasoningViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         onTextChanged(otherReasonText)
+        otherReasonText.delegate = self
+        
+        navigationItem.backBarButtonItem?.tintColor = globalTintColor
+        
+        if parentVC != nil {
+            navigationItem.backButtonTitle = "验证出入凭证"
+        } else if tokenParentVC != nil {
+            navigationItem.backButtonTitle = "发放临时出入凭证"
+        } else {
+            navigationItem.backButtonTitle = "返回"
+        }
     }
     
     @IBOutlet weak var okButton: RadiusButton!
@@ -36,6 +47,13 @@ class ReasoningViewController: UIViewController {
             parentVC?.reasoningCallback(reason: "未列明")
         }
         super.viewDidDisappear(animated)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == otherReasonText {
+            customReasonTapped(okButton)
+        }
+        return true
     }
     
     @IBAction func presetReasonTapped(_ sender: UIButton) {

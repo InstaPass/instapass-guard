@@ -91,7 +91,7 @@ class ScanViewController: UIViewController, QRCodeReaderViewControllerDelegate {
                                 "reason": reason
         ], success: { jsonResponse in
             DispatchQueue.main.async {
-                SPAlert.present(title: "请求成功", message: "此出入申请已被批准。服务器说「\(jsonResponse["validation"].stringValue)」。", image: UIImage(systemName: "checkmark.shield")!)
+                SPAlert.present(title: "请求成功", message: "此出入申请已被批准。", image: UIImage(systemName: "checkmark.shield")!)
             }
         }, failure: { errorMsg in
             SPAlert.present(title: "请求失败", message: "此出入申请未被批准。服务器报告了一个「\(errorMsg)」错误。", image: UIImage(systemName: "multiply")!)
