@@ -21,6 +21,7 @@ class QRCodeChildPageViewController: UIViewController {
     var secret: String?
 //    var reason: String?
     var timer: Timer?
+    var alreadyPrompted = false
     
     var parentVC: ReleaseTokenViewController?
     
@@ -33,6 +34,18 @@ class QRCodeChildPageViewController: UIViewController {
         
         timer = Timer(timeInterval: 10, target: self, selector: #selector(refreshQRCode), userInfo: nil, repeats: true)
         RunLoop.main.add(timer!, forMode: RunLoop.Mode.default)
+    }
+    
+    func showPrompt() {
+        if !alreadyPrompted {
+            if !temporary {
+                let alertController = UIAlertController(title: "警告", message: "发放常住出入凭证前，请务必确认住户身份。", preferredStyle: .alert)
+                alertController.view.setTintColor()
+                alertController.addAction(UIAlertAction(title: "好", style: .cancel, handler: nil))
+                present(alertController, animated: true, completion: nil)
+            }
+            alreadyPrompted = true
+        }
     }
     
     func redrawPageShadow() {

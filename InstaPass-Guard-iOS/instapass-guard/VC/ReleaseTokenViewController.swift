@@ -52,6 +52,9 @@ class ReleaseTokenViewController: UIViewController {
         childVC?.scrollToPage(.at(index: sender.selectedSegmentIndex),
                               animated: true, completion: {_,_,_ in 
                                 sender.isEnabled = true
+                                if self.childVC?.viewControllers.count ?? 0 > 1 {
+                                    (self.childVC?.viewControllers[1] as? QRCodeChildPageViewController)?.showPrompt()
+                                }
                               })
     }
     

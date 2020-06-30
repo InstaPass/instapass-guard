@@ -70,6 +70,9 @@ class QRCodesViewController: PageboyViewController, PageboyViewControllerDataSou
             parentVC?.typeSegmentationControl.selectedSegmentIndex = 0
         } else {
             parentVC?.typeSegmentationControl.selectedSegmentIndex = 1
+            if viewControllers.count > 1 {
+                (viewControllers[1] as? QRCodeChildPageViewController)?.showPrompt()
+            }
         }
         
         parentVC?.updateIssueLabel()
