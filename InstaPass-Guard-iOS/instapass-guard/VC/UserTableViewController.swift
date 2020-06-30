@@ -11,6 +11,9 @@ import SPAlert
 
 class UserTableViewController: UITableViewController {
     
+    @IBOutlet weak var checkInLabel: UILabel!
+    @IBOutlet weak var checkOutLabel: UILabel!
+    
     var locationHelper: LocationHelper?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +23,10 @@ class UserTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        if Community.activeCommunity != nil {
+            checkInLabel.text = "在「\(Community.activeCommunity!.name)」签到"
+            checkOutLabel.text = "在「\(Community.activeCommunity!.name)」签退"
+        }
     }
     
     func switchUser() {

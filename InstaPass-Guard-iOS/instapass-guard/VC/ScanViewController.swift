@@ -71,8 +71,8 @@ class ScanViewController: UIViewController, QRCodeReaderViewControllerDelegate {
     }
     
     func prepareRequest(secretValue: String) {
+        currentSecret = secretValue
         if secretValue.hasSuffix("}reason") {
-            currentSecret = secretValue
             performSegue(withIdentifier: "outingReasonSegue", sender: self)
         } else {
             reasoningCallback(reason: "")

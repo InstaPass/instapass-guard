@@ -202,7 +202,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <sections>
-                            <tableViewSection headerTitle="考勤" footerTitle="" id="VQU-Rf-dTf">
+                            <tableViewSection headerTitle="考勤" footerTitle="如需切换工作单位，请注销并再次登入。" id="VQU-Rf-dTf">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="CgT-Ib-p8O" style="IBUITableViewCellStyleDefault" id="rZs-Kr-dls">
                                         <rect key="frame" x="16" y="55.5" width="288" height="44"/>
@@ -240,10 +240,10 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="软件设置" footerTitle="" id="4kS-1N-AgW" userLabel="操作">
+                            <tableViewSection headerTitle="" footerTitle="" id="4kS-1N-AgW" userLabel="操作">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Key-Jj-c8U" style="IBUITableViewCellStyleDefault" id="gtE-YQ-A3S">
-                                        <rect key="frame" x="16" y="211" width="288" height="44"/>
+                                        <rect key="frame" x="16" y="203" width="288" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gtE-YQ-A3S" id="G9p-M0-otJ">
                                             <rect key="frame" x="0.0" y="0.0" width="288" height="44"/>
@@ -260,7 +260,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="34g-lq-wQy" style="IBUITableViewCellStyleDefault" id="iPN-di-Y86">
-                                        <rect key="frame" x="16" y="255" width="288" height="44"/>
+                                        <rect key="frame" x="16" y="247" width="288" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iPN-di-Y86" id="pWk-bJ-43a">
                                             <rect key="frame" x="0.0" y="0.0" width="288" height="44"/>
@@ -286,6 +286,8 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="我的" id="4Ew-M9-UVh"/>
                     <connections>
+                        <outlet property="checkInLabel" destination="CgT-Ib-p8O" id="LPA-5L-6nK"/>
+                        <outlet property="checkOutLabel" destination="UDJ-ze-orv" id="oyt-gH-nGY"/>
                         <segue destination="Zv9-1v-MnL" kind="presentation" identifier="loginSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="gYs-jn-v1M"/>
                     </connections>
                 </tableViewController>
@@ -457,6 +459,12 @@
                                     </segmentedControl>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4k4-Oj-Fex">
+                                <rect key="frame" x="156" y="91" width="8" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Eup-UZ-PMC"/>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
@@ -464,9 +472,13 @@
                             <constraint firstItem="e7q-WC-csV" firstAttribute="top" secondItem="Eup-UZ-PMC" secondAttribute="top" constant="-48" id="Ax8-YJ-Xfv"/>
                             <constraint firstItem="Eup-UZ-PMC" firstAttribute="bottom" secondItem="OcM-qf-0Em" secondAttribute="bottom" constant="12" id="C4b-Of-gCE"/>
                             <constraint firstItem="OcM-qf-0Em" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Eup-UZ-PMC" secondAttribute="leading" constant="12" id="Ec6-wY-DDF"/>
+                            <constraint firstItem="4k4-Oj-Fex" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Eup-UZ-PMC" secondAttribute="leading" constant="8" id="Efa-J2-eXP"/>
+                            <constraint firstItem="4k4-Oj-Fex" firstAttribute="centerX" secondItem="wL1-Tu-AWa" secondAttribute="centerX" id="Elh-tp-nH0"/>
                             <constraint firstItem="e7q-WC-csV" firstAttribute="leading" secondItem="Eup-UZ-PMC" secondAttribute="leading" id="Qx5-Ct-dVt"/>
                             <constraint firstItem="OcM-qf-0Em" firstAttribute="top" secondItem="e7q-WC-csV" secondAttribute="bottom" constant="-32" id="VU9-wj-Ehi"/>
+                            <constraint firstItem="4k4-Oj-Fex" firstAttribute="top" secondItem="Eup-UZ-PMC" secondAttribute="top" id="j3V-dE-cUf"/>
                             <constraint firstItem="OcM-qf-0Em" firstAttribute="centerX" secondItem="wL1-Tu-AWa" secondAttribute="centerX" id="mDN-mO-Bmo"/>
+                            <constraint firstItem="Eup-UZ-PMC" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4k4-Oj-Fex" secondAttribute="trailing" constant="8" id="uhM-y5-qdv"/>
                             <constraint firstItem="Eup-UZ-PMC" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OcM-qf-0Em" secondAttribute="trailing" constant="12" id="v12-4P-4QO"/>
                             <constraint firstItem="Eup-UZ-PMC" firstAttribute="trailing" secondItem="e7q-WC-csV" secondAttribute="trailing" id="zsg-BE-kUZ"/>
                         </constraints>
@@ -475,6 +487,7 @@
                         <barButtonItem key="backBarButtonItem" title="发放出入凭证" id="8EL-a2-QUf"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="communityName" destination="4k4-Oj-Fex" id="SNc-xV-8Uc"/>
                         <outlet property="navigationTitle" destination="8gn-CC-JAI" id="MpV-X3-eRY"/>
                         <outlet property="reasoningButton" destination="Q11-Bc-Z8I" id="VMd-hS-1dS"/>
                         <outlet property="typeSegmentationControl" destination="yvb-uA-ZaT" id="GHN-Do-5ZX"/>
@@ -652,7 +665,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="U4F-d3-HnW"/>
+        <segue reference="v0q-xJ-H4b"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.35102513429999999" green="0.58209806679999998" blue="0.67844754460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>
@@ -662,7 +675,7 @@
         <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.crop.square.fill.and.at.rectangle" catalog="system" width="128" height="93"/>
-        <image name="qrcode.viewfinder" catalog="system" width="32" height="32"/>
+        <image name="qrcode.viewfinder" catalog="system" width="128" height="115"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

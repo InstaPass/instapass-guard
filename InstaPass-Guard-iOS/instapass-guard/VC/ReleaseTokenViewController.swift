@@ -14,6 +14,8 @@ class ReleaseTokenViewController: UIViewController {
 
     @IBOutlet weak var typeSegmentationControl: UISegmentedControl!
     
+    @IBOutlet weak var communityName: UILabel!
+    
     var childVC: QRCodesViewController?
     
     @IBOutlet weak var navigationTitle: UINavigationItem!
@@ -30,6 +32,12 @@ class ReleaseTokenViewController: UIViewController {
             reasoningButton.setTitle("用于「\(QRCodeManager.outingReason!)」", for: .normal)
         } else {
             reasoningButton.setTitle("设定事由…", for: .normal)
+        }
+        
+        if Community.activeCommunity != nil {
+            communityName.text = "授予临时或永久性出入「\(Community.activeCommunity!.name)」小区的权限。"
+        } else {
+            communityName.text = ""
         }
     }
     
